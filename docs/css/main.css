@@ -211,28 +211,28 @@ header .logo {
   background-color: #008ed6;
 }
 
-.desc-made-img,
+.shuttle-desc-img,
 .learn-code-img {
   background-image: url("../img/1000x700x1.jpg");
   height: 662px;
 }
 
-.desc-made-col {
+.shuttle-desc-col {
   background-position: center center;
   background-size: cover;
 }
 
-.desc-made-col hr {
+.shuttle-desc-col hr {
   border: solid #fff 2px;
   width: 60px;
 }
 
-.desc-made-col img {
+.shuttle-desc-col img {
   padding-right: 15px;
   vertical-align: middle;
 }
 
-.desc-section-1 {
+.shuttle-desc {
   padding: 80px 90px 80px 40px;
 }
 
