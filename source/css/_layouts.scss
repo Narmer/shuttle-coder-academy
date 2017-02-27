@@ -134,7 +134,8 @@ header {
   background-color: #008ed6;
 }
 
-.desc-made-img {
+.desc-made-img,
+.learn-code-img {
   background-image: url("../img/1000x700x1.jpg");
   height: 662px;
 }
@@ -154,4 +155,12 @@ header {
 
 .desc-section-1 {
   padding: 80px 90px 80px 40px;
+}
+
+.learn-code-section {
+  background-color: #f5f5f5;
+}
+
+.learn-code {
+  padding: 80px 40px 80px 90px;
 }

@@ -18,6 +18,7 @@ h5,
 h6 {
   color: black;
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -38,6 +39,21 @@ p {
 
 .heading {
   padding-bottom: 0;
+}
+
+.learn-code h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.learn-code h5 {
+  color: #008ed6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.learn-code p {
+  margin: 0;
 }
 
 .section-3-bg h2 {
@@ -195,7 +211,8 @@ header .logo {
   background-color: #008ed6;
 }
 
-.desc-made-img {
+.desc-made-img,
+.learn-code-img {
   background-image: url("../img/1000x700x1.jpg");
   height: 662px;
 }
@@ -217,6 +234,14 @@ header .logo {
 
 .desc-section-1 {
   padding: 80px 90px 80px 40px;
+}
+
+.learn-code-section {
+  background-color: #f5f5f5;
+}
+
+.learn-code {
+  padding: 80px 40px 80px 90px;
 }
 
 .desc-3 {
