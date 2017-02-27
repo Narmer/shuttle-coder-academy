@@ -7,7 +7,7 @@ append meta
 
 
 block hero
-  header(style="position: relative; z-index: 0; background-image: none; background-position: initial initial; background-repeat: initial initial;")
+  header.heading-landing
     .container
       .row
         .col-md-12
@@ -26,8 +26,8 @@ block hero
                 i.fa.fa-chevron-down
           <!-- /MOUSE ICON -->
 
-    div(class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 325px; width: 1280px; z-index: -999998; position: absolute;")
-      img(src="img/slides/hero.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1280px; height: 853.3333333333334px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -264.1666666666667px;")
+    .backstretch
+      img(src="img/slides/hero.jpg")
 
 append content
   h1="Shuttle Coder Academy Accueil"

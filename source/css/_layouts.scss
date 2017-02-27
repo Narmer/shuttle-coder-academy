@@ -1,7 +1,6 @@
 .top-bar {
   width: 100%;
 	background-color: #243c4f;
-	display: inline-block;
 }
 
 .tage-line {
@@ -33,4 +32,94 @@
 
 .background-color {
   background-color: #7B5DA5;
+}
+
+// HEADER
+header {
+  .logo {
+    margin-top: 130px;
+    margin-bottom: 30px;
+  }
+}
+.heading-landing {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+//  position: relative;
+  padding-top: 120px;
+  p {
+    color: #fff;
+  }
+}
+
+.backstretch {
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 658px;
+  width: 1280px;
+  z-index: -999998;
+  position: absolute;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-repeat: repeat;
+    z-index: 1;
+  }
+}
+
+.mouse-wrapper {
+  display:block;
+  z-index:10;
+  position: absolute;
+  margin-left: 18px;
+  bottom: -110px;
+}
+
+.mouse {
+  margin-left: -20px;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+  -webkit-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+  -moz-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+  -o-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+  span {
+    position: absolute;
+    left: -19px;
+    bottom: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    display: block;
+    color: #fff;
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  a {
+    color: #FFFFFF;
+    position: relative;
+    top: 110px;
+    line-height: 36px;
+    text-align: center;
+    outline: none;
+    i {
+      font-size: 1.3em;
+    }
+  }
 }
