@@ -10,6 +10,7 @@ h5,
 h6 {
   color: black;
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -42,6 +43,21 @@ p {
 
 .heading {
   padding-bottom: 0;
+}
+
+.learn-code {
+  h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h5 {
+    color: #008ed6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 0;
+  }
 }
 
 .section-3-bg {

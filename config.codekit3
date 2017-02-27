@@ -256,6 +256,22 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/source\/includes\/_course-presentation2.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/docs\/includes\/_course-presentation2.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/includes\/_course-presentation3.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/docs\/includes\/_course-presentation3.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/source\/includes\/_favicon.pug": {
 		"cOD": 1,
 		"ft": 512,

@@ -134,12 +134,13 @@ header {
   background-color: #008ed6;
 }
 
-.desc-made-img {
+.shuttle-desc-img,
+.learn-code-img {
   background-image: url("../img/1000x700x1.jpg");
   height: 662px;
 }
 
-.desc-made-col {
+.shuttle-desc-col {
   background-position: center center;
   background-size: cover;
   hr {
@@ -152,6 +153,14 @@ header {
   }
 }
 
-.desc-section-1 {
+.shuttle-desc {
   padding: 80px 90px 80px 40px;
+}
+
+.learn-code-section {
+  background-color: #f5f5f5;
+}
+
+.learn-code {
+  padding: 80px 40px 80px 90px;
 }
