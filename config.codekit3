@@ -216,6 +216,14 @@
 		"oS": 1,
 		"uL": 1
 		},
+	"\/source\/img\/1000x700x1.jpg": {
+		"ft": 16384,
+		"iS": 162684,
+		"oA": 0,
+		"oAP": "\/docs\/img\/1000x700x1.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/source\/img\/logo.png": {
 		"ft": 32768,
 		"iS": 9803,
