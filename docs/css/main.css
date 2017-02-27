@@ -5,7 +5,25 @@ Version: 1.0
 Author: Shuttle Coder Academy
 
 */
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway:400,700");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  color: black;
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: normal;
+}
+
 /*
 
     TABLE OF CONTENTS
@@ -1676,4 +1694,49 @@ footer a:hover, footer a:focus {
     -webkit-background-size: cover;
     background-position: center;
   }
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.top-bar {
+  width: 100%;
+  background-color: #243c4f;
+  display: inline-block;
+}
+
+.tage-line {
+  color: #63839c;
+  font-size: 14px;
+  width: auto;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 15px 0px;
+  float: left;
+  margin: 0;
+}
+
+.phone-number,
+.email-address {
+  float: right;
+  padding: 15px 15px;
+  border-left: 1px solid #2e495f;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  display: inline-block;
+}
+
+.phone-number a,
+.email-address a {
+  color: #fff !important;
+}
+
+.phone-number a i,
+.email-address a i {
+  margin-right: 8px;
+}
+
+.background-color {
+  background-color: #7B5DA5;
 }
