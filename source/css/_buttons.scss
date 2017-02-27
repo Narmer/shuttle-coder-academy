@@ -1,0 +1,25 @@
+.btn {
+  padding: 14px;
+  line-height: 1.42857;
+  border-radius: 2px;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .26);
+  display: block;
+  margin: 30px auto 0
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: #1B99B9;
+  border-color: #1887a3;
+  &:visited {
+
+  }
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: #15748c;
+    border-color: #105a6d
+  }
+}

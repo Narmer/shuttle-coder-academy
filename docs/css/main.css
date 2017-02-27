@@ -29,6 +29,13 @@ p {
   font-weight: normal;
 }
 
+.headingH {
+  font-size: 2rem;
+  color: #6b6b6b;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .typed {
   font-size: 1.9em;
   color: #FFFFFF;
@@ -69,8 +76,43 @@ p {
   color: #fff;
 }
 
+.workshop_1 i,
+.workshop_2 i,
+.workshop_3 i {
+  color: #1B99B9;
+}
+
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
+}
+
+.btn {
+  padding: 14px;
+  line-height: 1.42857;
+  border-radius: 2px;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.26);
+  display: block;
+  margin: 30px auto 0;
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: #1B99B9;
+  border-color: #1887a3;
+}
+
+.btn-blue:hover, .btn-blue:active {
+  color: #fff;
+  background-color: #15748c;
+  border-color: #105a6d;
+}
+
+.workshop_1 i,
+.workshop_2 i,
+.workshop_3 i {
+  color: #1B99B9;
 }
 
 .top-bar {
@@ -242,6 +284,21 @@ header .logo {
 
 .learn-code {
   padding: 80px 40px 80px 90px;
+}
+
+.workshop_1,
+.workshop_2,
+.workshop_3 {
+  padding: 30px 15px;
+  border: 1px solid #1B99B9;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.workshop_1 ul,
+.workshop_2 ul,
+.workshop_3 ul {
+  list-style: none;
 }
 
 .desc-3 {

@@ -164,3 +164,16 @@ header {
 .learn-code {
   padding: 80px 40px 80px 90px;
 }
+
+// WORKSHOPS
+.workshop_1,
+.workshop_2,
+.workshop_3 {
+  padding: 30px 15px;
+  border: 1px solid #1B99B9;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  ul {
+    list-style: none;
+  }
+}

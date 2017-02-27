@@ -304,6 +304,30 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/source\/includes\/_workshop_1.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/docs\/includes\/_workshop_1.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/includes\/_workshop_2.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/docs\/includes\/_workshop_2.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/includes\/_workshop_3.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/docs\/includes\/_workshop_3.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/source\/index.pug": {
 		"cOD": 1,
 		"ft": 512,
