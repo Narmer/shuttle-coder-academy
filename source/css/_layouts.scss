@@ -142,6 +142,14 @@ header {
 .desc-made-col {
   background-position: center center;
   background-size: cover;
+  hr {
+    border: solid #fff 2px;
+    width: 60px;
+  }
+  img {
+    padding-right: 15px;
+    vertical-align: middle;
+  }
 }
 
 .desc-section-1 {

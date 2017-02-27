@@ -224,6 +224,14 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/source\/img\/64x64x1.png": {
+		"ft": 32768,
+		"iS": 1611,
+		"oA": 0,
+		"oAP": "\/docs\/img\/64x64x1.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/source\/img\/logo.png": {
 		"ft": 32768,
 		"iS": 9803,

@@ -37,7 +37,7 @@ p {
 }
 
 .heading {
-  padding-bottom: 15px;
+  padding-bottom: 0;
 }
 
 .section-3-bg h2 {
@@ -205,14 +205,25 @@ header .logo {
   background-size: cover;
 }
 
+.desc-made-col hr {
+  border: solid #fff 2px;
+  width: 60px;
+}
+
+.desc-made-col img {
+  padding-right: 15px;
+  vertical-align: middle;
+}
+
 .desc-section-1 {
   padding: 80px 90px 80px 40px;
 }
 
 .desc-3 {
   list-style: none;
+  padding-left: 0;
 }
 
 .desc-3 li {
-  margin: 30px 0 0 0;
+  margin: 40px 0 40px 0;
 }
