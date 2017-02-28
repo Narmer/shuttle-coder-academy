@@ -1,7 +1,11 @@
 footer
   .container
-    .brand-footer
-      img(src="img/logo-white.svg" alt="logo shuttle coder academy - Apprend à coder")
+    .flex
+      .brand-footer
+        img(src="img/logo-white.svg" alt="logo shuttle coder academy - Apprend à coder")
+      .social-footer
+        h3 On est aussi sur
+        include _social-icons.pug
     .flex
       .footer-column
         h3 Nos Cours
@@ -26,31 +30,6 @@ footer
             a(href="#" target="_blank") Notre boutique
       .footer-column
         h3 On est aussi sur
-        ul.footer-links.list-unstyled
-          li
-            a(href="#" target="_blank")
-              i.fa.fa-lg.fa-facebook
-              span Facebook
-          li
-            a(href="#" target="_blank")
-              i.fa.fa-lg.fa-twitter
-              span Twitter
-          li
-            a(href="#" target="_blank")
-              i.fa.fa-lg.fa-youtube
-              span Youtube
-          li
-            a(href="#" target="_blank")
-              i.fa.fa-lg.fa-meetup
-              span Meetup
-          li
-            a(href="#" target="_blank")
-              i.fa.fa-lg.fa-linkedin
-              span LinkedIn
-          //-li
-            a(href="#" target="_blank")
-              i.fa.fa-lg.fa-medium
-              span Medium
 
     .row
       ul.copyright.list-unstyled.list-inline.text-center

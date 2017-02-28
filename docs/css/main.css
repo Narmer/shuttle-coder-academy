@@ -86,6 +86,26 @@ p {
   margin-right: 15px;
 }
 
+.social-icons .fa-twitter {
+  color: #1da1f2;
+}
+
+.social-icons .fa-facebook {
+  color: #3b5998;
+}
+
+.social-icons .fa-meetup {
+  color: #e0393e;
+}
+
+.social-icons .fa-linkedin {
+  color: #00a0dc;
+}
+
+.social-icons .fa-youtube {
+  color: #cd201f;
+}
+
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
@@ -121,6 +141,26 @@ a:link, a:visited, a:hover, a:active {
 
 .footer-links li a i {
   margin-right: 15px;
+}
+
+.social-icons .fa-twitter {
+  color: #1da1f2;
+}
+
+.social-icons .fa-facebook {
+  color: #3b5998;
+}
+
+.social-icons .fa-meetup {
+  color: #e0393e;
+}
+
+.social-icons .fa-linkedin {
+  color: #00a0dc;
+}
+
+.social-icons .fa-youtube {
+  color: #cd201f;
 }
 
 .top-bar {
@@ -355,6 +395,14 @@ footer {
 }
 
 .footer-column li a:link, .footer-column li a:visited, .footer-column li a:hover, .footer-column li a:active {
+  color: #fff;
+}
+
+.social-footer h3 {
+  color: #b3b3b3;
+}
+
+.social-footer li a:link, .social-footer li a:visited, .social-footer li a:hover, .social-footer li a:active {
   color: #fff;
 }
 

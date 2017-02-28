@@ -47,6 +47,22 @@ footer {
   }
 }
 
+.social-footer {
+  h3 {
+    color: shade($text-light, 30%);
+  }
+  li {
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $text-light;
+      }
+    }
+  }
+}
+
 .copyright {
   color: shade($text-light, 45%);
   padding: 30px 0;
