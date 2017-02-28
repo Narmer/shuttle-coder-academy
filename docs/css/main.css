@@ -16,14 +16,20 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
+  color: #000;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
+h6 {
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 p {
-  color: black;
+  color: #000;
   font-family: 'Raleway';
   font-size: 16px;
   font-weight: normal;
@@ -38,7 +44,7 @@ p {
 
 .typed {
   font-size: 1.9em;
-  color: #FFFFFF;
+  color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -391,12 +397,18 @@ footer {
   display: flex;
 }
 
-.footer-column h3 {
-  color: #b3b3b3;
+.footer-column h6 {
+  color: #fff;
 }
 
-.footer-column li a:link, .footer-column li a:visited, .footer-column li a:hover, .footer-column li a:active {
+.footer-column li a:link, .footer-column li a:visited {
   color: #fff;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.footer-column li a:hover, .footer-column li a:active {
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .social-footer h3 {

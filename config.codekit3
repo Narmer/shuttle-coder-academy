@@ -268,19 +268,6 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"\/source\/css\/utils\/_typography.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/docs\/css\/utils\/_typography.css",
-		"oF": 0,
-		"oS": 1,
-		"uL": 1
-		},
 	"\/source\/css\/utils\/_variables.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -363,14 +350,6 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/docs\/includes\/_footer-bottom.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/includes\/_footer.pug": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/docs\/includes\/_footer.html",
 		"oF": 0,
 		"oS": 0
 		},

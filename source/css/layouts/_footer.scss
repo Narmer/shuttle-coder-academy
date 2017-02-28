@@ -33,16 +33,20 @@ footer {
 }
 
 .footer-column {
-  h3 {
-    color: shade($text-light, 30%);
+  h6 {
+    color: $text-light;
   }
   li {
     a {
       &:link,
-      &:visited,
+      &:visited {
+        color: $text-light;
+        border-bottom: 1px solid #4d4d4d;
+      }
       &:hover,
       &:active {
         color: $text-light;
+        border-bottom: 1px solid $text-light;
       }
     }
   }
