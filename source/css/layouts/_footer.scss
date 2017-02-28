@@ -61,10 +61,11 @@ footer {
         color: $text-light;
       }
     }
+  }
 }
 
 .footer-bottom {
-  background-color: $dark-color2;
+  background-color: #555;
   .row {
     padding: 18px 0;
   }
@@ -79,12 +80,11 @@ footer {
     margin: 0 5px;
   }
   a {
-      &:link,
-      &:visited,
-      &:hover,
-      &:active {
-        color: $text-gray;
-      }
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $text-gray;
     }
   }
 }

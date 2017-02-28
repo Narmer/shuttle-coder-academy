@@ -407,26 +407,26 @@ footer {
   color: #fff;
 }
 
-.social-footer .footer-bottom {
+.footer-bottom {
   background-color: #555;
 }
 
-.social-footer .footer-bottom .row {
+.footer-bottom .row {
   padding: 18px 0;
 }
 
-.social-footer .copyright {
+.copyright {
   font-size: 12px;
   line-height: normal;
   margin: 0;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.social-footer .copyright i {
+.copyright i {
   margin: 0 5px;
 }
 
-.social-footer .copyright a:link, .social-footer .copyright a:visited, .social-footer .copyright a:hover, .social-footer .copyright a:active {
+.copyright a:link, .copyright a:visited, .copyright a:hover, .copyright a:active {
   color: rgba(255, 255, 255, 0.7);
 }
 
