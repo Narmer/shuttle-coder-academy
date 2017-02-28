@@ -2,7 +2,8 @@ $main-color: #1797D4;
 $second-color: #F4B737;
 $third-color: #444C60;
 
-$dark-color: #1f2229;
+$dark-color: #333;
+$dark-color2: #555;
 
 // BACKGROUND
 $bg-light: #fff;
@@ -10,4 +11,4 @@ $bg-dark: $third-color;
 
 // TEXTS
 $text-light: #fff;
-$text-gray: shade($text-light, 20%);
+$text-gray: rgba(255, 255, 255, 0.7);

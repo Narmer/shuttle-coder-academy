@@ -422,6 +422,14 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/source\/includes\/_footer-bottom.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/docs\/includes\/_footer-bottom.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/source\/includes\/_footer.pug": {
 		"cOD": 1,
 		"ft": 512,

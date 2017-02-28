@@ -117,7 +117,7 @@ a:link, a:visited, a:hover, a:active {
 
 .top-bar {
   width: 100%;
-  background-color: #1f2229;
+  background-color: #333;
 }
 
 .tage-line {
@@ -249,6 +249,10 @@ header .logo {
   padding-right: 0;
 }
 
+.padding70 {
+  padding: 70px 0;
+}
+
 .section-3-bg {
   background-color: #1797D4;
 }
@@ -311,7 +315,8 @@ header .logo {
 }
 
 footer {
-  background-color: #1f2229;
+  background: #333;
+  border-top: 4px solid #555;
 }
 
 .brand-footer {
@@ -324,7 +329,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 60px 0 40px;
+  padding: 0 0 40px;
 }
 
 .brand-footer img {
@@ -350,13 +355,27 @@ footer {
   color: #fff;
 }
 
+.footer-bottom {
+  background-color: #555;
+}
+
+.footer-bottom .row {
+  padding: 18px 0;
+}
+
 .copyright {
-  color: #8c8c8c;
-  padding: 30px 0;
+  font-size: 12px;
+  line-height: normal;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.copyright i {
+  margin: 0 5px;
 }
 
 .copyright a:link, .copyright a:visited, .copyright a:hover, .copyright a:active {
-  color: #8c8c8c;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .desc-3 {
