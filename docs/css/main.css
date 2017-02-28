@@ -82,6 +82,12 @@ p {
   color: #1797D4;
 }
 
+.workshop_1 ul li i,
+.workshop_2 ul li i,
+.workshop_3 ul li i {
+  margin-right: 10px;
+}
+
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
@@ -113,6 +119,12 @@ a:link, a:visited, a:hover, a:active {
 .workshop_2 i,
 .workshop_3 i {
   color: #1797D4;
+}
+
+.workshop_1 ul li i,
+.workshop_2 ul li i,
+.workshop_3 ul li i {
+  margin-right: 10px;
 }
 
 .top-bar {
@@ -247,6 +259,10 @@ header .logo {
 .no_padding {
   padding-left: 0;
   padding-right: 0;
+}
+
+.padding100 {
+  padding: 100px 0;
 }
 
 .section-3-bg {

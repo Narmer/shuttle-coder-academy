@@ -4,4 +4,11 @@
   i {
     color: $main-color;
   }
+  ul {
+    li {
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
 }
