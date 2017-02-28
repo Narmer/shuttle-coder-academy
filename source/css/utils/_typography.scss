@@ -79,3 +79,16 @@ p {
     color: #fff;
   }
 }
+
+.navbar-right {
+  li {
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        //color: #1B99B9;
+      }
+    }
+  }
+}

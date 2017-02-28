@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="374px" height="78px" viewBox="0 0 374 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo color horizontal - EveryoneCanCode</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Logos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Colors-Logos" transform="translate(-386.000000, -354.000000)">
+            <g id="Logo-color-horizontal---EveryoneCanCode" transform="translate(383.000000, 342.000000)">
+                <text id="learn-To-Code" font-family="Ubuntu-Medium, Ubuntu" font-size="20" font-weight="400" fill="#000000">
+                    <tspan x="106" y="80">#EveryoneCanCode</tspan>
+                </text>
+                <g id="Nom" transform="translate(106.000000, 13.000000)" font-size="42" font-family="Righteous-Regular, Righteous" font-weight="normal">
+                    <text id="Shuttle" fill="#1797D4">
+                        <tspan x="0" y="41">Shuttle</tspan>
+                    </text>
+                    <text id="Coder" fill="#444C60">
+                        <tspan x="157" y="41">Coder</tspan>
+                    </text>
+                </g>
+                <g id="Logo">
+                    <text id="{" font-family="Ubuntu" font-size="80" font-weight="normal" fill="#444C60">
+                        <tspan x="0" y="75">{</tspan>
+                    </text>
+                    <text id="}" font-family="Ubuntu" font-size="80" font-weight="normal" line-spacing="80" fill="#444C60">
+                        <tspan x="65" y="78">}</tspan>
+                    </text>
+                    <rect id="Rectangle" fill="#FFFFFF" x="38" y="26" width="15" height="26"></rect>
+                    <g id="Rocket" transform="translate(24.000000, 15.000000)">
+                        <path d="M23.0829421,56 C23.2604069,56.4087786 23.3655712,56.9354962 23.3655712,57.6133588 C23.3655712,60.0270992 21.4989045,63.1003817 21.4989045,63.1003817 C21.4989045,63.1003817 19.6355243,60.0270992 19.6355243,57.6133588 C19.6355243,56.9354962 19.7395931,56.4087786 19.9170579,56 C18.8040689,56.6755725 18,58.1274809 18,60.7003817 C18,65.2312977 21.4989045,71 21.4989045,71 C21.4989045,71 25,65.2312977 25,60.7003817 C25,58.1274809 24.1970266,56.6755725 23.0829421,56 Z" id="flamme-réacteur" fill="#F4B737"></path>
+                        <path d="M21.500348,14 C23.9864666,14 26,16.0142294 26,18.499652 C26,20.9843786 23.9864666,23 21.500348,23 C19.0149254,23 17,20.9843786 17,18.499652 C17,16.0142294 19.0149254,14 21.500348,14 L21.500348,14 Z" id="intérieur-hublot-principal" fill="#4A4A4A"></path>
+                        <path d="M32,48.3481005 L35.0440945,54 L38.4472441,54 L42,35.3536908 L34.6976378,29 C33.7543307,38.5290334 32.4141732,46.1164943 32,48.3481005" id="aile-droite" fill="#1797D4" transform="translate(37.000000, 41.500000) rotate(-359.000000) translate(-37.000000, -41.500000) "></path>
+                        <path d="M1,35.3525699 L4.5511811,54 L7.95590551,54 L11,48.3477607 C10.584252,46.1160204 9.24251969,38.5281034 8.3023622,29 L1,35.3525699" id="aile-gauche" fill="#1797D4" transform="translate(6.000000, 41.500000) rotate(-1.000000) translate(-6.000000, -41.500000) "></path>
+                        <polyline id="réacteur" fill="#4A4A4A" points="27.1559836 55 29 49 14 49 15.8455952 55 27.1559836 55"></polyline>
+                        <path d="M21.5002707,28 C23.4339185,28 25,29.5666228 25,31.4997293 C25,33.4322945 23.4339185,35 21.5002707,35 C19.5671642,35 18,33.4322945 18,31.4997293 C18,29.5666228 19.5671642,28 21.5002707,28 L21.5002707,28 Z M21.545,12.008 C25.117,12.008 28.01,14.902 28.01,18.473 C28.01,22.043 25.117,24.939 21.545,24.939 C17.974,24.939 15.079,22.043 15.079,18.473 C15.079,14.902 17.974,12.008 21.545,12.008 L21.545,12.008 Z M30.157,47.183 C31.981,42.174 33.091,35.569 33.091,28.325 C33.091,12.682 27.921,0 21.545,0 C15.169,0 10,12.682 10,28.325 C10,35.569 11.11,42.174 12.932,47.183 L30.157,47.183 L30.157,47.183 Z" id="cockpit" fill="#1797D4"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

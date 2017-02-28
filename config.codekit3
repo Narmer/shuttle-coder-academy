@@ -232,6 +232,60 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/source\/img\/logo-black.png": {
+		"ft": 32768,
+		"iS": 9035,
+		"oA": 0,
+		"oAP": "\/docs\/img\/logo-black.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/logo-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/docs\/img\/logo-black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/logo-color.png": {
+		"ft": 32768,
+		"iS": 13786,
+		"oA": 0,
+		"oAP": "\/docs\/img\/logo-color.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/logo-color.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/docs\/img\/logo-color.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/img\/logo-white.png": {
+		"ft": 32768,
+		"iS": 9766,
+		"oA": 0,
+		"oAP": "\/docs\/img\/logo-white.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/logo-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/docs\/img\/logo-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/img\/logo.png": {
 		"ft": 32768,
 		"iS": 9803,
@@ -293,6 +347,14 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/docs\/includes\/_meta.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/includes\/_navigation.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/docs\/includes\/_navigation.html",
 		"oF": 0,
 		"oS": 0
 		},
