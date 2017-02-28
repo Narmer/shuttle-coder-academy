@@ -27,7 +27,7 @@ html(lang="fr")
     block top-bar
       .top-bar
         .container
-          p.tage-line Everyone Can Code.
+          p.tage-line Everyone Can Code
           <!-- tag-line -->
           span.phone-number.background-color
             a(href="#" class="font-white")
@@ -48,10 +48,7 @@ html(lang="fr")
     block content
 
     block footer
-      footer
-        .container
-          .row
-            .copyright Copyright © 2016.
+      include includes/_footer.pug
 
     block scripts
       <!-- jQuery -->
@@ -59,8 +56,8 @@ html(lang="fr")
       <!-- Backstretch -->
       script(src="js/jquery.backstretch.min.js")
       <!-- Validate form -->
-      script(src="js/jquery.validate.min.js")
-       <!-- Smooth Scroll -->
+      //-script(src="js/jquery.validate.min.js")
+      <!-- Smooth Scroll -->
       script(src="js/smooth-scroll.min.js")
       <!-- Bootstrap -->
       script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
