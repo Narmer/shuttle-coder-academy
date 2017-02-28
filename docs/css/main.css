@@ -419,7 +419,7 @@ footer {
   font-size: 12px;
   line-height: normal;
   margin: 0;
-  color: shade(#fff, 20%);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .social-footer .copyright i {
@@ -427,7 +427,7 @@ footer {
 }
 
 .social-footer .copyright a:link, .social-footer .copyright a:visited, .social-footer .copyright a:hover, .social-footer .copyright a:active {
-  color: shade(#fff, 20%);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .desc-3 {
