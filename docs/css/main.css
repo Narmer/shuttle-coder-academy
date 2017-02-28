@@ -370,6 +370,10 @@ footer {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.copyright i {
+  margin: 0 5px;
+}
+
 .copyright a:link, .copyright a:visited, .copyright a:hover, .copyright a:active {
   color: rgba(255, 255, 255, 0.7);
 }

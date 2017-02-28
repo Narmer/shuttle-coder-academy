@@ -73,6 +73,9 @@ footer {
   line-height: normal;
   margin: 0;
   color: $text-gray;
+  i {
+    margin: 0 5px;
+  }
   a {
       &:link,
       &:visited,
