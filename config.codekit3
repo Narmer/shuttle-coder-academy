@@ -346,16 +346,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/img\/logo-w.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/docs\/img\/logo-w.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/source\/img\/logo-white.png": {
 		"ft": 32768,
 		"iS": 9766,
@@ -363,16 +353,6 @@
 		"oAP": "\/docs\/img\/logo-white.png",
 		"oF": 0,
 		"opt": 1
-		},
-	"\/source\/img\/logo-white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/docs\/img\/logo-white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/source\/img\/logo.png": {
 		"ft": 32768,
@@ -443,6 +423,14 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/docs\/includes\/_hero.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/includes\/_logo-white.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/docs\/includes\/_logo-white.html",
 		"oF": 0,
 		"oS": 0
 		},
