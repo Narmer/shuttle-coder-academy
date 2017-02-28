@@ -1,0 +1,47 @@
+.section-3-bg {
+  background-color: $main-color;
+}
+
+.shuttle-desc-img,
+.learn-code-img {
+  background-image: url("../img/1000x700x1.jpg");
+  height: 662px;
+}
+
+.shuttle-desc-col {
+  background-position: center center;
+  background-size: cover;
+  hr {
+    border: solid #fff 2px;
+    width: 60px;
+  }
+  img {
+    padding-right: 15px;
+    vertical-align: middle;
+  }
+}
+
+.shuttle-desc {
+  padding: 80px 90px 80px 40px;
+}
+
+.learn-code-section {
+  background-color: #f5f5f5;
+}
+
+.learn-code {
+  padding: 80px 40px 80px 90px;
+}
+
+// WORKSHOPS
+.workshop_1,
+.workshop_2,
+.workshop_3 {
+  padding: 30px 15px;
+  border: 1px solid $main-color;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  ul {
+    list-style: none;
+  }
+}

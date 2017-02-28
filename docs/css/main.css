@@ -54,7 +54,7 @@ p {
 }
 
 .learn-code h5 {
-  color: #008ed6;
+  color: #1797D4;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -79,7 +79,7 @@ p {
 .workshop_1 i,
 .workshop_2 i,
 .workshop_3 i {
-  color: #1B99B9;
+  color: #1797D4;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -99,29 +99,29 @@ a:link, a:visited, a:hover, a:active {
 
 .btn-blue {
   color: #fff;
-  background-color: #1B99B9;
-  border-color: #1887a3;
+  background-color: #1797D4;
+  border-color: #1797D4;
 }
 
 .btn-blue:hover, .btn-blue:active {
   color: #fff;
-  background-color: #15748c;
-  border-color: #105a6d;
+  background-color: #1279aa;
+  border-color: #1279aa;
 }
 
 .workshop_1 i,
 .workshop_2 i,
 .workshop_3 i {
-  color: #1B99B9;
+  color: #1797D4;
 }
 
 .top-bar {
   width: 100%;
-  background-color: #243c4f;
+  background-color: #1f2229;
 }
 
 .tage-line {
-  color: #63839c;
+  color: #fff;
   font-size: 14px;
   width: auto;
   display: inline-block;
@@ -135,7 +135,7 @@ a:link, a:visited, a:hover, a:active {
 .email-address {
   float: right;
   padding: 15px 15px;
-  border-left: 1px solid #2e495f;
+  border-left: 1px solid #444C60;
   font-size: 15px;
   font-family: 'Lato', sans-serif;
   display: inline-block;
@@ -152,7 +152,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .background-color {
-  background-color: #7B5DA5;
+  background-color: #1797D4;
 }
 
 header .logo {
@@ -250,7 +250,7 @@ header .logo {
 }
 
 .section-3-bg {
-  background-color: #008ed6;
+  background-color: #1797D4;
 }
 
 .shuttle-desc-img,
@@ -290,7 +290,7 @@ header .logo {
 .workshop_2,
 .workshop_3 {
   padding: 30px 15px;
-  border: 1px solid #1B99B9;
+  border: 1px solid #1797D4;
   border-radius: 3px;
   margin-bottom: 30px;
 }
@@ -308,6 +308,48 @@ header .logo {
 .navbar-brand img {
   margin-top: 0;
   max-height: 40px;
+}
+
+footer {
+  background-color: #1f2229;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.brand-footer {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.brand-footer img {
+  height: 50px;
+}
+
+.flex {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-column h3 {
+  color: #b3b3b3;
+}
+
+.footer-column li a:link, .footer-column li a:visited, .footer-column li a:hover, .footer-column li a:active {
+  color: #fff;
 }
 
 .desc-3 {

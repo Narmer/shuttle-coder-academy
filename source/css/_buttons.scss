@@ -11,15 +11,15 @@
 
 .btn-blue {
   color: #fff;
-  background-color: #1B99B9;
-  border-color: #1887a3;
+  background-color: $main-color;
+  border-color: $main-color;
   &:visited {
 
   }
   &:hover,
   &:active {
     color: #fff;
-    background-color: #15748c;
-    border-color: #105a6d
+    background-color: shade($main-color, 20%);
+    border-color: shade($main-color, 20%);
   }
 }
