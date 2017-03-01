@@ -1,3 +1,13 @@
 .newsletter-container {
-  line-height: 2.5rem;
+
+}
+
+.newsletter-head {
+  h4 {
+    margin: 0;
+  }
+  h4,
+  p {
+    color: $text-light;
+  }
 }

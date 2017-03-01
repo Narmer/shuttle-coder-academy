@@ -495,6 +495,15 @@ header .logo {
   max-height: 40px;
 }
 
+.newsletter-head h4 {
+  margin: 0;
+}
+
+.newsletter-head h4,
+.newsletter-head p {
+  color: #fff;
+}
+
 footer {
   background: #333;
   border-top: 4px solid #555;
