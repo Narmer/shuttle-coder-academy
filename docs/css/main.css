@@ -7,6 +7,7 @@ Author: Shuttle Coder Academy
 */
 @import url("https://fonts.googleapis.com/css?family=Lato|Raleway:400,700");
 body {
+  font-size: 16px;
   text-align: left;
 }
 
@@ -20,6 +21,12 @@ h6 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+h2 {
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 3rem;
 }
 
 p {
@@ -46,6 +53,10 @@ p {
 
 .heading {
   padding-bottom: 0;
+}
+
+.heading h3 {
+  color: #fff;
 }
 
 .learn-code h3 {
@@ -107,6 +118,11 @@ a:link, a:visited, a:hover, a:active {
   color: #fff;
   background-color: #1797D4;
   border-color: #1797D4;
+}
+
+.btn-blue:link i, .btn-blue:visited i {
+  color: #fff;
+  margin-left: 5px;
 }
 
 .btn-blue:hover, .btn-blue:active {
