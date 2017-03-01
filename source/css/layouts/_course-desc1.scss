@@ -1,0 +1,41 @@
+// GENERIC
+
+.course-pres-col {
+  height: 662px;
+}
+
+.the-adventure,
+.shuttle-desc {
+  background-color: $dark-color;
+}
+
+.the-adventure-img {
+  background-image: url("../img/1000x700x1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.the-adventure-content {
+  padding: 80px 40px 80px 40px;
+  h2,
+  h4,
+  p {
+    color: $text-light;
+  }
+  h2 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 0;
+    text-align: left;
+  }
+  p {
+    margin: 0;
+  }
+  hr {
+    border: solid $second-color 2px;
+    margin: 0;
+    width: 100px;
+  }
+}
+
+// BLOC 1
