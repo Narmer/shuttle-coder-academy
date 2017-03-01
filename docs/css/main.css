@@ -158,6 +158,36 @@ a:link, a:visited, a:hover, a:active {
   border-color: #1279aa;
 }
 
+.newsletter-container {
+  color: #fff;
+  padding: 20px 0;
+}
+
+.newsletter-container .input-group {
+  width: 100%;
+}
+
+.newsletter-container input {
+  height: 40px;
+  border-radius: 0px;
+  border: none;
+  font-size: 18px;
+}
+
+.newsletter-container .button {
+  background: #333;
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0px 20px;
+}
+
+.email {
+  padding: 6px 12px;
+  width: 60%;
+}
+
 .workshop_1 i,
 .workshop_2 i,
 .workshop_3 i {
