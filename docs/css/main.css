@@ -434,6 +434,11 @@ header .logo {
   margin: 30px 0;
 }
 
+.shuttle-desc-content ul li h4 {
+  margin: 0;
+  padding-top: 10px;
+}
+
 .shuttle-desc-content ul li i {
   width: 2.9em;
 }
