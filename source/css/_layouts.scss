@@ -58,6 +58,10 @@
   padding-right: 0;
 }
 
+.padding20 {
+  padding: 20px 0;
+}
+
 .padding70 {
   padding: 70px 0;
 }
@@ -73,5 +77,5 @@
 @import 'layouts/workshops.scss';
 
 @import 'layouts/navigation.scss';
-
+@import 'layouts/newsletter.scss';
 @import 'layouts/footer.scss';
