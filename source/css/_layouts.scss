@@ -4,48 +4,7 @@
   background-color: $main-color;
 }
 
-// HEADER
-header {
-  .logo {
-    margin-top: 130px;
-    margin-bottom: 30px;
-  }
-}
-.heading-landing {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  padding-top: 120px;
-  p {
-    color: #fff;
-  }
-}
-
-.backstretch {
-  left: 0;
-  top: 0;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  height: 658px;
-  width: 1280px;
-  z-index: -999998;
-  position: absolute;
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-repeat: repeat;
-    z-index: 1;
-  }
-}
+@import 'layouts/hero.scss';
 
 
 .mouse-wrapper {
@@ -106,6 +65,10 @@ header {
 .padding100 {
   padding: 100px 0;
 }
+
+@import 'layouts/course-desc1.scss';
+@import 'layouts/course-desc2.scss';
+@import 'layouts/course-desc3.scss';
 
 @import 'layouts/workshops.scss';
 

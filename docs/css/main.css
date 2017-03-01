@@ -5,7 +5,8 @@ Version: 1.0
 Author: Shuttle Coder Academy
 
 */
-@import url("https://fonts.googleapis.com/css?family=Lato|Raleway:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,600|Raleway:400,700");
+html,
 body {
   font-size: 16px;
   text-align: left;
@@ -19,27 +20,27 @@ h5,
 h6 {
   color: #000;
   font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 h2 {
   padding-bottom: 30px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.875rem;
 }
 
 h6 {
   line-height: 1.6;
   font-size: 16px;
-  font-weight: bold;
 }
 
 p {
   color: #000;
-  font-family: 'Raleway';
-  font-size: 16px;
-  font-weight: normal;
+  font-family: 'Open Sans', sans-serif , Arial , Verdana , 'Trebuchet MS';
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 .headingH {
@@ -59,10 +60,6 @@ p {
 
 .heading {
   padding-bottom: 0;
-}
-
-.heading h3 {
-  color: #fff;
 }
 
 .learn-code h3 {
@@ -339,41 +336,111 @@ header .logo {
   padding: 100px 0;
 }
 
-.section-3-bg {
-  background-color: #1797D4;
-}
-
-.shuttle-desc-img,
-.learn-code-img {
-  background-image: url("../img/1000x700x1.jpg");
+.course-pres-col {
   height: 662px;
 }
 
-.shuttle-desc-col {
+.the-adventure,
+.shuttle-desc {
+  background-color: #333;
+}
+
+.the-adventure-img {
+  background-image: url("../img/1000x700x1.jpg");
   background-position: center center;
   background-size: cover;
 }
 
-.shuttle-desc-col hr {
-  border: solid #fff 2px;
-  width: 60px;
+.the-adventure-content {
+  padding: 80px 40px 80px 40px;
 }
 
-.shuttle-desc-col img {
-  padding-right: 15px;
-  vertical-align: middle;
+.the-adventure-content h2,
+.the-adventure-content h4,
+.the-adventure-content p {
+  color: #fff;
 }
 
-.shuttle-desc {
-  padding: 80px 90px 80px 40px;
+.the-adventure-content h2 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 0;
+  text-align: left;
 }
 
-.learn-code-section {
-  background-color: #f5f5f5;
+.the-adventure-content p {
+  margin: 0;
+}
+
+.the-adventure-content hr {
+  border: solid #F4B737 2px;
+  margin: 0;
+  width: 100px;
 }
 
 .learn-code {
+  background-color: #f5f5f5;
+}
+
+.learn-code-img {
+  background-image: url("../img/1000x700x1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.learn-code-content {
   padding: 80px 40px 80px 90px;
+}
+
+.shuttle-desc-img {
+  background-image: url("../img/1000x700x1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.shuttle-desc-content {
+  padding: 80px 40px 80px 40px;
+}
+
+.shuttle-desc-content h2,
+.shuttle-desc-content h4,
+.shuttle-desc-content p,
+.shuttle-desc-content i {
+  color: #fff;
+}
+
+.shuttle-desc-content h2 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 0;
+  text-align: left;
+}
+
+.shuttle-desc-content p {
+  margin: 0;
+}
+
+.shuttle-desc-content hr {
+  border: solid #F4B737 2px;
+  margin: 0;
+  width: 100px;
+}
+
+.shuttle-desc-content ul {
+  padding-left: 40px;
+}
+
+.shuttle-desc-content ul li {
+  margin: 30px 0;
+}
+
+.shuttle-desc-content ul li h4 {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.shuttle-desc-content ul li i {
+  width: 2.9em;
 }
 
 .workshop_1,
@@ -466,13 +533,4 @@ footer {
 
 .copyright a:link, .copyright a:visited, .copyright a:hover, .copyright a:active {
   color: rgba(255, 255, 255, 0.7);
-}
-
-.desc-3 {
-  list-style: none;
-  padding-left: 0;
-}
-
-.desc-3 li {
-  margin: 40px 0 40px 0;
 }
