@@ -1,13 +1,29 @@
 .learn-code {
-  background-color: #f5f5f5;
+  background-color: $bg-gray-light;
+  h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h4 {
+    color: $main-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 0;
+  }
+  hr {
+    border: solid $main-color 2px;
+  }
+  .fa-border {
+    border-color: $second-color;
+  }
 }
 
 .learn-code-img {
   background-image: url("../img/1000x700x1.jpg");
-  background-position: center center;
-  background-size: cover;
 }
 
 .learn-code-content {
-  padding: 80px 40px 80px 90px;
+  padding: 80px 40px 80px 70px;
 }

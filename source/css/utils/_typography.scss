@@ -10,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
+  color: $text-dark;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -38,7 +38,7 @@ h6 {
 }
 
 p {
-  color: #000;
+  color: $text-dark;
   font-family: 'Open Sans', sans-serif , Arial , Verdana , 'Trebuchet MS';
   font-size: 0.875rem;
   font-weight: 400;
@@ -54,7 +54,7 @@ p {
 
 .typed {
   font-size: 1.9em;
-  color: #fff;
+  color: $text-light;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -64,31 +64,16 @@ p {
   padding-bottom: 0;
 }
 
-.learn-code {
-  h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  h5 {
-    color: $main-color;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  p {
-    margin: 0;
-  }
-}
-
 .section-3-bg {
   h2 {
-    color: #fff;
+    color: $text-light;
   }
   h4 {
-    color: #fff;
+    color: $text-light;
     margin-top: 0;
   }
   p {
-    color: #fff;
+    color: $text-light;
   }
 }
 

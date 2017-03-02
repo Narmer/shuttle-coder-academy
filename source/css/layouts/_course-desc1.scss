@@ -9,19 +9,22 @@
   background-color: $dark-color;
 }
 
-.the-adventure-img {
-  background-image: url("../img/1000x700x1.jpg");
+.the-adventure-img,
+.learn-code-img,
+.shuttle-desc-img {
   background-position: center center;
   background-size: cover;
 }
 
-.the-adventure-content {
-  padding: 80px 40px 80px 40px;
-  h2,
-  h4,
-  p {
-    color: $text-light;
-  }
+.the-adventure-content,
+.shuttle-desc-content {
+  padding: 80px 40px;
+}
+
+
+.the-adventure-content,
+.learn-code-content,
+.shuttle-desc-content {
   h2 {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -32,13 +35,26 @@
     margin: 0;
   }
   hr {
-    border: solid $second-color 2px;
     margin: 0;
     width: 100px;
   }
 }
 
 // BLOC 1
+.the-adventure-img {
+  background-image: url("../img/1000x700x1.jpg");
+}
+
+.the-adventure-content {
+  h2,
+  h4,
+  p {
+    color: $text-light;
+  }
+  hr {
+    border: solid $second-color 2px;
+  }
+}
 
 .features {
   .icon {
@@ -53,7 +69,7 @@
 }
 
 .features-first {
-  border-bottom: 1px solid #EEEEEF;
+  border-bottom: 1px solid $text-light;
   display: inline-block;
   margin-bottom: 25px;
   margin-top: 20px;
