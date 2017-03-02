@@ -4,11 +4,6 @@
   height: 662px;
 }
 
-.the-adventure,
-.shuttle-desc {
-  background-color: $dark-color;
-}
-
 .the-adventure-img,
 .learn-code-img,
 .shuttle-desc-img {
@@ -18,13 +13,14 @@
 
 .the-adventure-content,
 .shuttle-desc-content {
-  padding: 80px 40px;
+  background-color: $dark-color;
 }
 
 
 .the-adventure-content,
 .learn-code-content,
 .shuttle-desc-content {
+  padding: 80px 40px;
   h2 {
     margin-bottom: 5px;
     margin-top: 5px;

@@ -359,11 +359,6 @@ header .logo {
   height: 662px;
 }
 
-.the-adventure,
-.shuttle-desc {
-  background-color: #333;
-}
-
 .the-adventure-img,
 .learn-code-img,
 .shuttle-desc-img {
@@ -372,6 +367,12 @@ header .logo {
 }
 
 .the-adventure-content,
+.shuttle-desc-content {
+  background-color: #333;
+}
+
+.the-adventure-content,
+.learn-code-content,
 .shuttle-desc-content {
   padding: 80px 40px;
 }
@@ -460,10 +461,6 @@ header .logo {
 
 .learn-code-img {
   background-image: url("../img/1000x700x1.jpg");
-}
-
-.learn-code-content {
-  padding: 80px 40px 80px 70px;
 }
 
 .shuttle-desc-img {
