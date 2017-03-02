@@ -584,17 +584,27 @@ footer {
   padding: 18px 0;
 }
 
-.copyright {
+.copyright,
+.with-love {
   font-size: 12px;
   line-height: normal;
   margin: 0;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.copyright i {
+.copyright i,
+.with-love i {
   margin: 0 5px;
 }
 
-.copyright a:link, .copyright a:visited, .copyright a:hover, .copyright a:active {
+.copyright a:link, .copyright a:visited, .copyright a:hover, .copyright a:active,
+.with-love a:link,
+.with-love a:visited,
+.with-love a:hover,
+.with-love a:active {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.with-love i {
+  color: #F4B737;
 }
