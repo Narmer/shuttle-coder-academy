@@ -412,6 +412,25 @@ header .logo {
   width: 100px;
 }
 
+.features .icon {
+  color: #fff;
+  float: left;
+  font-size: 35px;
+  margin: 0 auto;
+}
+
+.features .info {
+  margin-left: 50px;
+}
+
+.features-first {
+  border-bottom: 1px solid #EEEEEF;
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  padding-bottom: 25px;
+}
+
 .learn-code {
   background-color: #f5f5f5;
 }
