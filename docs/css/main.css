@@ -223,6 +223,7 @@ a:link, a:visited, a:hover, a:active {
   padding: 15px 0px;
   float: left;
   margin: 0;
+  line-height: 1.3rem;
 }
 
 .phone-number,
@@ -230,7 +231,7 @@ a:link, a:visited, a:hover, a:active {
   float: right;
   padding: 15px 15px;
   border-left: 1px solid #444C60;
-  font-size: 15px;
+  font-size: 14px;
   font-family: 'Lato', sans-serif;
   display: inline-block;
 }
