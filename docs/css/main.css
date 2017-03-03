@@ -261,6 +261,7 @@ a:link, a:visited, a:hover, a:active {
   color: #fff;
   height: 100vh;
   position: relative;
+  margin-top: -51px;
   z-index: 0;
   padding-top: 150px;
   background-color: #fff;
@@ -565,6 +566,10 @@ a:link, a:visited, a:hover, a:active {
 .navbar-brand img {
   margin-top: 0;
   max-height: 40px;
+}
+
+.navbar-nav > li > a {
+  text-transform: uppercase;
 }
 
 .newsletter-head h4 {
