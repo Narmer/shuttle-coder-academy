@@ -26,6 +26,7 @@ h6 {
 
 h1 {
   font-size: 2rem;
+  text-align: center;
 }
 
 h2 {
@@ -261,27 +262,17 @@ a:link, a:visited, a:hover, a:active {
   color: #fff;
   height: 100vh;
   position: relative;
-  margin-top: -51px;
   z-index: 0;
-  padding-top: 150px;
   background-color: #fff;
-}
-
-.hero-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0px;
-  background-position: center center;
-  position: relative;
-  z-index: 1;
-  border-radius: 4px;
-  overflow: hidden;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero-shadow {
@@ -299,9 +290,8 @@ a:link, a:visited, a:hover, a:active {
 .hero-content {
   background-color: transparent;
   color: #fff;
-  webkit-box-flex: 0;
-  -ms-flex: 0 1 100%;
   -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
           flex: 0 1 100%;
   position: relative;
   z-index: 2;
@@ -314,11 +304,12 @@ a:link, a:visited, a:hover, a:active {
 
 .hero-content h1 {
   font-size: 2rem;
+  margin: 0;
 }
 
 .hero-content h2 {
   font-size: 1.5rem;
-  margin: 20px;
+  margin: 40px 5px;
   padding: 0;
 }
 
@@ -340,6 +331,9 @@ a:link, a:visited, a:hover, a:active {
   margin: 0;
 }
 
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
 .mouse-wrapper {
   display: block;
   z-index: 10;
