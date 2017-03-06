@@ -1,0 +1,48 @@
+mixin course-listing(prerequis, places, lieu, objectif)
+  ul.list-inline.fa-ul
+    li
+      i.fa.fa-li.fa-check-square-o
+      p.
+        Prérequis :
+      span= prerequis
+    li
+      i.fa.fa-li.fa-user
+      p.
+        Nombre de places :
+      span= places
+    li
+      i.fa.fa-li.fa-map-marker
+      p.
+        Lieu :
+      span= lieu
+    li
+      i.fa.fa-li.fa-trophy
+      p.
+        Objectif :
+      span= objectif
+
+mixin course-learning(first, second, third, four)
+  h5 Ce que vous allez apprendre
+  ul.fa-ul
+    li
+      i.fa.fa-li.fa-lg.fa-check-square-o
+      p= first
+    li
+      i.fa.fa-li.fa-lg.fa-check-square-o
+      p= second
+    li
+      i.fa.fa-li.fa-lg.fa-check-square-o
+      p= third
+    li
+      i.fa.fa-li.fa-lg.fa-check-square-o
+      p= four
+
+mixin course-for-who(first, second, third, fourth, fifth)
+  h5 à qui s'adresse ce cours ?
+  ul
+    li
+      p= first
+    li
+      p= second
+    li
+      p= third

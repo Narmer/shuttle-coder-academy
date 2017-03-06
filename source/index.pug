@@ -1,10 +1,14 @@
 //- Index
 extends layout.pug
 
+prepend meta
+  title The academy - Shuttle Coder
 append meta
   meta(name="description" content="")
   meta(name="keywords" content="")
 
+append css
+  link(rel="stylesheet" type="text/css" href="css/main.css")
 
 block hero
   header.heading-landing

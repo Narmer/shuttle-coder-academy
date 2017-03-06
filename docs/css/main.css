@@ -358,6 +358,10 @@ header .logo {
   padding-right: 0;
 }
 
+.padding40 {
+  padding: 40px 0;
+}
+
 .padding20 {
   padding: 20px 0;
 }
@@ -484,6 +488,20 @@ header .logo {
   border: 1px solid #1797D4;
   border-radius: 3px;
   margin-bottom: 30px;
+}
+
+.workshop > .container {
+  background: #fff;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.workshop aside {
+  float: right;
+  border: 5px solid #F4B737;
+  border-radius: 5px;
+  padding: 40px 40px 10px;
 }
 
 .navbar-brand {
