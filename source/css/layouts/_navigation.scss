@@ -11,8 +11,11 @@
   }
 }
 
-/* Small devices (tablets, 768px and up) */
 .navbar-nav > li > a {
+  text-transform: uppercase;
+}
+
+/* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
 }
@@ -23,7 +26,6 @@
 }
 
 /* Large devices (large desktops, 1200px and up) */
-    text-transform: uppercase;
 @media (min-width: 1200px) {
 
 }
