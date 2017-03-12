@@ -1,0 +1,33 @@
+.workshop_1,
+.workshop_2,
+.workshop_3 {
+  i {
+    color: $main-color;
+  }
+  ul {
+    li {
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+.footer-links {
+  li {
+    a {
+      i {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.social-icons {
+  .fa-twitter { color: $twitter-color; }
+  .fa-facebook { color: $facebook-color; }
+  .fa-meetup { color: $meetup-color; }
+  .fa-linkedin { color: $linkedin-color; }
+  .fa-youtube { color: $youtube-color; }
+}

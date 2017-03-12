@@ -24,26 +24,35 @@ html(lang="fr")
     include includes/_favicon.pug
 
   body
+    block top-bar
+      include includes/layouts/_topbar.pug
+    block navigation
+      include includes/_navigation.pug
+
     block hero
 
     block content
 
+    block newsletter
+      include includes/layouts/_newsletter.pug
     block footer
-      footer
-        .container
-          .row
-            .copyright Copyright © 2016.
+      include includes/_footer.pug
+      include includes/_footer-bottom.pug
 
     block scripts
       <!-- jQuery -->
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
       <!-- Backstretch -->
-      script(src="js/jquery.backstretch.min.js")
+      //-script(src="js/jquery.backstretch.min.js")
       <!-- Validate form -->
-      script(src="js/jquery.validate.min.js")
-       <!-- Smooth Scroll -->
+      //-script(src="js/jquery.validate.min.js")
+      <!-- Smooth Scroll -->
       script(src="js/smooth-scroll.min.js")
       <!-- Bootstrap -->
       script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
       <!-- Custom -->
       script(src="js/main.min.js")
+      script.
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })

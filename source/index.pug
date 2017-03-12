@@ -7,27 +7,18 @@ append meta
 
 
 block hero
-  header(style="position: relative; z-index: 0; background-image: none; background-position: initial initial; background-repeat: initial initial;")
+  include includes/_hero.pug
+
+block content
+  section.course-presentation
+    .container-fluid.no_padding
+      include includes/_course-presentation1.pug
+      include includes/_course-presentation2.pug
+      include includes/_course-presentation3.pug
+
+  section.nos-workshops.padding100
     .container
-      .row
-        .col-md-12
-          .col-md-8
-            .logo.animated.fadeInDown
-              img(src="img/logo.png" alt="")
-            .typed.animated.fadeInUp Our website is under construction.
-            p.animated.fadeInUp We are working very hard to give you the best experience with this one.<br>You will love Woody as much as we do. It will morph perfectly on your needs!
-
-
-          <!-- MOUSE ICON -->
-          .mouse-wrapper
-            .mouse
-              a(href="#about")
-                span skroll
-                i.fa.fa-chevron-down
-          <!-- /MOUSE ICON -->
-
-    div(class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 325px; width: 1280px; z-index: -999998; position: absolute;")
-      img(src="img/slides/hero.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1280px; height: 853.3333333333334px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -264.1666666666667px;")
-
-append content
-  h1="Shuttle Coder Academy Accueil"
+      h2 Découvrez nos workshops
+      include includes/_workshop_1.pug
+      include includes/_workshop_2.pug
+      include includes/_workshop_3.pug

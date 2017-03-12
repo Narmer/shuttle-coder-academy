@@ -1,0 +1,81 @@
+@import 'layouts/topbar.scss';
+
+.background-color {
+  background-color: $main-color;
+}
+
+@import 'layouts/hero.scss';
+
+
+.mouse-wrapper {
+  display:block;
+  z-index:10;
+  position: absolute;
+  margin-left: 18px;
+  bottom: -110px;
+}
+
+.mouse {
+  margin-left: -20px;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+  -webkit-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+  -moz-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+  -o-animation: wobbleArrow 1s ease-in-out 0s infinite alternate;
+  span {
+    position: absolute;
+    left: -19px;
+    bottom: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    display: block;
+    color: $text-light;
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  a {
+    color: $text-light;
+    position: relative;
+    top: 110px;
+    line-height: 36px;
+    text-align: center;
+    outline: none;
+    i {
+      font-size: 1.3em;
+    }
+  }
+}
+
+.no_padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.padding20 {
+  padding: 20px 0;
+}
+
+.padding70 {
+  padding: 70px 0;
+}
+
+.padding100 {
+  padding: 100px 0;
+}
+
+@import 'layouts/course-desc1.scss';
+@import 'layouts/course-desc2.scss';
+@import 'layouts/course-desc3.scss';
+
+@import 'layouts/workshops.scss';
+
+@import 'layouts/navigation.scss';
+@import 'layouts/newsletter.scss';
+@import 'layouts/footer.scss';

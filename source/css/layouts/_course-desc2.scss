@@ -1,0 +1,25 @@
+.learn-code {
+  background-color: $bg-gray-light;
+  h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h4 {
+    color: $main-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 0;
+  }
+  hr {
+    border: solid $main-color 2px;
+  }
+  .fa-border {
+    border-color: $second-color;
+  }
+}
+
+.learn-code-img {
+  background-image: url("../img/1000x700x1.jpg");
+}
