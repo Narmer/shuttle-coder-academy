@@ -1,6 +1,7 @@
 //- Workshop CREER 1er site web
 extends ../layout.pug
 include ../mixins/_lists.pug
+include ../mixins/_buttons.pug
 include ../mixins/_forms.pug
 prepend meta
   title Créer votre premier site web - Shuttle Coder
@@ -43,4 +44,5 @@ block content
       aside.col-xs-12.col-lg-4.col-lg-offset-1
         h5 Prix Unitaire : 150€ TTC
         .summary-payment
-          +payment-form
+          +reservation('', 'Réserver')(class="btn-blue")
+          //-+payment-form

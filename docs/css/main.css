@@ -6,6 +6,24 @@ Author: Shuttle Coder Academy
 
 */
 @import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,600|Raleway:400,700,800");
+/*
+  300 : light
+  400 : regular
+  600 : semi-bold
+  700 : bold
+  800 : extra-bold
+*/
+/*
+  100 : thin
+  200 : extra-light
+  300 : light
+  400 : regular
+  500 : medium
+  600 : semi-bold
+  700 : bold
+  800 : extra-bold
+  900 : black
+*/
 html,
 body {
   font-size: 16px;
@@ -145,6 +163,7 @@ a:link, a:visited, a:hover, a:active {
   color: #fff;
   background-color: #1797D4;
   border-color: #1797D4;
+  font-size: 1rem;
 }
 
 .btn-blue:link i, .btn-blue:visited i {
@@ -546,6 +565,14 @@ header .logo {
   border: 5px solid #F4B737;
   border-radius: 5px;
   padding: 40px 40px 10px;
+}
+
+.workshop aside h5 {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /* Small devices (tablets, 768px and up) */
