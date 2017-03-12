@@ -585,6 +585,24 @@ header .logo {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+  .workshop article h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .workshop article h2 {
+    font-size: 1.6rem;
+    padding-top: 15px;
+  }
+  .workshop article h5 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  .workshop article > p {
+    font-size: 1.3rem;
+    font-weight: normal;
+    padding-bottom: 40px;
+    line-height: 26px;
+  }
   .workshop article > ul {
     display: block;
     padding: 30px 0;
@@ -597,6 +615,9 @@ header .logo {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 40px 0;
+  }
+  .workshop article > ul:nth-of-type(1) li {
+    max-width: 130px;
   }
   .workshop article > ul:nth-of-type(1) li i {
     left: -.7em;
