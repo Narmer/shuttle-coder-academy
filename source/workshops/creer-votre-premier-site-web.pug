@@ -29,14 +29,16 @@ block content
         h1 Construis ton idée et crée ton site web
         h2 Initiation à HTML5 et CSS3
         +course-listing('Aucun', '30', 'Memorial Act, Guadeloupe', 'Créer votre site web')
-        p.lead.
+        p.
           Comprenez enfin le développement web ! Apprenez à coder et créez votre propre site Internet en un week-end. La méthode Shuttle Coder, c'est 50% entrepreneur, 50% coder, 100% de pratique et le reste d'amour.
 
         //- A qui s'adresse ce cours
-        +course-for-who(['firs', 'second', 'third', 'four'])
+        - var who = ['Débutants', 'Entrepreneurs Tech', 'Designer', 'Founders']
+        +course-for-who(who)
 
         //- Ce que vous allez apprendre dans ce cours
-        +course-learning(['firs', 'second', 'third', 'four'])
+        - var learning = ["Fondamentaux en HTML & CSS.", "Comprendre le fonctionnement simplifié d'un serveur, les différentes façons de créer un site (From scratch, CMS, etc), les noms de domaine, les hébergements Web, les frameworks, et les bibliothèques.", "Découvrir le responsive web design avec la grille et les composants Bootstrap.", "Découvrir les ressources & outils de web-design", "Déployer son site sur Github", "Implémenter Google Analytics", "Insérer des formulaires Mailchimp & Wufoo", "Les pratiques (bonnes et mauvaises) liées à la programmation et à la gestion de projets."]
+        +course-learning(learning)
 
       aside.col-xs-12.col-lg-4.col-lg-offset-1
         h5 Prix Unitaire : 150€ TTC

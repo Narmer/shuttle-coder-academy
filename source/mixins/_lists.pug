@@ -42,8 +42,9 @@ mixin course-learning(values)
           p= four
 
 mixin course-for-who(values)
-  h5 à qui s'adresse ce cours ?
-  ul
+  h5 A qui s'adresse ce cours ?
+  ul.fa-ul
     each val in values
       li
+        i.fa.fa-li.fa.fa-minus
         p= val

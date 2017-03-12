@@ -26,29 +26,35 @@
       padding: 15px 0 0;
       text-align: left;
     }
+    h5 {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+  }
+  article > p {
+    margin-bottom: 0;
+    padding-bottom: 20px;
   }
   article > ul {
     display: block;
+    margin-bottom: 0;
     padding: 30px 0;
-    &:nth-of-type(1) {
+    li {
+      max-width: none;
+      padding: 0 10px 10px;
+      width: 100%;
       display: block;
-      li {
-        max-width: none;
-        padding: 0 10px 10px;
-        width: 100%;
-        display: block;
-        p {
-          margin: 0;
-        }
-        span {
-          font-weight: bold;
-          line-height: 1;
-        }
-        i {
+      p {
+        margin: 0;
+      }
+      span {
+        font-weight: bold;
+        line-height: 1;
+      }
+      i {
 //          left: -.7em;
 //          margin-right: 10px;
 //          text-align: left;
-        }
       }
     }
   }

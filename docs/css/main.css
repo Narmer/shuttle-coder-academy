@@ -509,27 +509,34 @@ header .logo {
   text-align: left;
 }
 
+.workshop article h5 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.workshop article > p {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
 .workshop article > ul {
   display: block;
+  margin-bottom: 0;
   padding: 30px 0;
 }
 
-.workshop article > ul:nth-of-type(1) {
-  display: block;
-}
-
-.workshop article > ul:nth-of-type(1) li {
+.workshop article > ul li {
   max-width: none;
   padding: 0 10px 10px;
   width: 100%;
   display: block;
 }
 
-.workshop article > ul:nth-of-type(1) li p {
+.workshop article > ul li p {
   margin: 0;
 }
 
-.workshop article > ul:nth-of-type(1) li span {
+.workshop article > ul li span {
   font-weight: bold;
   line-height: 1;
 }
