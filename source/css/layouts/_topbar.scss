@@ -8,10 +8,10 @@
 	font-size: 14px;
 	width:auto;
 	display: inline-block;
-	text-transform: uppercase;
 	padding:15px 0px;
 	float: left;
   margin: 0;
+  line-height: 1.3rem;
 }
 
 .phone-number,
@@ -19,7 +19,7 @@
   float: right;
   padding: 15px 15px;
   border-left: 1px solid $bg-dark;
-  font-size: 15px;
+  font-size: 14px;
   font-family: 'Lato', sans-serif;
   display: inline-block;
   a {

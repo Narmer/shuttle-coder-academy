@@ -75,7 +75,8 @@ footer {
   }
 }
 
-.copyright {
+.copyright,
+.with-love {
   font-size: 12px;
   line-height: normal;
   margin: 0;
@@ -90,5 +91,11 @@ footer {
     &:active {
       color: $text-gray;
     }
+  }
+}
+
+.with-love {
+  i {
+    color: $second-color;
   }
 }

@@ -11,27 +11,7 @@ append css
   link(rel="stylesheet" type="text/css" href="css/main.css")
 
 block hero
-  header.heading-landing
-    .container
-      .row
-        .col-md-12
-          .col-md-8
-            .logo.animated.fadeInDown
-              img(src="img/logo.png" alt="")
-            h1.typed.animated.fadeInUp Shuttle Coder Academy Accueil.
-            p.animated.fadeInUp We are working very hard to give you the best experience with this one.<br>You will love Woody as much as we do. It will morph perfectly on your needs!
-
-
-          <!-- MOUSE ICON -->
-          .mouse-wrapper
-            .mouse
-              a(href="#about")
-                span skroll
-                i.fa.fa-chevron-down
-          <!-- /MOUSE ICON -->
-
-    .backstretch
-      img(src="img/slides/hero.jpg")
+  include includes/_hero.pug
 
 block content
   section.course-presentation

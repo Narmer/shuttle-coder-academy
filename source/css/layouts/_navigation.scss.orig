@@ -11,8 +11,8 @@
   }
 }
 
+<<<<<<< HEAD
 /* Small devices (tablets, 768px and up) */
-.navbar-nav > li > a {
 @media (min-width: 768px) {
 
 }
@@ -23,7 +23,10 @@
 }
 
 /* Large devices (large desktops, 1200px and up) */
-    text-transform: uppercase;
 @media (min-width: 1200px) {
 
+=======
+.navbar-nav > li > a {
+    text-transform: uppercase;
+>>>>>>> master
 }

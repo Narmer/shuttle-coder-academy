@@ -22,21 +22,7 @@ html(lang="fr")
 
   body
     block top-bar
-      .top-bar
-        .container
-          p.tage-line Everyone Can Code
-          <!-- tag-line -->
-          span.phone-number.background-color
-            a(href="#" class="font-white")
-              i(class="fa fa-phone" aria-hidden="true")
-              span (+33) 0XXX-XXX-XXX
-
-          <!-- email-address-->
-          span.email-address
-            a(href="#")
-              i(class="fa fa-envelope-o" aria-hidden="true")
-              span info@shuttlecoder.academy
-
+      include includes/layouts/_topbar.pug
     block navigation
       include includes/_navigation.pug
 
@@ -54,7 +40,7 @@ html(lang="fr")
       <!-- jQuery -->
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
       <!-- Backstretch -->
-      script(src="js/jquery.backstretch.min.js")
+      //-script(src="js/jquery.backstretch.min.js")
       <!-- Validate form -->
       //-script(src="js/jquery.validate.min.js")
       <!-- Smooth Scroll -->

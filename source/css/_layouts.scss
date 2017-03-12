@@ -33,7 +33,7 @@
     letter-spacing: 1px;
     font-size: 1.3em;
     display: block;
-    color: #fff;
+    color: $text-light;
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -41,7 +41,7 @@
     transform: rotate(-90deg);
   }
   a {
-    color: #FFFFFF;
+    color: $text-light;
     position: relative;
     top: 110px;
     line-height: 36px;
