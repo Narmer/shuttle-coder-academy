@@ -4,7 +4,9 @@ mixin course-listing(prerequis, places, lieu, objectif)
       i.fa.fa-li.fa-lg.fa-check-square-o
       p.
         Pré-requis :
-      span= prerequis
+      each value in prerequis
+        // br
+        span= value
     li
       i.fa.fa-li.fa-lg.fa-user
       p.

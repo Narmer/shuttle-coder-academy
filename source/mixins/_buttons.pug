@@ -1,3 +1,7 @@
-mixin reservation(lien, titre)
-  a.btn(class!=attributes.class href=lien title="")= titre
+mixin cta-workshop(lien, titre)
+  - var link = "/workshops/" + lien + ".html"
+  a.btn(class!=attributes.class href=link title="")= titre
     i.fa.fa-angle-right
+
+mixin reservation(lien)
+  a.btn(class!=attributes.class href=lien title="") Réserver votre place
