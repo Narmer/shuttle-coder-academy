@@ -23,7 +23,7 @@
   &:hover,
   &:active {
     color: $text-light;
-    background-color: shade($main-color, 20%);
-    border-color: shade($main-color, 20%);
+    background-color: $second-color;
+    border-color: $second-color;
   }
 }
