@@ -5,7 +5,25 @@ Version: 1.0
 Author: Shuttle Coder Academy
 
 */
-@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,600|Raleway:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,600|Raleway:400,700,800");
+/*
+  300 : light
+  400 : regular
+  600 : semi-bold
+  700 : bold
+  800 : extra-bold
+*/
+/*
+  100 : thin
+  200 : extra-light
+  300 : light
+  400 : regular
+  500 : medium
+  600 : semi-bold
+  700 : bold
+  800 : extra-bold
+  900 : black
+*/
 html,
 body {
   font-size: 16px;
@@ -145,6 +163,7 @@ a:link, a:visited, a:hover, a:active {
   color: #fff;
   background-color: #1797D4;
   border-color: #1797D4;
+  font-size: 1rem;
 }
 
 .btn-blue:link i, .btn-blue:visited i {
@@ -154,8 +173,8 @@ a:link, a:visited, a:hover, a:active {
 
 .btn-blue:hover, .btn-blue:active {
   color: #fff;
-  background-color: #1279aa;
-  border-color: #1279aa;
+  background-color: #F4B737;
+  border-color: #F4B737;
 }
 
 .newsletter-container {
@@ -358,6 +377,10 @@ header .logo {
   padding-right: 0;
 }
 
+.padding40 {
+  padding: 40px 0;
+}
+
 .padding20 {
   padding: 20px 0;
 }
@@ -486,6 +509,129 @@ header .logo {
   margin-bottom: 30px;
 }
 
+.workshop > .container {
+  background: #f8f8f8;
+  border-top: 5px solid #ccc;
+  padding: 20px;
+}
+
+.workshop article h1 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.workshop article h2 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 15px 0 0;
+  text-align: left;
+}
+
+.workshop article h5 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.workshop article > p {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.workshop article > ul {
+  display: block;
+  margin-bottom: 0;
+  padding: 30px 0;
+}
+
+.workshop article > ul li {
+  max-width: none;
+  padding: 0 10px 10px;
+  width: 100%;
+  display: block;
+}
+
+.workshop article > ul li p {
+  margin: 0;
+}
+
+.workshop article > ul li span {
+  font-weight: bold;
+  line-height: 1;
+}
+
+.workshop aside {
+  float: right;
+  border: 5px solid #F4B737;
+  border-radius: 5px;
+  padding: 40px 40px 10px;
+}
+
+.workshop aside h5 {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .workshop {
+    padding: 30px 0;
+  }
+  .workshop .container {
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .workshop article h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .workshop article h2 {
+    font-size: 1.6rem;
+    padding-top: 15px;
+  }
+  .workshop article h5 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  .workshop article > p {
+    font-size: 1.3rem;
+    font-weight: normal;
+    padding-bottom: 40px;
+    line-height: 26px;
+  }
+  .workshop article > ul {
+    display: block;
+    padding: 30px 0;
+  }
+  .workshop article > ul:nth-of-type(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  .workshop article > ul:nth-of-type(1) li {
+    max-width: 130px;
+  }
+  .workshop article > ul:nth-of-type(1) li i {
+    left: -.7em;
+    margin-right: 10px;
+    text-align: left;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+.navbar {
+  margin-bottom: 0;
+}
+
 .navbar-brand {
   padding: 5px 15px;
 }
@@ -495,6 +641,9 @@ header .logo {
   max-height: 40px;
 }
 
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
 .newsletter-head h4 {
   margin: 0;
 }

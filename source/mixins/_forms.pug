@@ -1,0 +1,59 @@
+mixin payment-form()
+  form(action="/your-server-side-code" method="POST")
+    script(src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_Ph29clHN8TNeJKn5fGz9eYxu"
+    data-amount="999"
+    data-name="Shuttle Coder Academy"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto"
+    data-zip-code="true"
+    data-currency="eur")
+  //-
+    form(class="variations_form cart" method="post" enctype="multipart/form-data" data-product_id="96" data-product_variations="false" style="position: static; zoom: 1;")
+      table(class="variations" cellspacing="0")
+        tbody
+          tr
+            td.label
+              label(for="date-de-la-session") Date de la session
+            td.value
+              select(id="date-de-la-session" class="" name="attribute_date-de-la-session" data-attribute_name="attribute_date-de-la-session" "="" data-show_option_none="yes")
+                option(value="") Choisir une option
+                option(value="11-12 mars" selected="selected") 11-12 mars
+          tr
+            td.label
+              label(for="nombre-de-place") Nombre de place
+            td.value
+              select(id="nombre-de-place" class="" name="attribute_nombre-de-place" data-attribute_name="attribute_nombre-de-place" "="" data-show_option_none="yes")
+                option(value="") Choisir une option
+                option(value="1" selected="selected") 1
+                option(value="2") 2
+                option(value="3") 3
+                option(value="4") 4
+                option(value="5") 5
+
+
+
+    <div class="single_variation_wrap">
+    <div class="woocommerce-variation single_variation" style="">
+    <div class="woocommerce-variation-description">
+
+    </div>
+
+    <div class="woocommerce-variation-price">
+    <span class="price"><span class="woocommerce-Price-amount amount">200,00<span class="woocommerce-Price-currencySymbol">€</span></span></span>
+    </div>
+
+    <div class="woocommerce-variation-availability">
+
+    </div>
+    </div><div class="woocommerce-variation-add-to-cart variations_button woocommerce-variation-add-to-cart-enabled">
+    <div class="quantity">
+    <input type="number" step="" min="1" name="" value="" title="Qté" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+    </div>
+    <button type="submit" class="single_add_to_cart_button button alt">Réserver</button>
+    <input type="hidden" name="add-to-cart" value="96">
+    <input type="hidden" name="product_id" value="96">
+    <input type="hidden" name="variation_id" class="variation_id" value="1156">
+    </div>
+    </div>
