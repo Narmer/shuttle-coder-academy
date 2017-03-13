@@ -758,29 +758,68 @@ Form
   display: table;
 }
 
-.cd-form fieldset:last-of-type > div {
-  padding-top: 0;
-}
-
 .cd-form legend {
   width: 100%;
-  font-size: 2.3rem;
+  font-size: 1.4rem;
+  font-weight: normal;
   line-height: 1.2;
   padding-bottom: 0.3em;
   border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+  text-align: left;
+}
+
+.cd-payment-gateways {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+.cd-payment-gateways li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .cd-form input[type="radio"],
 .cd-form label {
   cursor: pointer;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 0;
 }
 
 .cd-form label {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: .7rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #b2b2b2;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
 }
 
 .cd-form input[type="radio"] + label {
@@ -821,7 +860,7 @@ Form
 
 .cd-form select {
   padding: 0 25px 0 15px;
-  font-size: 1.4rem;
+  font-size: .9rem;
 }
 
 .cd-form select::-ms-expand {
@@ -845,6 +884,10 @@ Form
   display: inline-block;
   position: relative;
   margin-top: 6px;
+}
+
+.cd-form .cd-select:nth-of-type(1) {
+  margin-right: 6px;
 }
 
 .cd-form .cd-select::after {
@@ -964,6 +1007,14 @@ Form
     width: 48%;
     float: left;
     margin-right: 4%;
+    margin-bottom: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cd-form .half-width label,
+  .cd-form .half-width input {
+    float: left;
   }
   .cd-form .half-width:nth-of-type(2n) {
     margin-right: 0;

@@ -361,29 +361,66 @@ Form
   display: table;
 }
 
-.cd-form fieldset:last-of-type > div {
-  padding-top: 0;
-}
+// .cd-form fieldset:last-of-type > div {
+//   padding-top: 0;
+// }
 
 .cd-form legend {
   width: 100%;
-  font-size: 2.3rem;
+  font-size: 1.4rem;
+  font-weight: normal;
   line-height: 1.2;
   padding-bottom: 0.3em;
   border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+  text-align: left;
+}
+
+.cd-payment-gateways {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  //vertical-align: baseline;
+  li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    //vertical-align: baseline;
+    align-items: baseline;
+  }
 }
 
 .cd-form input[type="radio"],
 .cd-form label {
   cursor: pointer;
+  align-items: baseline;
+  margin: 0;
 }
 
 .cd-form label {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: .7rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #b2b2b2;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
 }
 
 .cd-form input[type="radio"] + label {
@@ -424,7 +461,7 @@ Form
 
 .cd-form select {
   padding: 0 25px 0 15px;
-  font-size: 1.4rem;
+  font-size: .9rem;
 }
 
 .cd-form select::-ms-expand {
@@ -448,6 +485,9 @@ Form
   display: inline-block;
   position: relative;
   margin-top: 6px;
+  &:nth-of-type(1) {
+    margin-right: 6px;
+  }
 }
 
 .cd-form .cd-select::after {
@@ -555,37 +595,52 @@ Form
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
   }
+
   .cd-form .cd-pricing-header {
     border-radius: .25em 0 0 0;
   }
+
   .cd-form .cd-pricing-features {
     -webkit-transition: padding 0.3s 0.2s;
     -moz-transition: padding 0.3s 0.2s;
     transition: padding 0.3s 0.2s;
   }
+
   .cd-form .cd-more-info {
     display: block;
     opacity: 0;
   }
+
   .cd-form form {
     padding: 0 0 0 210px;
   }
+
   .cd-form .half-width {
     width: 48%;
     float: left;
     margin-right: 4%;
+    margin-bottom: 0;
+    align-items: center;
+    label,
+    input {
+      float: left;
+    }
   }
+
   .cd-form .half-width:nth-of-type(2n) {
     margin-right: 0;
   }
+
   .cd-form input[type="submit"] {
     float: right;
   }
+
   .cd-form .cd-close {
     /* move close icon outside the form container */
     top: -40px;
     right: -5px;
   }
+
   .cd-form.is-visible .cd-pricing-features {
     padding-top: 0;
     opacity: 1;
@@ -594,6 +649,7 @@ Form
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
   }
+
   .cd-form.is-visible .cd-pricing-features::before {
     -webkit-transform: scaleY(1);
     -moz-transform: scaleY(1);
@@ -604,6 +660,7 @@ Form
     -moz-transition: -moz-transform 0.4s 0s;
     transition: transform 0.4s 0s;
   }
+
   .cd-form.is-visible .cd-more-info {
     opacity: 1;
   }
