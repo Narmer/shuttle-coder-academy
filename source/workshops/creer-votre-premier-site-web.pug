@@ -2,6 +2,7 @@
 extends ../layout.pug
 include ../mixins/_navigation.pug
 include ../mixins/_lists.pug
+include ../mixins/_signup.pug
 include ../mixins/_buttons.pug
 include ../mixins/_forms.pug
 prepend meta
@@ -13,6 +14,7 @@ append meta
 
 append css
   link(rel="stylesheet" type="text/css" href="../css/main.css")
+  script(src="../js/modernizr-min.js")
 
 block navigation
   +navigation('..')
@@ -38,8 +40,12 @@ block content
         - var learning = ["Fondamentaux en HTML & CSS.", "Comprendre le fonctionnement simplifié d'un serveur, les différentes façons de créer un site (From scratch, CMS, etc), les noms de domaine, les hébergements Web, les frameworks, et les bibliothèques.", "Découvrir le responsive web design avec la grille et les composants Bootstrap.", "Découvrir les ressources & outils de web-design", "Déployer son site sur Github", "Implémenter Google Analytics", "Insérer des formulaires Mailchimp & Wufoo", "Les pratiques (bonnes et mauvaises) liées à la programmation et à la gestion de projets."]
         +course-learning(learning)
 
-      aside.col-xs-12.col-lg-4.col-lg-offset-1
-        h5 Prix Unitaire : 150€ TTC
-        .summary-payment
-          +reservation('', 'Réserver')(class="btn-blue")
-          //-+payment-form
+      aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
+        +signup('Basic', '150', "20-21 mai")
+        //- h5 Prix Unitaire : 150€ TTC
+          .summary-payment
+            +reservation('', 'Réserver')(class="btn-blue")
+            //-+payment-form
+  append scripts
+    script(src="../js/velocity-min.js")
+    script(src="../js/main-min.js")

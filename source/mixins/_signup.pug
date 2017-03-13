@@ -1,0 +1,119 @@
+mixin signup(titre, prix, dates)
+  div
+    header.cd-pricing-header
+      h5.cd-price= "Prix Unitaire : " + prix + "€ TTC"
+    
+    section.cd-pricing-features
+      ul.fa-ul
+        li
+          i.fa.fa-li.fa-check-square-o
+          span Feature 1
+        li
+          i.fa.fa-li.fa-check-square-o
+          span Feature 2
+        li
+          i.fa.fa-li.fa-check-square-o
+          span Feature 3
+        li
+          i.fa.fa-li.fa-check-square-o
+          span Feature 4
+    footer.cd-pricing-footer
+      +signup-btn("Réserver ma place")
+  //-ul.cd-pricing
+    li
+      header
+        h2= titre
+
+        .cd-price
+          span= prix + "€"
+
+      .cd-pricing-features
+        ul
+          li.available
+            em Feature 1
+          li.available
+            em Feature 2
+          li.available
+            em Feature 3
+          li.available
+            em Feature 4
+
+      footer.cd-pricing-footer
+        +signup-btn("Réserver ma place")
+
+  .cd-form
+		
+    .cd-plan-info
+      <!-- content will be loaded using jQuery - according to the selected plan -->
+
+    .cd-more-info
+      h3 Need help?
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		
+    form(action="" class="")
+      fieldset
+        legend Account Info
+				
+        .half-width
+          label(for="userName") Nom
+          input(type="text" id="userName" name="userName")
+
+        .half-width
+          label(for="userEmail") Email
+          input(type="email" id="userEmail" name="userEmail")
+
+        .half-width
+          label(for="userPassword") Password
+          input(type="password" id="userPassword" name="userPassword")
+
+        .half-width
+          label(for="userPasswordRepeat") Repeat Password
+          input(type="password" id="userPasswordRepeat" name="userPasswordRepeat")
+
+      fieldset
+        legend Payment Method
+				
+        div
+          ul.cd-payment-gateways
+            li
+              input(type="radio" name="payment-method" id="paypal" value="paypal")
+              label(for="paypal") Paypal
+						
+            li
+              input(type="radio" name="payment-method" id="card" value="card" checked)
+              label(for="card") Card
+
+        .cd-credit-card
+          div
+            p.half-width
+              label(for="cardNumber") Card Number
+              input(type="text" id="cardNumber" name="cardNumber")
+
+            p.half-width
+              label Expiration date
+              <b>
+                span.cd-select
+                  select(name="card-expiry-month" id="card-expiry-month")
+                    option(value="1") 1
+                    option(value="2") 2
+                    option(value="3") 3
+                    option(value="4") 4
+                    option(value="5") 5
+
+                span.cd-select
+                  select(name="card-expiry-year" id="card-expiry-year")
+                    option(value="2015") 2015
+                    option(value="2016") 2016
+                    option(value="2017") 2017
+						
+            p.half-width
+              label(for="cardCvc") Card CVC
+              input(type="text" id="cardCvc" name="cardCvc")
+			
+      fieldset
+        div
+          input(type="submit" value="Get started")
+
+    a(href="#0" class="cd-close")
+
+  .cd-overlay
