@@ -169,8 +169,6 @@
                 <li><i class="fa fa-li fa-lg fa-check"></i><span>Bootstrap</span></li>
                 <li><i class="fa fa-li fa-lg fa-check"></i><span>GitHub</span></li>
                 <li><i class="fa fa-li fa-lg fa-check"></i><span>Google Analytics</span></li>
-                <li><i class="fa fa-li fa-lg fa-check"></i><span>Responsive Design</span></li>
-                <li><i class="fa fa-li fa-lg fa-check"></i><span>Bonnes pratiques</span></li>
               </ul>
             </section>
             <footer class="cd-pricing-footer"><a class="btn signup-btn" href="#0">Réserver ma place</a>
@@ -179,7 +177,7 @@
           <div class="cd-form">
             <div class="cd-plan-info"></div>
             <div class="cd-more-info">
-              <h3>Besoin d'aide ?</h3>
+              <h5>Besoin d'aide ?</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
             <form action="">
@@ -203,27 +201,31 @@
                 </div>
               </fieldset>
               <fieldset>
-                <legend>Payment Method</legend>
+                <legend>Mode de Paiement</legend>
                 <div>
                   <ul class="cd-payment-gateways">
                     <li>
                       <input type="radio" name="payment-method" id="paypal" value="paypal"/>
-                      <label for="paypal">Paypal</label>
+                      <label for="paypal"><img class="payment-cards payment-cards-small" src="../img/payment/paypal.png"/></label>
                     </li>
                     <li>
-                      <input type="radio" name="payment-method" id="card" value="card" checked="checked"/>
-                      <label for="card">Card</label>
+                      <input type="radio" name="payment-method" id="card" value="card"/>
+                      <label for="card"><img class="payment-cards payment-cards-small" src="../img/payment/mastercard.png"/><img class="payment-cards payment-cards-small" src="../img/payment/visa.png"/><img class="payment-cards payment-cards-small" src="../img/payment/americanexpress.png"/></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="payment-method" id="apple-pay" value="apple-pay" checked="checked"/>
+                      <label for="apple-pay"><img class="payment-cards payment-cards-small" src="../img/payment/applepay.png"/></label>
                     </li>
                   </ul>
                 </div>
                 <div class="cd-credit-card">
                   <div>
                     <p class="half-width">
-                      <label for="cardNumber">Card Number</label>
+                      <label for="cardNumber">Numéro de carte</label>
                       <input type="text" id="cardNumber" name="cardNumber"/>
                     </p>
                     <p class="half-width">
-                      <label>Expiration date</label><b><span class="cd-select">
+                      <label>Mois/Année (MM/AA)</label><b><span class="cd-select">
                           <select name="card-expiry-month" id="card-expiry-month">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -238,7 +240,7 @@
                           </select></span></b>
                     </p>
                     <p class="half-width">
-                      <label for="cardCvc">Card CVC</label>
+                      <label for="cardCvc">CVV</label>
                       <input type="text" id="cardCvc" name="cardCvc"/>
                     </p>
                   </div>

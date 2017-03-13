@@ -13,7 +13,6 @@
   }
 }
 
-
 .footer-links {
   li {
     a {
@@ -30,4 +29,14 @@
   .fa-meetup { color: $meetup-color; }
   .fa-linkedin { color: $linkedin-color; }
   .fa-youtube { color: $youtube-color; }
+}
+
+
+// Payment Cards
+.payment-cards {
+  margin: 0 5px;
+}
+
+.payment-cards-small {
+  max-height: 30px;
 }

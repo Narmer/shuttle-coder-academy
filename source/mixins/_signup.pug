@@ -19,7 +19,7 @@ mixin signup(titre, prix, objectifs, dates)
       //- content will be loaded using jQuery - according to the selected plan
 
     .cd-more-info
-      h3 Besoin d'aide ?
+      h5 Besoin d'aide ?
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		
     form(action="" class="")
@@ -43,26 +43,33 @@ mixin signup(titre, prix, objectifs, dates)
           input(type="password" id="userPasswordRepeat" name="userPasswordRepeat")
 
       fieldset
-        legend Payment Method
+        legend Mode de Paiement
 				
         div
           ul.cd-payment-gateways
             li
               input(type="radio" name="payment-method" id="paypal" value="paypal")
-              label(for="paypal") Paypal
-						
+              label(for="paypal")
+                img(src="../img/payment/paypal.png" class="payment-cards payment-cards-small")
             li
-              input(type="radio" name="payment-method" id="card" value="card" checked)
-              label(for="card") Card
+              input(type="radio" name="payment-method" id="card" value="card")
+              label(for="card")
+                img(src="../img/payment/mastercard.png" class="payment-cards payment-cards-small")
+                img(src="../img/payment/visa.png" class="payment-cards payment-cards-small")
+                img(src="../img/payment/americanexpress.png" class="payment-cards payment-cards-small")
+            li
+              input(type="radio" name="payment-method" id="apple-pay" value="apple-pay" checked)
+              label(for="apple-pay")
+                img(src="../img/payment/applepay.png" class="payment-cards payment-cards-small")
 
         .cd-credit-card
           div
             p.half-width
-              label(for="cardNumber") Card Number
+              label(for="cardNumber") Numéro de carte
               input(type="text" id="cardNumber" name="cardNumber")
 
             p.half-width
-              label Expiration date
+              label Mois/Année (MM/AA)
               b
                 span.cd-select
                   select(name="card-expiry-month" id="card-expiry-month")
@@ -79,7 +86,7 @@ mixin signup(titre, prix, objectifs, dates)
                     option(value="2017") 2017
 						
             p.half-width
-              label(for="cardCvc") Card CVC
+              label(for="cardCvc") CVV
               input(type="text" id="cardCvc" name="cardCvc")
 			
       fieldset

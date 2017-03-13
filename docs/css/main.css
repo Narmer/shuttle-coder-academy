@@ -134,6 +134,14 @@ p {
   color: #cd201f;
 }
 
+.payment-cards {
+  margin: 0 5px;
+}
+
+.payment-cards-small {
+  max-height: 30px;
+}
+
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
@@ -233,6 +241,14 @@ a:link, a:visited, a:hover, a:active {
 
 .social-icons .fa-youtube {
   color: #cd201f;
+}
+
+.payment-cards {
+  margin: 0 5px;
+}
+
+.payment-cards-small {
+  max-height: 30px;
 }
 
 .top-bar {
@@ -612,8 +628,11 @@ Form
 
 -------------------------------- */
 .cd-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
-  z-index: 1000;
+  z-index: 3;
   background-color: #f8f8f8;
   border-radius: .25em;
   visibility: hidden;
@@ -706,7 +725,7 @@ Form
   transition: opacity 0.6s;
 }
 
-.cd-form .cd-more-info h3 {
+.cd-form .cd-more-info h5 {
   line-height: 2;
 }
 
