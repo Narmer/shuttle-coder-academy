@@ -642,8 +642,8 @@ Form
   width: 100%;
   border-radius: 0 0 .25em .25em;
   background-color: rgba(255, 255, 255, 0);
-  background-image: -webkit-linear-gradient(bottom, white, rgba(255, 255, 255, 0));
-  background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0));
+  background-image: -webkit-linear-gradient(bottom, #f8f8f8, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to top, #f8f8f8, rgba(255, 255, 255, 0));
   pointer-events: none;
 }
 
@@ -712,7 +712,7 @@ Form
 
 .cd-form .cd-more-info p {
   font-size: 1.3rem;
-  color: #999999;
+  color: #999;
   line-height: 1.6;
 }
 
@@ -1022,9 +1022,12 @@ Buttons
 }
 
 .signup-btn {
-  background-color: #1797D4;
-  color: #fff;
+  background-color: #cd201f;
   display: inline-block;
+}
+
+.signup-btn:link, .signup-btn:visited, .signup-btn:hover, .signup-btn:active {
+  color: #fff;
 }
 
 .cd-form input[type="submit"] {
@@ -1033,7 +1036,7 @@ Buttons
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  background-color: #df4f71;
+  background-color: #cd201f;
   color: #ffffff;
   border: none;
   cursor: pointer;

@@ -7,7 +7,7 @@ mixin signup(titre, prix, objectifs, dates)
       ul.fa-ul
         each objectif in objectifs
           li
-            i.fa.fa-li.fa-check
+            i.fa.fa-li.fa-lg.fa-check
             span= objectif
 
     footer.cd-pricing-footer
@@ -16,10 +16,10 @@ mixin signup(titre, prix, objectifs, dates)
   .cd-form
 		
     .cd-plan-info
-      <!-- content will be loaded using jQuery - according to the selected plan -->
+      //- content will be loaded using jQuery - according to the selected plan
 
     .cd-more-info
-      h3 Need help?
+      h3 Besoin d'aide ?
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		
     form(action="" class="")
