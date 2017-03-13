@@ -1,45 +1,17 @@
-mixin signup(titre, prix, dates)
+mixin signup(titre, prix, objectifs, dates)
   div
     header.cd-pricing-header
       h5.cd-price= "Prix Unitaire : " + prix + "€ TTC"
     
     section.cd-pricing-features
       ul.fa-ul
-        li
-          i.fa.fa-li.fa-check-square-o
-          span Feature 1
-        li
-          i.fa.fa-li.fa-check-square-o
-          span Feature 2
-        li
-          i.fa.fa-li.fa-check-square-o
-          span Feature 3
-        li
-          i.fa.fa-li.fa-check-square-o
-          span Feature 4
+        each objectif in objectifs
+          li
+            i.fa.fa-li.fa-check
+            span= objectif
+
     footer.cd-pricing-footer
       +signup-btn("Réserver ma place")
-  //-ul.cd-pricing
-    li
-      header
-        h2= titre
-
-        .cd-price
-          span= prix + "€"
-
-      .cd-pricing-features
-        ul
-          li.available
-            em Feature 1
-          li.available
-            em Feature 2
-          li.available
-            em Feature 3
-          li.available
-            em Feature 4
-
-      footer.cd-pricing-footer
-        +signup-btn("Réserver ma place")
 
   .cd-form
 		
