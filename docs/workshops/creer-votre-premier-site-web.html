@@ -14,6 +14,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><!-- Bootstrap v3.3.1 -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="../js/modernizr-min.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
   </head>
   <body>
@@ -157,10 +158,102 @@
             </li>
           </ul>
         </article>
-        <aside class="col-xs-12 col-lg-4 col-lg-offset-1">
-          <h5>Prix Unitaire : 150€ TTC</h5>
-          <div class="summary-payment"><a class="btn btn-blue" href="" title="">Réserver votre place</a>
+        <aside class="cd-pricing col-xs-12 col-lg-4 col-lg-offset-1">
+          <div>
+            <header class="cd-pricing-header">
+              <h5 class="cd-price">Prix Unitaire : 150€ TTC</h5>
+            </header>
+            <section class="cd-pricing-features">
+              <ul class="fa-ul">
+                <li><i class="fa fa-li fa-lg fa-check"></i><span>HTML5/CSS3</span></li>
+                <li><i class="fa fa-li fa-lg fa-check"></i><span>Bootstrap</span></li>
+                <li><i class="fa fa-li fa-lg fa-check"></i><span>GitHub</span></li>
+                <li><i class="fa fa-li fa-lg fa-check"></i><span>Google Analytics</span></li>
+              </ul>
+            </section>
+            <footer class="cd-pricing-footer"><a class="btn signup-btn" href="#0">Réserver ma place</a>
+            </footer>
           </div>
+          <div class="cd-form">
+            <div class="cd-plan-info"></div>
+            <div class="cd-more-info">
+              <h5>Besoin d'aide ?</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <form action="">
+              <fieldset>
+                <legend>Account Info</legend>
+                <div class="half-width">
+                  <label for="userName">Nom</label>
+                  <input type="text" id="userName" name="userName"/>
+                </div>
+                <div class="half-width">
+                  <label for="userEmail">Email</label>
+                  <input type="email" id="userEmail" name="userEmail"/>
+                </div>
+                <div class="half-width">
+                  <label for="userPassword">Password</label>
+                  <input type="password" id="userPassword" name="userPassword"/>
+                </div>
+                <div class="half-width">
+                  <label for="userPasswordRepeat">Repeat Password</label>
+                  <input type="password" id="userPasswordRepeat" name="userPasswordRepeat"/>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Mode de Paiement</legend>
+                <div>
+                  <ul class="cd-payment-gateways">
+                    <li>
+                      <input type="radio" name="payment-method" id="paypal" value="paypal"/>
+                      <label for="paypal"><img class="payment-cards payment-cards-small" src="../img/payment/paypal.png"/></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="payment-method" id="card" value="card"/>
+                      <label for="card"><img class="payment-cards payment-cards-small" src="../img/payment/mastercard.png"/><img class="payment-cards payment-cards-small" src="../img/payment/visa.png"/><img class="payment-cards payment-cards-small" src="../img/payment/americanexpress.png"/></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="payment-method" id="apple-pay" value="apple-pay" checked="checked"/>
+                      <label for="apple-pay"><img class="payment-cards payment-cards-small" src="../img/payment/applepay.png"/></label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cd-credit-card">
+                  <div>
+                    <p class="half-width">
+                      <label for="cardNumber">Numéro de carte</label>
+                      <input type="text" id="cardNumber" name="cardNumber"/>
+                    </p>
+                    <p class="half-width">
+                      <label>Mois/Année (MM/AA)</label><b><span class="cd-select">
+                          <select name="card-expiry-month" id="card-expiry-month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select></span><span class="cd-select">
+                          <select name="card-expiry-year" id="card-expiry-year">
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                          </select></span></b>
+                    </p>
+                    <p class="half-width">
+                      <label for="cardCvc">CVV</label>
+                      <input type="text" id="cardCvc" name="cardCvc"/>
+                    </p>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div>
+                  <input type="submit" value="Get started"/>
+                </div>
+              </fieldset>
+            </form><a class="cd-close" href="#0"></a>
+          </div>
+          <div class="cd-overlay"></div>
         </aside>
       </div>
     </section>
@@ -189,7 +282,7 @@
         </div>
       </div>
     </section>
-    <footer class="padding70">
+    <footer class="footer-main padding70">
       <div class="container">
         <div class="flex">
           <div class="brand-footer">
@@ -282,7 +375,7 @@
         </div>
       </div>
     </div><!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!-- Backstretch -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><!-- Backstretch -->
 <!-- Validate form -->
 <!-- Smooth Scroll -->
     <script src="js/smooth-scroll.min.js"></script><!-- Bootstrap -->
@@ -293,5 +386,7 @@
         $('[data-toggle="tooltip"]').tooltip()
       })
     </script>
+    <script src="../js/velocity-min.js"></script>
+    <script src="../js/main-min.js"></script>
   </body>
 </html>

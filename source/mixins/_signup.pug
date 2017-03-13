@@ -1,0 +1,98 @@
+mixin signup(titre, prix, objectifs, dates)
+  div
+    header.cd-pricing-header
+      h5.cd-price= "Prix Unitaire : " + prix + "€ TTC"
+    
+    section.cd-pricing-features
+      ul.fa-ul
+        each objectif in objectifs
+          li
+            i.fa.fa-li.fa-lg.fa-check
+            span= objectif
+
+    footer.cd-pricing-footer
+      +signup-btn("Réserver ma place")
+
+  .cd-form
+		
+    .cd-plan-info
+      //- content will be loaded using jQuery - according to the selected plan
+
+    .cd-more-info
+      h5 Besoin d'aide ?
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		
+    form(action="" class="")
+      fieldset
+        legend Account Info
+				
+        .half-width
+          label(for="userName") Nom
+          input(type="text" id="userName" name="userName")
+
+        .half-width
+          label(for="userEmail") Email
+          input(type="email" id="userEmail" name="userEmail")
+
+        .half-width
+          label(for="userPassword") Password
+          input(type="password" id="userPassword" name="userPassword")
+
+        .half-width
+          label(for="userPasswordRepeat") Repeat Password
+          input(type="password" id="userPasswordRepeat" name="userPasswordRepeat")
+
+      fieldset
+        legend Mode de Paiement
+				
+        div
+          ul.cd-payment-gateways
+            li
+              input(type="radio" name="payment-method" id="paypal" value="paypal")
+              label(for="paypal")
+                img(src="../img/payment/paypal.png" class="payment-cards payment-cards-small")
+            li
+              input(type="radio" name="payment-method" id="card" value="card")
+              label(for="card")
+                img(src="../img/payment/mastercard.png" class="payment-cards payment-cards-small")
+                img(src="../img/payment/visa.png" class="payment-cards payment-cards-small")
+                img(src="../img/payment/americanexpress.png" class="payment-cards payment-cards-small")
+            li
+              input(type="radio" name="payment-method" id="apple-pay" value="apple-pay" checked)
+              label(for="apple-pay")
+                img(src="../img/payment/applepay.png" class="payment-cards payment-cards-small")
+
+        .cd-credit-card
+          div
+            p.half-width
+              label(for="cardNumber") Numéro de carte
+              input(type="text" id="cardNumber" name="cardNumber")
+
+            p.half-width
+              label Mois/Année (MM/AA)
+              b
+                span.cd-select
+                  select(name="card-expiry-month" id="card-expiry-month")
+                    option(value="1") 1
+                    option(value="2") 2
+                    option(value="3") 3
+                    option(value="4") 4
+                    option(value="5") 5
+
+                span.cd-select
+                  select(name="card-expiry-year" id="card-expiry-year")
+                    option(value="2015") 2015
+                    option(value="2016") 2016
+                    option(value="2017") 2017
+						
+            p.half-width
+              label(for="cardCvc") CVV
+              input(type="text" id="cardCvc" name="cardCvc")
+			
+      fieldset
+        div
+          input(type="submit" value="Get started")
+
+    a(href="#0" class="cd-close")
+
+  .cd-overlay
