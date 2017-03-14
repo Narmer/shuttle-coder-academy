@@ -395,15 +395,22 @@ Form
   border: 0;
   font-size: 100%;
   font: inherit;
-  //vertical-align: baseline;
   li {
-    margin: 0;
+    margin: 5px 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
-    //vertical-align: baseline;
     align-items: baseline;
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    input[type="radio"] {
+      visibility: hidden;
+    }
   }
 }
 
@@ -416,13 +423,13 @@ Form
 
 .cd-form label {
   font-size: .7rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #b2b2b2;
-  margin-bottom: 5px;
+  //margin-bottom: 5px;
   padding: 0;
-  text-align: left;
+  //text-align: left;
 }
 
 .cd-form input[type="radio"] + label {
@@ -457,7 +464,7 @@ Form
 .cd-form input[type="password"] {
   width: 100%;
   display: block;
-  margin-top: 6px;
+  //margin-top: 6px;
   padding: 0 16px;
 }
 
@@ -486,7 +493,7 @@ Form
 .cd-form .cd-select {
   display: inline-block;
   position: relative;
-  margin-top: 6px;
+  //margin-top: 6px;
   &:nth-of-type(1) {
     margin-right: 6px;
   }
@@ -508,6 +515,15 @@ Form
   width: 10px;
   background: url(../img/cd-icon-arrow.svg) no-repeat center center;
   pointer-events: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-payment-gateways {
+    flex-direction: row;
+    li {
+      margin: 0;
+    }
+  }
 }
 
 .cd-form .cd-close {
@@ -633,6 +649,12 @@ Form
     margin-right: 0;
   }
 
+  form.is-scrollable {
+    p.half-width {
+      padding-bottom: 0;
+    }
+  }
+
   .cd-form input[type="submit"] {
     float: right;
   }
@@ -718,7 +740,7 @@ Buttons
   -o-appearance: none;
   appearance: none;
   background-color: $youtube-color;
-  color: #ffffff;
+  color: $text-light;
   border: none;
   cursor: pointer;
 }

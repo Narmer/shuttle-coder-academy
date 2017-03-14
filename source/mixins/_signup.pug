@@ -46,7 +46,11 @@ mixin signup(titre, prix, objectifs, dates)
         legend Mode de Paiement
 				
         div
-          ul.cd-payment-gateways
+          ul.list-inline.cd-payment-gateways
+            li
+              input(type="radio" name="payment-method" id="bitcoin" value="bitcoin")
+              label(for="bitcoin")
+                img(src="../img/payment/bitcoin.png" class="payment-cards payment-cards-small")
             li
               input(type="radio" name="payment-method" id="paypal" value="paypal")
               label(for="paypal")
@@ -91,7 +95,7 @@ mixin signup(titre, prix, objectifs, dates)
 			
       fieldset
         div
-          input(type="submit" value="Get started")
+          input(type="submit" value="Payer ma place")
 
     a(href="#0" class="cd-close")
 

@@ -203,7 +203,11 @@
               <fieldset>
                 <legend>Mode de Paiement</legend>
                 <div>
-                  <ul class="cd-payment-gateways">
+                  <ul class="list-inline cd-payment-gateways">
+                    <li>
+                      <input type="radio" name="payment-method" id="bitcoin" value="bitcoin"/>
+                      <label for="bitcoin"><img class="payment-cards payment-cards-small" src="../img/payment/bitcoin.png"/></label>
+                    </li>
                     <li>
                       <input type="radio" name="payment-method" id="paypal" value="paypal"/>
                       <label for="paypal"><img class="payment-cards payment-cards-small" src="../img/payment/paypal.png"/></label>
@@ -248,7 +252,7 @@
               </fieldset>
               <fieldset>
                 <div>
-                  <input type="submit" value="Get started"/>
+                  <input type="submit" value="Payer ma place"/>
                 </div>
               </fieldset>
             </form><a class="cd-close" href="#0"></a>
