@@ -1207,7 +1207,7 @@ Shadow layer
 }
 
 .the-adventure-img {
-  background-image: url("../img/1000x700x1.jpg");
+  background-image: url("../img/features/coworking.jpg");
 }
 
 .the-adventure-content h2,
@@ -1267,11 +1267,11 @@ Shadow layer
 }
 
 .learn-code-img {
-  background-image: url("../img/1000x700x1.jpg");
+  background-image: url("../img/features/coding.jpg");
 }
 
 .shuttle-desc-img {
-  background-image: url("../img/1000x700x1.jpg");
+  background-image: url("../img/features/mindset-coder.jpg");
 }
 
 .shuttle-desc-content i {
