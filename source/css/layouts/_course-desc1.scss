@@ -1,6 +1,6 @@
 // GENERIC
 
-.course-pres-col {
+.img-pres-col {
   height: 662px;
 }
 
@@ -70,4 +70,21 @@
   margin-bottom: 25px;
   margin-top: 20px;
   padding-bottom: 25px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .course-pres-col {
+    height: 662px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
