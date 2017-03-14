@@ -14,8 +14,8 @@ append meta
 append css
   link(rel="stylesheet" type="text/css" href="../css/main.css")
 
-block navigation
-  +navigation('..')
+prepend navigation
+  -var path = '../'
 
 block content
   - var dateList = ["11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars"]
