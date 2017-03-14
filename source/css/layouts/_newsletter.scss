@@ -1,13 +1,129 @@
-.newsletter-container {
+.newsletter {
+  padding: 30px;
+}
 
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  color: $text-light;
+  .input-group {
+//    margin-top: 20px;
+    width: 100%;
+  }
+  input {
+    height: 40px;
+    border-radius: 0px;
+    border: none;
+    font-size: 18px;
+  }
+  .button {
+    background: $dark-color;
+    border: none;
+    border-radius: 0px;
+    color: $text-light;
+    text-transform: uppercase;
+    padding: 0px 20px;
+  }
+}
+
+.input-group .email {
+  // position: relative;
+  // z-index: 2;
+  // float: left;
+  // width: 100%;
+  // margin-bottom: 0;
+}
+
+.email {
+  padding: 6px 12px;
+  width: 60%;
 }
 
 .newsletter-head {
-  h4 {
-    margin: 0;
-  }
   h4,
   p {
     color: $text-light;
+    margin: 0;
+  }
+  margin-bottom: 20px;
+}
+
+.newsletter-suscribe {
+  div {
+    form {
+      .input-group {
+        display: flex;
+        flex-direction: row;
+        input[type="email"] {
+          flex-grow: 2;
+          color: $text-dark;
+        }
+        input[type="submit"] {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .newsletter {
+    padding: 30px;
+  }
+  .newsletter-container {
+    flex-direction: column;
+    .input-group {
+  //    margin-top: 20px;
+      //width: 100%;
+    }
+    input {
+      height: 40px;
+      border-radius: 0px;
+      border: none;
+      font-size: 18px;
+    }
+    .button {
+      background: $dark-color;
+      border: none;
+      border-radius: 0px;
+      color: $text-light;
+      text-transform: uppercase;
+      padding: 0px 20px;
+    }
+  }
+  .newsletter-suscribe {
+    div {
+      form {
+        .input-group {
+          input[type="email"] {
+            flex-grow: 1;
+          }
+          input[type="submit"] {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .newsletter {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .newsletter-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .newsletter-head {
+    margin-bottom: 0;
   }
 }
