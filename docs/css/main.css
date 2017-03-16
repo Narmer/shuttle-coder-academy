@@ -280,6 +280,16 @@ a:link, a:visited, a:hover, a:active {
           align-items: center;
 }
 
+.hero-formation {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .hero-shadow {
   background-image: -webkit-linear-gradient(315deg, rgba(30, 30, 30, 0.6) 30%, rgba(46, 46, 46, 0.5) 80%);
   background-image: linear-gradient(-225deg, rgba(30, 30, 30, 0.6) 30%, rgba(46, 46, 46, 0.5) 80%);
@@ -334,6 +344,25 @@ a:link, a:visited, a:hover, a:active {
 
 .hero-cta .btn {
   margin: 0;
+}
+
+.hero-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-titles h1 {
+  font-size: 1.55rem;
+}
+
+.hero-titles h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -1285,6 +1314,79 @@ Shadow layer
 
 .shuttle-desc-content ul li i {
   width: 2.9em;
+}
+
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+.course-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding: 20px 0;
+}
+
+.course-item-lg,
+.course-item-md,
+.course-item-sm {
+  border: 1px solid #1797D4;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.course-item-lg:last-of-type,
+.course-item-md:last-of-type,
+.course-item-sm:last-of-type {
+  margin-bottom: 0;
+}
+
+.course-item-lg section,
+.course-item-md section,
+.course-item-sm section {
+  padding: 15px 0;
+}
+
+.course-item-lg section h2,
+.course-item-md section h2,
+.course-item-sm section h2 {
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.course-item-lg section h4,
+.course-item-md section h4,
+.course-item-sm section h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #888;
+}
+
+.course-item-lg section h2,
+.course-item-lg section h4,
+.course-item-lg section p,
+.course-item-md section h2,
+.course-item-md section h4,
+.course-item-md section p,
+.course-item-sm section h2,
+.course-item-sm section h4,
+.course-item-sm section p {
+  text-align: justify;
+}
+
+.course-item-lg header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Small devices (tablets, 768px and up) */

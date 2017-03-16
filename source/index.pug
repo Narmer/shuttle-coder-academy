@@ -1,6 +1,8 @@
 //- Index
 extends layout.pug
 
+include ./mixins/_hero.pug
+
 prepend meta
   title The academy - Shuttle Coder
 append meta
@@ -14,7 +16,8 @@ prepend navigation
   - var path = ''
 
 block hero
-  include includes/_hero.pug
+  - var titles = {h1:"Deux jours pour apprendre !", h2:"L'initiation à la programmation pour tous"}
+  +hero(true, titles)
 
 block content
   section.course-presentation

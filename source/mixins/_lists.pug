@@ -4,24 +4,29 @@ mixin course-listing(prerequis, places, lieu, objectif)
       i.fa.fa-li.fa-lg.fa-check-square-o
       p.
         Pré-requis :
-      each value in prerequis
-        // br
-        span= value
-    li
-      i.fa.fa-li.fa-lg.fa-user
-      p.
-        Nombre de places :
-      span= places
+      if prerequis
+        each value in prerequis
+          // br
+          span= value        
+      else
+        span Aucun
+    if places
+      li
+        i.fa.fa-li.fa-lg.fa-user
+        p.
+          Nombre de places :
+        span= places
     li
       i.fa.fa-li.fa-lg.fa-map-marker
       p.
         Lieu :
       span= lieu
-    li
-      i.fa.fa-li.fa-lg.fa-trophy
-      p.
-        Objectif :
-      span= objectif
+    if objectif
+      li
+        i.fa.fa-li.fa-lg.fa-trophy
+        p.
+          Objectif :
+        span= objectif
 
 mixin course-learning(values)
   h5 Ce que vous allez apprendre

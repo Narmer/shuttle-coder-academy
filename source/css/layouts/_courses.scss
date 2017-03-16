@@ -1,0 +1,58 @@
+.course-items {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 20px 0;
+}
+
+.course-item-lg,
+.course-item-md,
+.course-item-sm {
+  border: 1px solid $main-color;
+  margin-bottom: 20px;
+  padding: 20px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  section {
+    padding: 15px 0;
+    h2 {
+      font-size: 1.3rem;
+      padding: 0;
+      margin: 0;
+    }
+    h4 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $text-grayer;
+    }
+    h2,
+    h4,
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+.course-item-lg {
+  header {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

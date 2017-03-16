@@ -1,0 +1,51 @@
+//- Index
+extends layout.pug
+
+include ./mixins/_hero.pug
+include ./mixins/_workshops-listing.pug
+
+prepend meta
+  title The academy - Shuttle Coder
+append meta
+  meta(name="description" content="")
+  meta(name="keywords" content="")
+
+append css
+  link(rel="stylesheet" type="text/css" href="css/main.css")
+
+prepend navigation
+  - var path = ''
+
+block hero
+  - var titles = {h1:"Deux jours pour apprendre !", h2:"L'initiation à la programmation pour tous"}
+  +hero(false, titles)
+
+block content
+  section.course-items
+    .container
+      //- Workshop 1
+      - var titre = "Construis ton idée et crée ton site web"
+      - var resultat = "Votre site web"
+      - var description = "description"
+      - var requis = ""
+      - var lieu = ""
+      - var path = "creer-votre-premier-site-web"
+      +workshop-listing(titre, resultat, description, requis, lieu, path)
+      
+      //- Workshop 2
+      - var titre = "Construis ton idée et crée ton site web"
+      - var resultat = "resultat"
+      - var description = "description"
+      - var requis = ""
+      - var lieu = ""
+      - var path = "creer-votre-premier-site-web"
+      +workshop-listing(titre, resultat, description, requis, lieu, path)
+
+      //- Workshop 3
+      - var titre = "Construis ton idée et crée ton site web"
+      - var resultat = "resultat"
+      - var description = "description"
+      - var requis = ""
+      - var lieu = ""
+      - var path = "creer-votre-premier-site-web"
+      +workshop-listing(titre, resultat, description, requis, lieu, path)
