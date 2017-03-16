@@ -6,3 +6,132 @@
   border-radius: 3px;
   margin-bottom: 30px;
 }
+
+.workshop > .container {
+  background:$bg-light;
+  border-top: 5px solid $bg-gray;
+  padding: 20px;
+}
+
+.workshop {
+  article {
+    h1 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1rem;
+      margin: 0;
+      padding: 15px 0 0;
+      text-align: left;
+    }
+    h5 {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+  }
+  article > p {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  article > ul {
+    display: block;
+    margin-bottom: 0;
+    padding: 30px 0;
+    li {
+      max-width: none;
+      padding: 0 10px 10px;
+      width: 100%;
+      display: block;
+      p {
+        margin: 0;
+      }
+      span {
+        font-weight: bold;
+        line-height: 1;
+      }
+      i {
+//          left: -.7em;
+//          margin-right: 10px;
+//          text-align: left;
+      }
+    }
+  }
+  aside {
+    float: right;
+    //border: 5px solid $second-color;
+    //border-radius: 5px;
+    padding: 0;
+    h5 {
+      color: $text-dark;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .workshop {
+    padding: 30px 0;
+    .container {
+      padding: 40px;
+      border: 1px solid $bg-gray;
+      border-radius: 5px;
+    }
+    article {
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 1.6rem;
+        padding-top: 15px;
+      }
+      h5 {
+        font-size: 1.1rem;
+        margin: 0;
+      }
+    }
+    article > p {
+      font-size: 1.3rem;
+      font-weight: normal;
+      padding-bottom: 40px;
+      line-height: 26px;
+    }
+    article > ul {
+      display: block;
+      padding: 30px 0;
+      &:nth-of-type(1) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 40px 0;
+        li {
+          max-width: 130px;
+          i {
+            left: -.7em;
+            margin-right: 10px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

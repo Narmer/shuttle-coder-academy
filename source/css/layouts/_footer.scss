@@ -1,20 +1,21 @@
-footer {
+.footer-main {
+  padding: 50px 20px 50px;
   background: $dark-color;
   border-top: 4px solid $dark-color2;
 }
 
 .brand-footer {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  // align-items: center;
+  // -webkit-box-pack: center;
+  // -ms-flex-pack: center;
+  justify-content: space-around;
+  // display: -webkit-box;
+  // display: -ms-flexbox;
   display: flex;
 //  margin-bottom: 50px;
-  padding: 0 0 40px;
+  padding: 0 0 30px;
   img {
     //width: 100px;
     //height: 50px;
@@ -24,20 +25,34 @@ footer {
 .flex {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  &:first-of-type {
+    margin-bottom: 30px;
+  }
 }
 
 .footer-column {
-  h6 {
+  text-align: center;
+  margin-bottom: 20px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  h4 {
     color: $text-light;
+    font-size: 1.35em;
+    margin: 0;
   }
   li {
     a {
+      font-size: 1.25em;
+      line-height: 2;
       &:link,
       &:visited {
         color: $text-light;
@@ -53,16 +68,21 @@ footer {
 }
 
 .social-footer {
+  text-align: center;
   h3 {
     color: shade($text-light, 30%);
+    margin-top: 0;
   }
-  li {
-    a {
-      &:link,
-      &:visited,
-      &:hover,
-      &:active {
-        color: $text-light;
+  ul {
+    margin-bottom: 0;
+    li {
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: $text-light;
+        }
       }
     }
   }
@@ -98,4 +118,64 @@ footer {
   i {
     color: $second-color;
   }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .footer-column {
+    margin-bottom: 0;
+    text-align: left;
+    h4 {
+      color: $text-light;
+      font-size: 1.1em;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    ul {
+      margin: 0;
+      li {
+        a {
+          font-size: .9em;
+          line-height: 2;
+          &:link,
+          &:visited {
+            color: $text-light;
+            border-bottom: 1px solid #4d4d4d;
+          }
+          &:hover,
+          &:active {
+            color: $text-light;
+            border-bottom: 1px solid $text-light;
+          }
+        }
+      }
+    }
+  }
+
+  .social-footer {
+    text-align: left;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }

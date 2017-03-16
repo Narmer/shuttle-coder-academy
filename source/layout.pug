@@ -1,8 +1,9 @@
 doctype
 
+include mixins/_navigation.pug
+
 html(lang="fr")
   head
-    title Shuttle Coder Academy - #{title}
     block meta
       meta(charset="utf-8")
       meta(name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no")
@@ -18,8 +19,6 @@ html(lang="fr")
       link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
       <!-- Bootstrap v3.3.1 -->
       link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
-      <!-- Custom styles CSS -->
-      link(rel="stylesheet" type="text/css" href="css/main.css")
 
     include includes/_favicon.pug
 
@@ -27,7 +26,7 @@ html(lang="fr")
     block top-bar
       include includes/layouts/_topbar.pug
     block navigation
-      include includes/_navigation.pug
+      +navigation(path)
 
     block hero
 
@@ -41,7 +40,7 @@ html(lang="fr")
 
     block scripts
       <!-- jQuery -->
-      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
       <!-- Backstretch -->
       //-script(src="js/jquery.backstretch.min.js")
       <!-- Validate form -->

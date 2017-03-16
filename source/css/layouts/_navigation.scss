@@ -1,6 +1,7 @@
 // navigation
 .navbar {
   margin-bottom: 0;
+  z-index: 1;
 }
 
 .navbar-brand {
@@ -12,5 +13,20 @@
 }
 
 .navbar-nav > li > a {
-    text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }

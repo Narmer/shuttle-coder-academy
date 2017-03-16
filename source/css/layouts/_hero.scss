@@ -15,6 +15,12 @@ header {
   align-items: center;
 }
 
+.hero-formation {
+  //height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
 
 .hero-shadow {
   background-image: -webkit-linear-gradient(315deg, rgba(30, 30, 30, 0.6) 30%, rgba(46, 46, 46, 0.5) 80%);
@@ -68,17 +74,30 @@ header {
   }
 }
 
+.hero-titles {
+  display: flex;
+  flex-direction: column;
+//  flex-wrap: wrap;
+  h1 {
+    font-size: 1.55rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+
 /* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) {
+@media (min-width: 768px) {
 
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) {
+@media (min-width: 992px) {
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {
+@media (min-width: 1200px) {
 
 }

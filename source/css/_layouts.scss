@@ -58,6 +58,10 @@
   padding-right: 0;
 }
 
+.padding40 {
+  padding: 40px 0;
+}
+
 .padding20 {
   padding: 20px 0;
 }
@@ -70,10 +74,13 @@
   padding: 100px 0;
 }
 
+@import 'layouts/signup.scss';
+
 @import 'layouts/course-desc1.scss';
 @import 'layouts/course-desc2.scss';
 @import 'layouts/course-desc3.scss';
 
+@import 'layouts/courses.scss';
 @import 'layouts/workshops.scss';
 
 @import 'layouts/navigation.scss';
