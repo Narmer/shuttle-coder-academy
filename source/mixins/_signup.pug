@@ -48,6 +48,12 @@ mixin signup(titre, prix, objectifs, dates)
         div
           ul.list-inline.cd-payment-gateways
             li
+              input(type="radio" name="payment-method" id="card" value="card")
+              label(for="card")
+                img(src="../img/payment/mastercard.png" class="payment-cards payment-cards-small")
+                img(src="../img/payment/visa.png" class="payment-cards payment-cards-small")
+                img(src="../img/payment/americanexpress.png" class="payment-cards payment-cards-small")
+            li
               input(type="radio" name="payment-method" id="bitcoin" value="bitcoin")
               label(for="bitcoin")
                 img(src="../img/payment/bitcoin.png" class="payment-cards payment-cards-small")
@@ -55,12 +61,6 @@ mixin signup(titre, prix, objectifs, dates)
               input(type="radio" name="payment-method" id="paypal" value="paypal")
               label(for="paypal")
                 img(src="../img/payment/paypal.png" class="payment-cards payment-cards-small")
-            li
-              input(type="radio" name="payment-method" id="card" value="card")
-              label(for="card")
-                img(src="../img/payment/mastercard.png" class="payment-cards payment-cards-small")
-                img(src="../img/payment/visa.png" class="payment-cards payment-cards-small")
-                img(src="../img/payment/americanexpress.png" class="payment-cards payment-cards-small")
             li
               input(type="radio" name="payment-method" id="apple-pay" value="apple-pay" checked)
               label(for="apple-pay")

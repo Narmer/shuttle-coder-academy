@@ -2,6 +2,7 @@
 extends ../layout.pug
 include ../mixins/_navigation.pug
 include ../mixins/_lists.pug
+include ../mixins/_signup.pug
 include ../mixins/_buttons.pug
 include ../mixins/_forms.pug
 prepend meta
@@ -13,9 +14,10 @@ append meta
 
 append css
   link(rel="stylesheet" type="text/css" href="../css/main.css")
+  script(src="../js/modernizr-min.js")
 
-block navigation
-  +navigation('..')
+prepend navigation
+  -var path = '../'
 
 block content
   - var dateList = ["11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars"]
@@ -39,29 +41,10 @@ block content
         - var learning = ["Fondamentaux en HTML & CSS.", "Comprendre le fonctionnement simplifié d'un serveur, les différentes façons de créer un site (From scratch, CMS, etc), les noms de domaine, les hébergements Web, les frameworks, et les bibliothèques.", "Découvrir le responsive web design avec la grille et les composants Bootstrap.", "Découvrir les ressources & outils de web-design", "Déployer son site sur Github", "Implémenter Google Analytics", "Insérer des formulaires Mailchimp & Wufoo", "Les pratiques (bonnes et mauvaises) liées à la programmation et à la gestion de projets."]
         +course-learning(learning)
 
-      aside.col-xs-12.col-lg-4.col-lg-offset-1
-        h5 Prix Unitaire : 300€ TTC
-        .summary-payment
-          table(cellspacing="0")
-            tbody
-              tr
-                td.label
-                  label(for="date-de-la-session") Date des sessions
-                td.value
-                  select(id="date-de-la-session" class="" name="attribute_date-de-la-session" data-attribute_name="attribute_date-de-la-session" data-show_option_none="yes")
-                    option(value="" selected="selected") Choisir une date
-                    - var dates = ['6-7 mai', '27-28 mai', '10-11 juin'];
-                    each date in dates
-                      option(value=date)= date
-              tr
-                td.label
-                  label(for="nombre-de-places") Date des sessions
-                td.value
-                  select(id="nombre-de-places" class="" name="attribute_nombre-de-places" data-attribute_name="attribute_nombre-de-places" data-show_option_none="yes")
-                    option(value="" selected="selected") Choisir une date
-                    - var places = 1;
-                    while places < 6
-                      option(value="1")= places++
+      aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
+        - var objectifs = ["HTML5/CSS3", "Bootstrap", "GitHub", "Google Analytics"]
+        +signup('Basic', '300', objectifs, "20-21 mai")
 
-          +reservation('meetup')(class="btn-blue")
-          //-+payment-form
+append scripts
+  script(src="../js/velocity-min.js")
+  script(src="../js/main-min.js")

@@ -1,0 +1,16 @@
+mixin hero(large, titles)
+  if large
+    header.hero
+      .hero-shadow
+      .hero-content
+        h1= titles.h2
+        h2= titles.h2
+        .hero-cta
+          a(href="nos-workshops.html")
+            span(class="btn btn-blue btn-lg") Découvrez nos formations
+  else
+    header.hero-formation
+      .container
+        article.hero-titles
+          h1= titles.h1
+          h2= titles.h2

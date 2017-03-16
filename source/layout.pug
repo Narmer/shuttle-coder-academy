@@ -1,5 +1,7 @@
 doctype
 
+include mixins/_navigation.pug
+
 html(lang="fr")
   head
     block meta
@@ -24,7 +26,7 @@ html(lang="fr")
     block top-bar
       include includes/layouts/_topbar.pug
     block navigation
-      include includes/_navigation.pug
+      +navigation(path)
 
     block hero
 

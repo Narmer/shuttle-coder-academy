@@ -15,6 +15,12 @@ header {
   align-items: center;
 }
 
+.hero-formation {
+  //height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
 
 .hero-shadow {
   background-image: -webkit-linear-gradient(315deg, rgba(30, 30, 30, 0.6) 30%, rgba(46, 46, 46, 0.5) 80%);
@@ -65,6 +71,19 @@ header {
   margin: 0;
   .btn {
     margin: 0;
+  }
+}
+
+.hero-titles {
+  display: flex;
+  flex-direction: column;
+//  flex-wrap: wrap;
+  h1 {
+    font-size: 1.55rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
   }
 }
 
