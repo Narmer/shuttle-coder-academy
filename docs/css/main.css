@@ -1346,6 +1346,17 @@ Shadow layer
   margin-bottom: 0;
 }
 
+.course-item-lg header,
+.course-item-md header,
+.course-item-sm header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .course-item-lg section,
 .course-item-md section,
 .course-item-sm section {
