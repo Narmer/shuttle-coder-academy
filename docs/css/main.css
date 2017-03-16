@@ -1377,7 +1377,39 @@ Shadow layer
 .course-item-sm section h2,
 .course-item-sm section h4,
 .course-item-sm section p {
-  text-align: justify;
+  text-align: left;
+}
+
+.course-item-lg aside ul,
+.course-item-md aside ul,
+.course-item-sm aside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.course-item-lg aside ul li,
+.course-item-md aside ul li,
+.course-item-sm aside ul li {
+  width: 50%;
+}
+
+.course-item-lg aside ul li p,
+.course-item-md aside ul li p,
+.course-item-sm aside ul li p {
+  margin: 0;
+}
+
+.course-item-lg aside ul li span,
+.course-item-md aside ul li span,
+.course-item-sm aside ul li span {
+  font-size: .9rem;
+  font-weight: 600;
 }
 
 .course-item-lg header {
