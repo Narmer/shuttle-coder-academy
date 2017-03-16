@@ -8,16 +8,16 @@ mixin navigation(path)
           span.icon-bar
           span.icon-bar
 
-        a(class="navbar-brand" href="/index.html")
+        a(class="navbar-brand" href=path+'index.html')
           include ../includes/_logo-color.pug
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
+      //- Collect the nav links, forms, and other content for toggling
       .collapse.navbar-collapse#bs-example-navbar-collapse-1
         ul.nav.navbar-nav.navbar-right
           li
-            a(href=path+"/a-propos.html") à propos
+            a(href=path+'a-propos.html') à propos
           li
-            a(href=path+"/l-equipage.html") l'équipage
+            a(href=path+'l-equipage.html') l'équipage
           li.dropdown
             a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") Nos Formations <span class="caret"></span>
             ul.dropdown-menu

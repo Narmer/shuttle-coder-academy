@@ -1,6 +1,7 @@
 doctype
 
 include mixins/_navigation.pug
+include mixins/_footer.pug
 
 html(lang="fr")
   head
@@ -35,7 +36,7 @@ html(lang="fr")
     block newsletter
       include includes/layouts/_newsletter.pug
     block footer
-      include includes/_footer.pug
+      +footer(path)
       include includes/_footer-bottom.pug
 
     block scripts
