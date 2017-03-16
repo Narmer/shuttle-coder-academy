@@ -4,7 +4,7 @@ mixin cta-workshop(lien, titre)
     i.fa.fa-angle-right
 
 mixin reservation(lien)
-  a.btn(class!=attributes.class href=lien title="") Réserver votre place
+  a.btn(class!=attributes.class href=lien + '.html' title="") Réserver votre place
 
 mixin signup-btn(titre)
   a(class="btn signup-btn" href="#0")= titre

@@ -11,4 +11,4 @@ mixin workshop-listing(titre, resultat, description, requis, lieu, path)
       p= description
     aside
       +course-listing(requis, '', lieu, '')
-      +reservation(path)(class="btn-blue")
+      +cta-workshop(path, "Je veux participer")(class="btn-blue")
