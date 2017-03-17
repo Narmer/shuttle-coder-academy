@@ -1,0 +1,32 @@
+mixin footer(path)
+  footer.footer-main
+    .container
+      .flex
+        .brand-footer
+          include ../includes/_logo-white.pug
+        .social-footer
+          h3 On est aussi sur
+          include ../includes/_social-icons.pug
+
+      .flex
+        .footer-column
+          h4 Nos Cours
+          ul.footer-links.list-unstyled
+            li
+              a(href=path+"nos-workshops.html" target="_blank") Nos workshops
+            li
+              a(href=path+"shuttle-on-demand" target="_blank") Shuttle Coder On Demand
+            li
+              a(href=path+"nos-formations-complètes.html" target="_blank") Nos formations complètes
+        .footer-column
+          h4 Dans votre ville
+          ul.footer-links.list-unstyled
+        .footer-column
+          h4 Qui sommes-nous ?
+          ul.footer-links.list-unstyled
+            li
+              a(href=path+"a-propos.html" target="_blank") Shuttle Coder, c'est quoi ?
+            li
+              a(href=path+"l-equipage.html" target="_blank") L'équipage
+            li
+              a(href="//shop.shuttlecoder.com" target="_blank") Notre boutique

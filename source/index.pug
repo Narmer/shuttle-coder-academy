@@ -13,7 +13,7 @@ append css
   link(rel="stylesheet" type="text/css" href="css/main.css")
 
 prepend navigation
-  - var path = ''
+  - var path = './'
 
 block hero
   - var titles = {h1:"Deux jours pour apprendre !", h2:"L'initiation à la programmation pour tous"}
@@ -32,3 +32,6 @@ block content
       include includes/_workshop_1.pug
       include includes/_workshop_2.pug
       include includes/_workshop_3.pug
+
+prepend footer
+  - var path = './'
