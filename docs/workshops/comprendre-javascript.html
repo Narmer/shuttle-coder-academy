@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>The academy - Shuttle Coder</title>
+    <title>Construire rapidement son prototype</title>
     <title> - Shuttle Coder</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no">
@@ -14,7 +14,8 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css"><!-- Font Awesome CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><!-- Bootstrap v3.3.1 -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="../js/modernizr-min.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
   </head>
   <body>
@@ -26,7 +27,7 @@
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="../index.html">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="193px" height="41px" viewBox="0 0 193 41" enable-background="new 0 0 193 41" xml:space="preserve">
               <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g transform="translate(-477.000000, -370.000000)">
@@ -66,98 +67,187 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="./a-propos.html">à propos</a></li>
-            <li><a href="./l-equipage.html">l'équipage</a></li>
+            <li><a href="../a-propos.html">à propos</a></li>
+            <li><a href="../l-equipage.html">l'équipage</a></li>
             <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nos Formations <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header"><span>Nos Workshops (présentiel)</span></li>
-                <li><a href="./workshops/creer-votre-premier-site-web.html">Créer son premier site web</a></li>
-                <li><a href="./workshops/comprendre-javascript.html">Rendre votre site web dynamique</a></li>
-                <li><a href="./workshops/construire-rapidement-son-prototype.html">Construire rapidement son prototype</a></li>
+                <li><a href="../workshops/creer-votre-premier-site-web.html">Créer son premier site web</a></li>
+                <li><a href="../workshops/comprendre-javascript.html">Rendre votre site web dynamique</a></li>
+                <li><a href="../workshops/construire-rapidement-son-prototype.html">Construire rapidement son prototype</a></li>
                 <li class="divider" role="separator"></li>
                 <li class="dropdown-header"><span>Nos Formations Complètes (présentiel)</span></li>
-                <li class="disabled"><a href="./">Code ta Startup (9 semaines)</a></li>
-                <li class="disabled"><a href="./">Crée ton appli iPhone (9 semaines)</a></li>
+                <li class="disabled"><a href="../">Code ta Startup (9 semaines)</a></li>
+                <li class="disabled"><a href="../">Crée ton appli iPhone (9 semaines)</a></li>
                 <li class="divider" role="separator"></li>
                 <li class="dropdown-header"><span>En ligne (Vidéos)</span></li>
-                <li class="disabled"><a href="./">iOS 10, Swift 3 - De parfait débutant à professionnel</a></li>
+                <li class="disabled"><a href="../">iOS 10, Swift 3 - De parfait débutant à professionnel</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <header class="hero-formation">
+    <section class="workshop">
       <div class="container">
-        <article class="hero-titles">
-          <h1>Deux jours pour apprendre !</h1>
-          <h2>L'initiation à la programmation pour tous</h2>
+        <article class="col-xs-12 col-lg-7">
+          <h1>Rendre dynamique votre site web</h1>
+          <h2>Apprenez à vous servir de Javascript</h2>
+          <ul class="fa-ul">
+            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
+              <p>Pré-requis :</p>
+              <!-- br--><span>HTML5/CSS3</span>
+            </li>
+            <li><i class="fa fa-li fa-lg fa-user"></i>
+              <p>Nombre de places :</p><span>30</span>
+            </li>
+            <li><i class="fa fa-li fa-lg fa-map-marker"></i>
+              <p>Lieu :</p><span>Memorial Act, Guadeloupe</span>
+            </li>
+            <li><i class="fa fa-li fa-lg fa-trophy"></i>
+              <p>Objectif :</p><span>Récupérez des données sur le web</span>
+            </li>
+          </ul>
+          <p>Avec HTML5 et CSS3, JavaScript est une des technologies au coeur du web. La majorité des sites web utilise JavaScript, et tous les naigateurs web modernes le supporte sans ajout de plugins.<br>Il y a une communauté énorme, et l'écosystème évolue rapidement. Si vous voulez être un développeur web, JavaScript est incontournable. Et si vous voulez apprendre JavaScript, vous êtes au bon endroit !</p>
+          <h5>A qui s'adresse ce cours ?</h5>
+          <ul class="fa-ul">
+            <li><i class="fa fa-li fa fa-minus"></i>
+              <p>Débutants</p>
+            </li>
+            <li><i class="fa fa-li fa fa-minus"></i>
+              <p>Entrepreneurs Tech</p>
+            </li>
+            <li><i class="fa fa-li fa fa-minus"></i>
+              <p>Web Designers</p>
+            </li>
+            <li><i class="fa fa-li fa fa-minus"></i>
+              <p>Back-end Developers</p>
+            </li>
+            <li><i class="fa fa-li fa fa-minus"></i>
+              <p>Growth Hackers</p>
+            </li>
+          </ul>
+          <h5>Ce que vous allez apprendre</h5>
+          <ul class="fa-ul">
+            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
+              <p>Fondamentaux du langage JavaScript</p>
+            </li>
+            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
+              <p>Comprendre les bases de la programmation en JavaScript</p>
+            </li>
+            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
+              <p>Comprendre les interaction avec la page web (programmation événementielle)</p>
+            </li>
+            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
+              <p>Maîtriser les concepts importants de JavaScript (types, objets, fonctions, syntaxe, etc.)</p>
+            </li>
+            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
+              <p>Analyser une page web avec les outils développeur</p>
+            </li>
+          </ul>
         </article>
+        <aside class="cd-pricing col-xs-12 col-lg-4 col-lg-offset-1">
+          <div>
+            <header class="cd-pricing-header">
+              <h5 class="cd-price">Prix Unitaire : 300€ TTC</h5>
+            </header>
+            <section class="cd-pricing-features">
+              <ul class="fa-ul">
+                <li><i class="fa fa-li fa-lg fa-check"></i><span>HTML5/CSS3</span></li>
+                <li><i class="fa fa-li fa-lg fa-check"></i><span>Bootstrap</span></li>
+                <li><i class="fa fa-li fa-lg fa-check"></i><span>GitHub</span></li>
+                <li><i class="fa fa-li fa-lg fa-check"></i><span>Google Analytics</span></li>
+              </ul>
+            </section>
+            <footer class="cd-pricing-footer"><a class="btn signup-btn" href="#0">Réserver ma place</a>
+            </footer>
+          </div>
+          <div class="cd-form">
+            <div class="cd-plan-info"></div>
+            <div class="cd-more-info">
+              <h5>Besoin d'aide ?</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <form action="">
+              <fieldset>
+                <legend>Account Info</legend>
+                <div class="half-width">
+                  <label for="userName">Nom</label>
+                  <input type="text" id="userName" name="userName"/>
+                </div>
+                <div class="half-width">
+                  <label for="userEmail">Email</label>
+                  <input type="email" id="userEmail" name="userEmail"/>
+                </div>
+                <div class="half-width">
+                  <label for="userPassword">Password</label>
+                  <input type="password" id="userPassword" name="userPassword"/>
+                </div>
+                <div class="half-width">
+                  <label for="userPasswordRepeat">Repeat Password</label>
+                  <input type="password" id="userPasswordRepeat" name="userPasswordRepeat"/>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Mode de Paiement</legend>
+                <div>
+                  <ul class="list-inline cd-payment-gateways">
+                    <li>
+                      <input type="radio" name="payment-method" id="card" value="card"/>
+                      <label for="card"><img class="payment-cards payment-cards-small" src="../img/payment/mastercard.png"/><img class="payment-cards payment-cards-small" src="../img/payment/visa.png"/><img class="payment-cards payment-cards-small" src="../img/payment/americanexpress.png"/></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="payment-method" id="bitcoin" value="bitcoin"/>
+                      <label for="bitcoin"><img class="payment-cards payment-cards-small" src="../img/payment/bitcoin.png"/></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="payment-method" id="paypal" value="paypal"/>
+                      <label for="paypal"><img class="payment-cards payment-cards-small" src="../img/payment/paypal.png"/></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="payment-method" id="apple-pay" value="apple-pay" checked="checked"/>
+                      <label for="apple-pay"><img class="payment-cards payment-cards-small" src="../img/payment/applepay.png"/></label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cd-credit-card">
+                  <div>
+                    <p class="half-width">
+                      <label for="cardNumber">Numéro de carte</label>
+                      <input type="text" id="cardNumber" name="cardNumber"/>
+                    </p>
+                    <p class="half-width">
+                      <label>Mois/Année (MM/AA)</label><b><span class="cd-select">
+                          <select name="card-expiry-month" id="card-expiry-month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select></span><span class="cd-select">
+                          <select name="card-expiry-year" id="card-expiry-year">
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                          </select></span></b>
+                    </p>
+                    <p class="half-width">
+                      <label for="cardCvc">CVV</label>
+                      <input type="text" id="cardCvc" name="cardCvc"/>
+                    </p>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div>
+                  <input type="submit" value="Payer ma place"/>
+                </div>
+              </fieldset>
+            </form><a class="cd-close" href="#0"></a>
+          </div>
+          <div class="cd-overlay"></div>
+        </aside>
       </div>
-    </header>
-    <section class="course-items">
-      <article class="course-item-lg">
-        <header><img class="attachment-post-thumbnail size-post-thumbnail wp-post-image" width="300" height="300" src="/icon_web-300x300.png" alt="" srcset="/icon_web-300x300.png 300w, /icon_web-300x300-150x150.png 150w, /icon_web-300x300-180x180.png 180w" sizes="(max-width: 300px) 100vw, 300px"/></header>
-        <section>
-          <h2>Construis ton idée et crée ton site web</h2>
-          <h4>Résultat : Votre site web</h4>
-          <p>Comprenez enfin le développement web ! Apprenez à coder et créez votre propre site Internet en un week-end. Shuttle Coder, c'est 50% entrepreneur, 50% coder, 100% de pratique.</p>
-        </section>
-        <aside>
-          <ul class="fa-ul">
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Pré-requis :</p>
-              <!-- br--><span>A</span>
-              <!-- br--><span>u</span>
-              <!-- br--><span>c</span>
-              <!-- br--><span>u</span>
-              <!-- br--><span>n</span>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-map-marker"></i>
-              <p>Lieu :</p><span></span>
-            </li>
-          </ul><a class="btn btn-blue" href="./workshops/creer-votre-premier-site-web.html" title="">Je veux participer<i class="fa fa-angle-right"></i></a>
-        </aside>
-      </article>
-      <article class="course-item-lg">
-        <header><img class="attachment-post-thumbnail size-post-thumbnail wp-post-image" width="300" height="300" src="/icon_web-300x300.png" alt="" srcset="/icon_web-300x300.png 300w, /icon_web-300x300-150x150.png 150w, /icon_web-300x300-180x180.png 180w" sizes="(max-width: 300px) 100vw, 300px"/></header>
-        <section>
-          <h2>Rendre votre site web dynamique</h2>
-          <h4>Résultat : Apprenez à vous servir de JavaScript</h4>
-          <p>Comprenez enfin comment récupérer des données sur Internet ! Apprenez à coder en JavaScript et créez votre propre robot en un week-end.</p>
-        </section>
-        <aside>
-          <ul class="fa-ul">
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Pré-requis :</p>
-              <!-- br--><span>HTML5/CSS3</span>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-map-marker"></i>
-              <p>Lieu :</p><span></span>
-            </li>
-          </ul><a class="btn btn-blue" href="./workshops/comprendre-javascript.html" title="">Je veux participer<i class="fa fa-angle-right"></i></a>
-        </aside>
-      </article>
-      <article class="course-item-lg">
-        <header><img class="attachment-post-thumbnail size-post-thumbnail wp-post-image" width="300" height="300" src="/icon_web-300x300.png" alt="" srcset="/icon_web-300x300.png 300w, /icon_web-300x300-150x150.png 150w, /icon_web-300x300-180x180.png 180w" sizes="(max-width: 300px) 100vw, 300px"/></header>
-        <section>
-          <h2>Construire rapidement son prototype</h2>
-          <h4>Résultat : Votre appli réactive avec le front-end, le back-end et la base de données</h4>
-          <p>description</p>
-        </section>
-        <aside>
-          <ul class="fa-ul">
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Pré-requis :</p>
-              <!-- br--><span>HTML5/CSS3</span>
-              <!-- br--><span>JavaScript</span>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-map-marker"></i>
-              <p>Lieu :</p><span></span>
-            </li>
-          </ul><a class="btn btn-blue" href="./workshops/creer-votre-premier-site-web.html" title="">Je veux participer<i class="fa fa-angle-right"></i></a>
-        </aside>
-      </article>
     </section>
     <section class="newsletter background-color">
       <div class="newsletter-container">
@@ -237,9 +327,9 @@
           <div class="footer-column">
             <h4>Nos Cours</h4>
             <ul class="footer-links list-unstyled">
-              <li><a href="./nos-workshops.html" target="_blank">Nos workshops</a></li>
-              <li><a href="./shuttle-on-demand" target="_blank">Shuttle Coder On Demand</a></li>
-              <li><a href="./nos-formations-complètes.html" target="_blank">Nos formations complètes</a></li>
+              <li><a href="../nos-workshops.html" target="_blank">Nos workshops</a></li>
+              <li><a href="../shuttle-on-demand" target="_blank">Shuttle Coder On Demand</a></li>
+              <li><a href="../nos-formations-complètes.html" target="_blank">Nos formations complètes</a></li>
             </ul>
           </div>
           <div class="footer-column">
@@ -249,8 +339,8 @@
           <div class="footer-column">
             <h4>Qui sommes-nous ?</h4>
             <ul class="footer-links list-unstyled">
-              <li><a href="./a-propos.html" target="_blank">Shuttle Coder, c'est quoi ?</a></li>
-              <li><a href="./l-equipage.html" target="_blank">L'équipage</a></li>
+              <li><a href="../a-propos.html" target="_blank">Shuttle Coder, c'est quoi ?</a></li>
+              <li><a href="../l-equipage.html" target="_blank">L'équipage</a></li>
               <li><a href="//shop.shuttlecoder.com" target="_blank">Notre boutique</a></li>
             </ul>
           </div>
@@ -280,5 +370,7 @@
         $('[data-toggle="tooltip"]').tooltip()
       })
     </script>
+    <script src="../js/velocity-min.js"></script>
+    <script src="../js/main-min.js"></script>
   </body>
 </html>
