@@ -1,4 +1,4 @@
-//- Workshop CREER 1er site web
+//- Workshop Comprendre JavaScript
 extends ../layout.pug
 include ../mixins/_navigation.pug
 include ../mixins/_lists.pug
@@ -6,7 +6,7 @@ include ../mixins/_signup.pug
 include ../mixins/_buttons.pug
 include ../mixins/_forms.pug
 prepend meta
-  title Construire rapidement son prototype
+  title Comprendre JavaScript - Shuttle Coder
 append meta
   meta(name="description" content="")
   meta(name="keywords" content="")
@@ -21,8 +21,6 @@ prepend navigation
 
 block content
   - var dateList = ["11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars"]
-  - var whoList = ["Débutants", "Entrepreneurs Tech", "Designers", "Founders"]
-  - var learnWhat = ["Fondamentaux en HTML & CSS", "", "Déploiement sur Github", "Implémentation de Google Analytics", "Insertion de formulaires Mailchimp & Wufoo"]
   section.workshop
     .container
       article.col-xs-12.col-lg-7
@@ -44,7 +42,7 @@ block content
         +course-learning(learning)
 
       aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
-        - var objectifs = ["HTML5/CSS3", "Bootstrap", "GitHub", "Google Analytics"]
+        - var objectifs = ["Fondamentaux JavaScript", "Débugguer son code", "Découvrir des APIs"]
         +signup('Basic', '300', objectifs, "20-21 mai")
 
 append scripts
