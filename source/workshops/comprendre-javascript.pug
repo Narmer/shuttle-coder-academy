@@ -1,0 +1,50 @@
+//- Workshop Comprendre JavaScript
+extends ../layout.pug
+include ../mixins/_navigation.pug
+include ../mixins/_lists.pug
+include ../mixins/_signup.pug
+include ../mixins/_buttons.pug
+include ../mixins/_forms.pug
+prepend meta
+  title Comprendre JavaScript - Shuttle Coder
+append meta
+  meta(name="description" content="")
+  meta(name="keywords" content="")
+  //-+meta-social(title, description, url, site_name, fpublisher, image, creator)
+
+append css
+  link(rel="stylesheet" type="text/css" href="../css/main.css")
+  script(src="../js/modernizr-min.js")
+
+prepend navigation
+  -var path = '../'
+
+block content
+  - var dateList = ["11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars"]
+  section.workshop
+    .container
+      article.col-xs-12.col-lg-7
+        h1 Rendre votre site web dynamique
+        h2 Apprenez à vous servir de Javascript
+        -var requis = ['HTML5/CSS3']
+        +course-listing(requis, '30', 'Memorial Act, Guadeloupe', 'Récupérez des données sur le web')
+        p
+          | Avec HTML5 et CSS3, JavaScript est une des technologies au coeur du web. La majorité des sites web utilise JavaScript, et tous les naigateurs web modernes le supporte sans ajout de plugins.
+          br
+          | Il y a une communauté énorme, et l'écosystème évolue rapidement. Si vous voulez être un développeur web, JavaScript est incontournable. Et si vous voulez apprendre JavaScript, vous êtes au bon endroit !
+
+        //- A qui s'adresse ce cours
+        - var who = ['Débutants', "Entrepreneurs Tech", "Web Designers", "Back-end Developers", "Growth Hackers"]
+        +course-for-who(who)
+
+        //- Ce que vous allez apprendre dans ce cours
+        - var learning = ["Fondamentaux du langage JavaScript", "Comprendre les bases de la programmation en JavaScript", "Comprendre les interaction avec la page web (programmation événementielle)", "Maîtriser les concepts importants de JavaScript (types, objets, fonctions, syntaxe, etc.)", "Analyser une page web avec les outils développeur"]
+        +course-learning(learning)
+
+      aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
+        - var objectifs = ["Fondamentaux JavaScript", "Débugguer son code", "Découvrir des APIs"]
+        +signup('Basic', '300', objectifs, "20-21 mai")
+
+append scripts
+  script(src="../js/velocity-min.js")
+  script(src="../js/main-min.js")
