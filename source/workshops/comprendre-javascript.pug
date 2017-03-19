@@ -6,7 +6,7 @@ include ../mixins/_signup.pug
 include ../mixins/_buttons.pug
 include ../mixins/_forms.pug
 prepend meta
-  title Créer votre premier site web - Shuttle Coder
+  title Construire rapidement son prototype
 append meta
   meta(name="description" content="")
   meta(name="keywords" content="")
@@ -26,23 +26,26 @@ block content
   section.workshop
     .container
       article.col-xs-12.col-lg-7
-        h1 Construis ton idée et crée ton site web
-        h2 Initiation à HTML5 et CSS3
-        +course-listing(['Aucun'], '30', 'Memorial Act, Guadeloupe', 'Créer votre site web')
-        p.
-          Comprenez enfin le développement web ! Apprenez à coder et créez votre propre site Internet en un week-end. Shuttle Coder, c'est 50% entrepreneur, 50% coder, 100% de pratique.
+        h1 Rendre votre site web dynamique
+        h2 Apprenez à vous servir de Javascript
+        -var requis = ['HTML5/CSS3']
+        +course-listing(requis, '30', 'Memorial Act, Guadeloupe', 'Récupérez des données sur le web')
+        p
+          | Avec HTML5 et CSS3, JavaScript est une des technologies au coeur du web. La majorité des sites web utilise JavaScript, et tous les naigateurs web modernes le supporte sans ajout de plugins.
+          br
+          | Il y a une communauté énorme, et l'écosystème évolue rapidement. Si vous voulez être un développeur web, JavaScript est incontournable. Et si vous voulez apprendre JavaScript, vous êtes au bon endroit !
 
         //- A qui s'adresse ce cours
-        - var who = ['Débutants', 'Entrepreneurs Tech', 'Designer', 'Founders']
+        - var who = ['Débutants', "Entrepreneurs Tech", "Web Designers", "Back-end Developers", "Growth Hackers"]
         +course-for-who(who)
 
         //- Ce que vous allez apprendre dans ce cours
-        - var learning = ["Fondamentaux en HTML & CSS.", "Comprendre le fonctionnement simplifié d'un serveur, les différentes façons de créer un site (From scratch, CMS, etc), les noms de domaine, les hébergements Web, les frameworks, et les bibliothèques.", "Découvrir le responsive web design avec la grille et les composants Bootstrap.", "Découvrir les ressources & outils de web-design", "Déployer son site sur Github", "Implémenter Google Analytics", "Insérer des formulaires Mailchimp & Wufoo", "Les pratiques (bonnes et mauvaises) liées à la programmation et à la gestion de projets."]
+        - var learning = ["Fondamentaux du langage JavaScript", "Comprendre les bases de la programmation en JavaScript", "Comprendre les interaction avec la page web (programmation événementielle)", "Maîtriser les concepts importants de JavaScript (types, objets, fonctions, syntaxe, etc.)", "Analyser une page web avec les outils développeur"]
         +course-learning(learning)
 
       aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
         - var objectifs = ["HTML5/CSS3", "Bootstrap", "GitHub", "Google Analytics"]
-        +signup('Basic', '150', objectifs, "20-21 mai")
+        +signup('Basic', '300', objectifs, "20-21 mai")
 
 append scripts
   script(src="../js/velocity-min.js")

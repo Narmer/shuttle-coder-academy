@@ -1554,27 +1554,30 @@ Shadow layer
 }
 
 .workshop > .container {
-  background: #f8f8f8;
+  background: #fff;
   border-top: 5px solid #ccc;
   padding: 20px;
+}
+
+.workshop article h1,
+.workshop article h2,
+.workshop article h5 {
+  margin: 0;
+  text-align: left;
 }
 
 .workshop article h1 {
   font-size: 1.3rem;
   font-weight: 800;
-  margin: 0;
 }
 
 .workshop article h2 {
   font-size: 1rem;
-  margin: 0;
   padding: 15px 0 0;
-  text-align: left;
 }
 
 .workshop article h5 {
   font-size: 1.1rem;
-  margin: 0;
 }
 
 .workshop article > p {
@@ -1610,7 +1613,7 @@ Shadow layer
 }
 
 .workshop aside h5 {
-  color: #000;
+  color: #fff;
   font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
@@ -1624,7 +1627,7 @@ Shadow layer
   }
   .workshop .container {
     padding: 40px;
-    border: 1px solid #ccc;
+    border: 1px solid #1797D4;
     border-radius: 5px;
   }
   .workshop article h1 {
