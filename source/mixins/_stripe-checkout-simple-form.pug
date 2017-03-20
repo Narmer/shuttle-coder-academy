@@ -1,0 +1,28 @@
+mixin stripeCheckoutSimpleForm(titre, price, objectifs, dates, description)
+  div
+    header.cd-pricing-header
+      h5.cd-price= "Prix Unitaire : " + price/100 + "€ TTC"
+    
+    section.cd-pricing-features
+      ul.fa-ul
+        each objectif in objectifs
+          li
+            i.fa.fa-li.fa-lg.fa-check
+            span= objectif
+
+    footer.cd-pricing-footer
+      form(action="/your-server-side-code" method="POST")
+      script(
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_test_Ph29clHN8TNeJKn5fGz9eYxu"
+        data-amount= price
+        data-name="Shuttle Coder Academy"
+        data-description= description
+        data-image="../img/payment/logo-stripe.jpg"
+        data-locale="fr"
+        data-zip-code="true"
+        data-currency="eur"
+        data-billing-address="false"
+        data-label="Réserver ma place"
+        data-bitcoin="false"
+      )
