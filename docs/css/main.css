@@ -1682,6 +1682,37 @@ Shadow layer
 
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+.faqs {
+  padding: 30px 0;
+}
+
+.faqs .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.faqs .container h3 {
+  margin: 50px 0 15px;
+}
+
+.faqs .container h3:first-of-type {
+  margin-top: 0;
+}
+
+.faqs .container h3:last-of-type {
+  margin-bottom: 0;
+}
+
 .navbar {
   margin-bottom: 0;
   z-index: 1;
