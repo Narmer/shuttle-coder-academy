@@ -1,0 +1,86 @@
+//- Index
+extends ../layout.pug
+
+include ../mixins/_hero.pug
+
+prepend meta
+  title L'initiation à la programmation pour tous - Shuttle Coder
+append meta
+  meta(name="description" content="")
+  meta(name="keywords" content="")
+
+append css
+  - var path = '../'
+  link(rel="stylesheet" type="text/css" href=path+"css/main.css")
+
+block top-bar
+prepend navigation
+  - path
+
+block hero
+  - var titles = {h1:"FAQ"}
+  +hero(false, titles)
+
+block content
+  section.faqs
+    .container
+      .col-lg-8.col-lg-offset-2
+        h3 Comment se déroule une formation ?
+        p.
+          Voici une journée type :
+          
+        ul
+          li
+            strong 9h : 
+            | vous êtes accueillis par votre formateur autour d'un petit déjeuner (croissants, pains au chocolat, jus de fruit, thé ou café...)
+          li
+            strong 9h30 : 
+            | la formation commence
+          li
+            strong 12h30 : 
+            | pause de midi. Le formateur mangera avec vous. C'est l'occasion d'avoir des discussions plus informelles.
+          li
+            strong 14h : 
+            | reprise de la formation
+          li
+            strong 18h : 
+            | fin de la journée
+        
+        h3 Qu'est-ce qui est inclu dans le prix de la formation ?
+        ul
+          li X jours complets de cours intensifs en petits groupes
+          li La documentation complète du cours au format PDF
+          li L'accès au code source des projets
+          
+        h3 Quelles sont les conditions de remboursement ?
+        p.
+          Voici les modalités de remboursement en fonction des différents cas :
+        ul
+          li Annulation sans frais si l'annulation est effectuée plus de 30 jours avant.
+          li Nous facturons 50% du prix de la formation si l'annulation est effectuée entre 15 et 30 jours avant.
+          li L'intégralité de la formation sera facturée si l'annulation est effectuée moins de 15 jours avant.
+          li En cas de nombre d'inscriptions trop faible, nous nous réservons le droit d'annuler et/ou de repousser le cours à une date ultérieure. Dans ce cas, tout personne inscrite aura le droit d'accepter la nouvelle date de la formation ou demander le remboursement intégral du prix de la formation.
+        
+        h3 Je suis un vrai débutant, est ce que les cours sont faits pour moi?
+        p
+          | Aucune connaissance du code n'est requise pour venir à Shuttle Coder. Mais il est important que nos élèves soient <strong>motivés</strong> (surtout pour les formations de 9 semaines), <strong>curieux</strong> (il y a de nombreuses formations) et aient un bon <strong>sens relationnel</strong> (vous allez travailler en équipe).
+          br
+          | Pour faire simple:
+        ul
+          li Tous nos workshops de niveau 100 sont accessible aux débutants
+          li Certains de nos workshops de niveau 200 sont accesibles aux débutants (Ne vous inquiétez pas c'est indiqué).
+          li Pour les autres workshops de niveau 200 et tous les workshops de niveau 300, les pré-requis sont indiqués.
+          li Por nos formations complètes, nous partons des fondamentaux, des bases et pendant les 9 semaines vous allez intégrer les savoirs pour devenir autonome en développement Web/mobile. 
+        
+        h3 Est-ce que je dois venir avec mon ordi ?
+        p.
+          Oui, tous les élèves doivent avoir un ordinateur portable. Nous utiliserons Mac OS X ou Linux, si vous n'avez que Windows, ne vous inquiétez pas, le premier jour est consacré à installer Linux sur vos machines (en dual boot à côté de Windows).
+        
+        h3 Dois-je parler français ? anglais ? les deux ?
+        p.
+          Nos workshops et nos formations sont données en <trongs>français</strong>. C'est-à-dire que le cours du matin (1h30) et la correction en live-code du soir (1h30) sont en français. Cependant, le matériel pédagogique (cours, exercices, etc.) ainsi que toute la documentation technique peut être en <trongs>anglais</strong> aussi.
+
+block newsletter
+
+prepend footer
+  - path

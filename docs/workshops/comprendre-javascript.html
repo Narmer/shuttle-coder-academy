@@ -16,6 +16,28 @@
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <script src="../js/modernizr-min.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
+    <script>
+      !function() {
+        var t;
+        if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+        t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n;
+            return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e, n, o, i;
+          e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+          n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+        });
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('eitw9tstg3zk');
+    </script>
   </head>
   <body>
     <div class="top-bar">
@@ -148,7 +170,7 @@
         <aside class="cd-pricing col-xs-12 col-lg-4 col-lg-offset-1">
           <div>
             <header class="cd-pricing-header">
-              <h5 class="cd-price">Prix Unitaire : 300€ TTC</h5>
+              <h5 class="cd-price">Prix Unitaire : 150€ TTC</h5>
             </header>
             <section class="cd-pricing-features">
               <ul class="fa-ul">
@@ -157,93 +179,11 @@
                 <li><i class="fa fa-li fa-lg fa-check"></i><span>Découvrir des APIs</span></li>
               </ul>
             </section>
-            <footer class="cd-pricing-footer"><a class="btn signup-btn" href="#0">Réserver ma place</a>
+            <footer class="cd-pricing-footer">
+              <form action="https://ym9jsj386i.execute-api.eu-central-1.amazonaws.com/prod/stripeCreateCharges" method="POST"></form>
+              <script class="stripe-button" src="https://checkout.stripe.com/checkout.js" data-key="pk_test_Ph29clHN8TNeJKn5fGz9eYxu" data-amount="15000" data-name="Shuttle Coder Academy" data-description="Comprendre JavaScript" data-image="../img/payment/logo-stripe.jpg" data-locale="fr" data-zip-code="true" data-currency="eur" data-billing-address="false" data-label="Réserver ma place" data-bitcoin="false"></script>
             </footer>
           </div>
-          <div class="cd-form">
-            <div class="cd-plan-info"></div>
-            <div class="cd-more-info">
-              <h5>Besoin d'aide ?</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <form action="">
-              <fieldset>
-                <legend>Account Info</legend>
-                <div class="half-width">
-                  <label for="userName">Nom</label>
-                  <input type="text" id="userName" name="userName"/>
-                </div>
-                <div class="half-width">
-                  <label for="userEmail">Email</label>
-                  <input type="email" id="userEmail" name="userEmail"/>
-                </div>
-                <div class="half-width">
-                  <label for="userPassword">Password</label>
-                  <input type="password" id="userPassword" name="userPassword"/>
-                </div>
-                <div class="half-width">
-                  <label for="userPasswordRepeat">Repeat Password</label>
-                  <input type="password" id="userPasswordRepeat" name="userPasswordRepeat"/>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>Mode de Paiement</legend>
-                <div>
-                  <ul class="list-inline cd-payment-gateways">
-                    <li>
-                      <input type="radio" name="payment-method" id="card" value="card"/>
-                      <label for="card"><img class="payment-cards payment-cards-small" src="../img/payment/mastercard.png"/><img class="payment-cards payment-cards-small" src="../img/payment/visa.png"/><img class="payment-cards payment-cards-small" src="../img/payment/americanexpress.png"/></label>
-                    </li>
-                    <li>
-                      <input type="radio" name="payment-method" id="bitcoin" value="bitcoin"/>
-                      <label for="bitcoin"><img class="payment-cards payment-cards-small" src="../img/payment/bitcoin.png"/></label>
-                    </li>
-                    <li>
-                      <input type="radio" name="payment-method" id="paypal" value="paypal"/>
-                      <label for="paypal"><img class="payment-cards payment-cards-small" src="../img/payment/paypal.png"/></label>
-                    </li>
-                    <li>
-                      <input type="radio" name="payment-method" id="apple-pay" value="apple-pay" checked="checked"/>
-                      <label for="apple-pay"><img class="payment-cards payment-cards-small" src="../img/payment/applepay.png"/></label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="cd-credit-card">
-                  <div>
-                    <p class="half-width">
-                      <label for="cardNumber">Numéro de carte</label>
-                      <input type="text" id="cardNumber" name="cardNumber"/>
-                    </p>
-                    <p class="half-width">
-                      <label>Mois/Année (MM/AA)</label><b><span class="cd-select">
-                          <select name="card-expiry-month" id="card-expiry-month">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                          </select></span><span class="cd-select">
-                          <select name="card-expiry-year" id="card-expiry-year">
-                            <option value="2015">2015</option>
-                            <option value="2016">2016</option>
-                            <option value="2017">2017</option>
-                          </select></span></b>
-                    </p>
-                    <p class="half-width">
-                      <label for="cardCvc">CVV</label>
-                      <input type="text" id="cardCvc" name="cardCvc"/>
-                    </p>
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset>
-                <div>
-                  <input type="submit" value="Payer ma place"/>
-                </div>
-              </fieldset>
-            </form><a class="cd-close" href="#0"></a>
-          </div>
-          <div class="cd-overlay"></div>
         </aside>
       </div>
     </section>
@@ -328,6 +268,7 @@
               <li><a href="../nos-workshops.html" target="_blank">Nos workshops</a></li>
               <li><a href="../shuttle-on-demand" target="_blank">Shuttle Coder On Demand</a></li>
               <li><a href="../nos-formations-complètes.html" target="_blank">Nos formations complètes</a></li>
+              <li><a href="../pages/faq.html">FAQ</a></li>
             </ul>
           </div>
           <div class="footer-column">

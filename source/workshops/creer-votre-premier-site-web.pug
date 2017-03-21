@@ -3,6 +3,7 @@ extends ../layout.pug
 include ../mixins/_navigation.pug
 include ../mixins/_lists.pug
 include ../mixins/_signup.pug
+include ../mixins/_stripe-checkout-simple-form.pug
 include ../mixins/_buttons.pug
 include ../mixins/_forms.pug
 prepend meta
@@ -40,7 +41,11 @@ block content
 
       aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
         - var objectifs = ["HTML5/CSS3", "Bootstrap", "GitHub", "Google Analytics"]
-        +signup('Basic', '150', objectifs, "20-21 mai")
+        - var titre = ''
+        - var price = 15000
+        - var description = "Créer votre 1er site web"
+        +stripeCheckoutSimpleForm(titre, price, objectifs, dateList, description)
+        //- +signup('Basic', '150', objectifs, "20-21 mai")
 
 append scripts
   script(src="../js/velocity-min.js")
