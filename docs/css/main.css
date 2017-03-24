@@ -5,7 +5,7 @@ Version: 1.0
 Author: Shuttle Coder Academy
 
 */
-@import url("https://fonts.googleapis.com/css?family=Righteous|Ubuntu|Lato|Open+Sans:400,600|Raleway:400,500,700,800");
+@import url("https://fonts.googleapis.com/css?family=Righteous|Ubuntu|Lato|Open+Sans:400,600|Raleway:400,500,700,800|Montserrat:700");
 /*
   300 : light
   400 : regular
@@ -1627,6 +1627,247 @@ Shadow layer
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.course-item-lg header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.course-item-lg header svg {
+  border-width: 7px;
+  border-style: solid;
+  width: 170px;
+  height: 170px;
+}
+
+.html5 {
+  border-color: #e34f26;
+}
+
+.js {
+  border-color: #f7df1e;
+}
+
+.meteor {
+  border-color: #E26363;
+}
+
+.st0 {
+  fill: #FFFFFF;
+}
+
+.st1 {
+  fill: #F1F2F2;
+}
+
+.st2 {
+  font-family: 'Montserrat-Bold';
+}
+
+.st3 {
+  font-size: 10px;
+}
+
+.st4 {
+  fill: #414042;
+}
+
+.st5 {
+  font-size: 11.1897px;
+}
+
+.st6 {
+  fill: none;
+  stroke: #414042;
+  stroke-miterlimit: 10;
+}
+
+.st7 {
+  fill: none;
+  stroke: #414042;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 2;
+}
+
+.st8 {
+  fill: #D1D3D4;
+}
+
+.st9 {
+  fill: #939598;
+}
+
+.st10 {
+  fill: #F5AB35;
+}
+
+.st11 {
+  fill: #F9CD86;
+}
+
+.st12 {
+  opacity: 0.3;
+  fill: #58595B;
+}
+
+.st13 {
+  fill: #47CBD7;
+}
+
+.st14 {
+  fill: #E7643E;
+}
+
+.st15 {
+  fill: #E6E7E8;
+}
+
+.st16 {
+  fill: none;
+  stroke: #414042;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1.9412,1.9412;
+}
+
+.st17 {
+  fill: none;
+  stroke: #231F20;
+  stroke-miterlimit: 10;
+}
+
+.st18 {
+  opacity: 0.3;
+  fill: #231F20;
+}
+
+.st19 {
+  fill: #F7BC5D;
+}
+
+.st20 {
+  fill: none;
+  stroke: #414042;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 2.0137,2.0137;
+}
+
+.st21 {
+  fill: #535151;
+}
+
+.st22 {
+  fill: #E3E0E2;
+}
+
+.st23 {
+  fill: #FFFFFE;
+}
+
+.st24 {
+  fill: #6D6E71;
+}
+
+.st25 {
+  fill: none;
+  stroke: #A7A9AC;
+  stroke-miterlimit: 10;
+}
+
+.st26 {
+  fill: #808285;
+}
+
+.st27 {
+  fill: #BCBEC0;
+}
+
+.st28 {
+  fill: #3598A1;
+}
+
+.st29 {
+  fill: #F5AB35;
+  stroke: #414042;
+  stroke-miterlimit: 10;
+}
+
+.st30 {
+  fill: #F26522;
+}
+
+.st31 {
+  fill: #6CD5DF;
+}
+
+.st32 {
+  fill: #91E0E7;
+}
+
+.st33 {
+  fill: #B5EAEF;
+}
+
+.st34 {
+  fill: #DAF5F7;
+}
+
+.st35 {
+  fill: #FBDDAE;
+}
+
+.st36 {
+  fill: #FDEED7;
+}
+
+.st37 {
+  fill: #EC8365;
+}
+
+.st38 {
+  fill: #F1A28B;
+}
+
+.st39 {
+  fill: #F5C1B2;
+}
+
+.st40 {
+  fill: #FAE0D8;
+}
+
+.st41 {
+  fill: none;
+  stroke: #414042;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 3;
+}
+
+.st42 {
+  fill: none;
+  stroke: #414042;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 4;
+}
+
+.st43 {
+  fill: #A7A9AC;
+}
+
+.st44 {
+  fill: #58595B;
+}
+
+.st45 {
+  fill: #99CC33;
+}
+
+.st46 {
+  font-size: 8px;
 }
 
 /* Small devices (tablets, 768px and up) */

@@ -4,56 +4,56 @@ include mixins/_navigation.pug
 include mixins/_footer.pug
 
 html(lang="fr")
-  head
-    block meta
-      meta(charset="utf-8")
-      meta(name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no")
-      meta(name="apple-mobile-web-app-capable" content="yes")
-      meta(name="HandheldFriendly" content="True")
-      meta(name="apple-mobile-web-app-status-bar-style" content="black")
-      meta(name="author" content="Shuttle Coder Academy")
+	head
+		block meta
+			meta(charset="utf-8")
+			meta(name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no")
+			meta(name="apple-mobile-web-app-capable" content="yes")
+			meta(name="HandheldFriendly" content="True")
+			meta(name="apple-mobile-web-app-status-bar-style" content="black")
+			meta(name="author" content="Shuttle Coder Academy")
 
-    block css
-      <!-- Animate css -->
-      link(rel="stylesheet" type="text/css" href="css/animate.css")
-      <!-- Font Awesome CSS -->
-      link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
-      <!-- Bootstrap v3.3.1 -->
-      link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+		block css
+			<!-- Animate css -->
+			link(rel="stylesheet" type="text/css" href="css/animate.css")
+			<!-- Font Awesome CSS -->
+			link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+			<!-- Bootstrap v3.3.1 -->
+			link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
 
-    include includes/_favicon.pug
-    include includes/vendors/_drift-chat.pug
+		include includes/_favicon.pug
+		include includes/vendors/_drift-chat.pug
 
-  body
-    block top-bar
-      include includes/layouts/_topbar.pug
-    block navigation
-      +navigation(path)
+	body
+		block top-bar
+			include includes/layouts/_topbar.pug
+		block navigation
+			+navigation(path)
 
-    block hero
+		block hero
 
-    block content
+		block content
 
-    block newsletter
-      include includes/layouts/_newsletter.pug
-    block footer
-      +footer(path)
-      include includes/_footer-bottom.pug
+		block newsletter
+			include includes/layouts/_newsletter.pug
+		block footer
+			+footer(path)
+			include includes/_footer-bottom.pug
 
-    block scripts
-      <!-- jQuery -->
-      script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
-      <!-- Backstretch -->
-      //-script(src="js/jquery.backstretch.min.js")
-      <!-- Validate form -->
-      //-script(src="js/jquery.validate.min.js")
-      <!-- Smooth Scroll -->
-      script(src="js/smooth-scroll.min.js")
-      <!-- Bootstrap -->
-      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
-      <!-- Custom -->
-      script(src="js/main.min.js")
-      script.
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        })
+		block scripts
+			<!-- jQuery -->
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+			<!-- Backstretch -->
+			//-script(src="js/jquery.backstretch.min.js")
+			<!-- Validate form -->
+			//-script(src="js/jquery.validate.min.js")
+			<!-- Smooth Scroll -->
+			script(src="js/smooth-scroll.min.js")
+			<!-- Bootstrap -->
+			script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+			<!-- Custom -->
+			script(src="js/main.min.js")
+			script.
+				$(function () {
+					$('[data-toggle="tooltip"]').tooltip()
+				})

@@ -1,10 +1,11 @@
 include ./_lists.pug
 include ./_buttons.pug
+include ./_svgs.pug
 
-mixin workshop-listing(titre, resultat, description, requis, lieu, path)
+mixin workshop-listing(titre, resultat, description, requis, lieu, path, svgNum)
   article.course-item-lg
     header
-      img(width="300" height="300" src="/icon_web-300x300.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/icon_web-300x300.png 300w, /icon_web-300x300-150x150.png 150w, /icon_web-300x300-180x180.png 180w" sizes="(max-width: 300px) 100vw, 300px")
+      +select-svg(svgNum)
     section
       h2= titre
       h4= "Résultat : " + resultat
