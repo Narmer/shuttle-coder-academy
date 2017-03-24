@@ -1629,6 +1629,11 @@ Shadow layer
           align-items: center;
 }
 
+.course-items {
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
 .course-item-lg header {
   display: -webkit-box;
   display: -ms-flexbox;
