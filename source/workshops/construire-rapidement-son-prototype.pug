@@ -17,6 +17,8 @@ append css
   link(rel="stylesheet" type="text/css" href="../css/main.css")
   script(src="../js/modernizr-min.js")
 
+block top-bar
+
 prepend navigation
   -var path = '../'
 
@@ -30,7 +32,10 @@ block content
         -var requis = ['HTML5/CSS3', 'Javascript']
         +course-listing(requis, '30', 'Memorial Act, Guadeloupe', 'Créer votre prototype')
         p
-          | Construisez votre prototype en quelques jours voir en quelques heures.          Vous utiliserez un framework open-source de développement Web en JavaScript basé sur NodeJS.          br          | Il propose une façon simple et efficace, d'écrire des applications Web/mobile réactives (en temps réel).
+          | Construisez votre prototype en quelques jours voir en quelques heures.
+          | Vous utiliserez un framework open-source de développement Web en JavaScript basé sur NodeJS.
+          br
+          | Il propose une façon simple et efficace, d'écrire des applications Web/mobile réactives (en temps réel).
         //- A qui s'adresse ce cours
         - var who = ["Entrepreneurs Tech", "Développeur Web", "Founders"]
         +course-for-who(who)

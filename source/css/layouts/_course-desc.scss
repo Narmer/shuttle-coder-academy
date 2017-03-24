@@ -1,0 +1,200 @@
+// GENERIC
+
+.the-adventure,
+.learn-code,
+.shuttle-desc {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.img-pres-col {
+	height: 662px;
+}
+
+.the-adventure-img,
+.learn-code-img,
+.shuttle-desc-img {
+	background-position: center center;
+	background-size: cover;
+}
+
+.the-adventure-content,
+.shuttle-desc-content {
+	background-color: $dark-color;
+}
+
+
+.the-adventure-content,
+.learn-code-content,
+.shuttle-desc-content {
+	padding: 80px 40px;
+	h2 {
+		margin-bottom: 5px;
+		margin-top: 5px;
+		padding: 0;
+		text-align: left;
+	}
+	p {
+		margin: 0;
+	}
+	hr {
+		margin: 0;
+		width: 100px;
+	}
+}
+
+// BLOC 1
+.the-adventure-img {
+	background-image: url("../img/features/coworking.jpg");
+}
+
+.the-adventure-content {
+	h2,
+	h4,
+	p {
+		color: $text-light;
+	}
+	hr {
+		border: solid $second-color 2px;
+	}
+}
+
+.features {
+	.icon {
+		color: $text-light;
+		float: left;
+		font-size: 35px;
+		margin: 0 auto;
+	}
+	.info {
+		margin-left: 50px;
+	}
+}
+
+.features-first {
+	border-bottom: 1px solid $text-light;
+	display: inline-block;
+	margin-bottom: 25px;
+	margin-top: 20px;
+	padding-bottom: 25px;
+}
+
+// BLOC 2
+.learn-code-img {
+  background-image: url("../img/features/coding.jpg");
+}
+
+.learn-code {
+  background-color: $bg-gray-light;
+  h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h4 {
+    color: $main-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 0;
+  }
+  hr {
+    border: solid $main-color 2px;
+  }
+  .fa-border {
+    border-color: $second-color;
+  }
+}
+
+// BLOC 3
+.shuttle-desc-img {
+  background-image: url("../img/features/mindset-coder.jpg");
+}
+
+.shuttle-desc-content {
+  i {
+    color: $text-light;
+  }
+  h2,
+  h4,
+  p {
+    color: $text-light;
+  }
+  hr {
+    border: solid $second-color 2px;
+  }
+  ul {
+    padding-left: 40px;
+    li {
+      h4 {
+        margin: 0;
+        padding-top: 10px;
+      }
+      margin: 30px 0;
+      i {
+        width: 2.9em;
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.the-adventure,
+	.shuttle-desc {
+		flex-direction: row-reverse;
+	}
+	.learn-code {
+		flex-direction: row;
+	}
+	.course-pres-col {
+		height: 900px;
+	}
+	.the-adventure-content,
+	.learn-code-content,
+	.shuttle-desc-content {
+		padding: 40px;
+	}
+	.the-adventure-img,
+	.learn-code-img,
+	.shuttle-desc-img {
+		//flex: 0 2 auto;
+		height: 900px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.the-adventure,
+	.shuttle-desc {
+		flex-direction: row-reverse;
+	}
+	.course-pres-col {
+		//height: 700px;
+	}
+	.the-adventure-content,
+	.learn-code-content,
+	.shuttle-desc-content {
+		padding: 80px 40px;
+	}
+	.the-adventure-img {
+		flex: 0 2 auto;
+		height: 900px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.course-pres-col,
+	.the-adventure-img,
+	.learn-code-img,
+	.shuttle-desc-img {
+		height: 662px;
+	}
+	.the-adventure-content,
+	.learn-code-content,
+	.shuttle-desc-content {
+		padding: 80px 40px;
+	}
+}

@@ -5,46 +5,51 @@ include ./mixins/_hero.pug
 include ./mixins/_workshops-listing.pug
 
 prepend meta
-  title Tous nos workshops - Shuttle Coder
+	title Tous nos workshops - Shuttle Coder
 append meta
-  meta(name="description" content="")
-  meta(name="keywords" content="")
+	meta(name="description" content="")
+	meta(name="keywords" content="")
 
 append css
-  link(rel="stylesheet" type="text/css" href="css/main.css")
+	link(rel="stylesheet" type="text/css" href="css/main.css")
+
+block top-bar
 
 prepend navigation
-  - var path = './'
+	- var path = './'
 
 block hero
-  - var titles = {h1:"Deux jours pour apprendre !", h2:"L'initiation à la programmation pour tous"}
-  +hero(false, titles)
+	- var titles = {h1:"Deux jours pour apprendre !", h2:"L'initiation à la programmation pour tous"}
+	+hero(false, titles)
 
 block content
-  section.course-items
-      //- Workshop 1
-      - var titre = "Construis ton idée et crée ton site web"
-      - var resultat = "Votre site web"
-      - var description = "Comprenez enfin le développement web ! Apprenez à coder et créez votre propre site Internet en un week-end. Shuttle Coder, c'est 50% entrepreneur, 50% coder, 100% de pratique."
-      - var requis = "Aucun"
-      - var lieu = ""
-      - var lien = path + "workshops/creer-votre-premier-site-web"
-      +workshop-listing(titre, resultat, description, requis, lieu, lien)
-      
-      //- Workshop 2
-      - titre = "Rendre votre site web dynamique"
-      - resultat = "Apprenez à vous servir de JavaScript"
-      - description = "Comprenez enfin comment récupérer des données sur Internet ! Apprenez à coder en JavaScript et créez votre propre robot en un week-end."
-      - requis = ["HTML5/CSS3"]
-      - lieu = ""
-      - lien = path + "workshops/comprendre-javascript"
-      +workshop-listing(titre, resultat, description, requis, lieu, lien)
+	section.course-items
+			//- Workshop 1
+			- var titre = "Construis ton idée et crée ton site web"
+			- var resultat = "Votre site web"
+			- var description = "Comprenez enfin le développement web ! Apprenez à coder et créez votre propre site Internet en un week-end. Shuttle Coder, c'est 50% entrepreneur, 50% coder, 100% de pratique."
+			- var requis = "Aucun"
+			- var lieu = ""
+			- var lien = path + "workshops/creer-votre-premier-site-web"
+			- var svgNumber = 1
+			+workshop-listing(titre, resultat, description, requis, lieu, lien, svgNumber)
 
-      //- Workshop 3
-      - titre = "Construire rapidement son prototype"
-      - resultat = "Votre appli Web/mobile réactive avec le front-end, le back-end et la base de données"
-      - description = "description"
-      - requis = ["HTML5/CSS3", 'JavaScript']
-      - lieu = ""
-      - lien = path + "workshops/creer-votre-premier-site-web"
-      +workshop-listing(titre, resultat, description, requis, lieu, lien)
+			//- Workshop 2
+			- titre = "Rendre votre site web dynamique"
+			- resultat = "Apprenez à vous servir de JavaScript"
+			- description = "Comprenez enfin comment récupérer des données sur Internet ! Apprenez à coder en JavaScript et créez votre propre robot en un week-end."
+			- requis = ["HTML5/CSS3"]
+			- lieu = ""
+			- lien = path + "workshops/comprendre-javascript"
+			- svgNumber = 2
+			+workshop-listing(titre, resultat, description, requis, lieu, lien, svgNumber)
+
+			//- Workshop 3
+			- titre = "Construire rapidement son prototype"
+			- resultat = "Votre appli Web/mobile réactive avec le front-end, le back-end et la base de données"
+			- description = "Construisez votre prototype en quelques jours voir en quelques heures."
+			- requis = ["HTML5/CSS3", 'JavaScript']
+			- lieu = ""
+			- lien = path + "workshops/construire-rapidement-son-prototype"
+			- svgNumber = 3
+			+workshop-listing(titre, resultat, description, requis, lieu, lien, svgNumber)

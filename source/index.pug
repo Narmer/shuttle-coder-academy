@@ -4,38 +4,38 @@ extends layout.pug
 include ./mixins/_hero.pug
 
 prepend meta
-  title L'initiation à la programmation pour tous - Shuttle Coder
+	title L'initiation à la programmation pour tous - Shuttle Coder
 append meta
-  meta(name="description" content="")
-  meta(name="keywords" content="")
+	meta(name="description" content="")
+	meta(name="keywords" content="")
 
 append css
-  link(rel="stylesheet" type="text/css" href="css/main.css")
+	link(rel="stylesheet" type="text/css" href="css/main.css")
 
 prepend navigation
-  - var path = './'
+	- var path = './'
 
 block hero
-  - var titles = {h1:"Deux jours pour apprendre !", h2:"L'initiation à la programmation pour tous"}
-  +hero(true, titles)
+	- var titles = {h1:"Deux jours pour apprendre !", h2:"L'initiation à la programmation pour tous"}
+	+hero(true, titles)
 
 block content
-  section.course-presentation
-    .container-fluid.no_padding
-      include includes/_course-presentation1.pug
-      include includes/_course-presentation2.pug
-      include includes/_course-presentation3.pug
+	section.course-presentation
+		.container-fluid.no_padding
+			include includes/_course-presentation1.pug
+			include includes/_course-presentation2.pug
+			include includes/_course-presentation3.pug
 
-  section.nos-workshops.padding100
-    .container
-      h2 Découvrez nos workshops
-      .row
-        include includes/_workshop_1.pug
-        include includes/_workshop_2.pug
-        include includes/_workshop_3.pug
-      .row.cta-button
-        - path = './'
-        +cta-workshop(path+'nos-workshops', 'Voir tous nos workshops')(class='btn-blue')
+	section.nos-workshops.padding100
+		.container
+			h2 Découvrez nos workshops
+			.row
+				include includes/_workshop_1.pug
+				include includes/_workshop_2.pug
+				include includes/_workshop_3.pug
+			.row.cta-button
+				- path = './'
+				+cta-workshop(path+'nos-workshops', 'Voir tous nos workshops')(class='btn-blue')
 
 prepend footer
-  - var path = './'
+	- var path = './'
