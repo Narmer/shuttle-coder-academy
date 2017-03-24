@@ -357,17 +357,41 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .hero-titles h1 {
+  color: #fff;
   font-size: 1.55rem;
 }
 
 .hero-titles h2 {
+  color: #fff;
   font-size: 1.5rem;
   font-weight: normal;
 }
 
+.neutral-header {
+  background-image: url("../img/banners/blue-header.jpg");
+}
+
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .hero-titles h1 {
+    font-size: 2rem;
+  }
+  .hero-titles h2 {
+    font-size: 1.5rem;
+  }
+}
+
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .hero-titles h1 {
+    font-size: 3rem;
+  }
+  .hero-titles h2 {
+    font-size: 2.6rem;
+  }
+}
+
 .mouse-wrapper {
   display: block;
   z-index: 10;
