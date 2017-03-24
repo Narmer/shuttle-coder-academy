@@ -1629,9 +1629,32 @@ Shadow layer
           align-items: center;
 }
 
+.course-item-lg header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .course-item-lg header svg {
-  width: 300px;
-  height: 300px;
+  border-width: 7px;
+  border-style: solid;
+  width: 170px;
+  height: 170px;
+}
+
+.html5 {
+  border-color: #e34f26;
+}
+
+.js {
+  border-color: #f7df1e;
+}
+
+.meteor {
+  border-color: #E26363;
 }
 
 .st0 {

@@ -5,9 +5,7 @@ include ./_svgs.pug
 mixin workshop-listing(titre, resultat, description, requis, lieu, path, svgNum)
   article.course-item-lg
     header
-      svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 444.7 444.7" style="enable-background:new 0 0 444.7 444.7;" xml:space="preserve")
-        +select-svg(svgNum)
-      //-img(width="300" height="300" src="/icon_web-300x300.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="/icon_web-300x300.png 300w, /icon_web-300x300-150x150.png 150w, /icon_web-300x300-180x180.png 180w" sizes="(max-width: 300px) 100vw, 300px")
+      +select-svg(svgNum)
     section
       h2= titre
       h4= "Résultat : " + resultat
