@@ -1,0 +1,22 @@
+
+extends layout.pug
+
+include ./mixins/_hero.pug
+
+prepend meta
+  title Tous nos workshops - Shuttle Coder
+
+append css
+  link(rel="stylesheet" type="text/css" href="css/main.css")
+
+prepend navigation
+  - var path = './'
+
+block hero
+  - var titles = {h1:"Mentions légales"}
+  +hero(false, titles)
+
+block content
+  section
+    .container
+      h2.text-center Informations légales
