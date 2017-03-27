@@ -2,21 +2,24 @@ include ../mixins/_buttons.pug
 
 article.col-sm-4
 	.whorkshop-content
-		i.fa.fa-3x.fa-code
-		h3 Rendre votre site web dynamique
-		h4 Initiation à Javascript
-		p
-			| Envie d'apprendre à récupérer les données d'un site web automatiquement?
-			br
-			| Ce cours est idéal pour s'initier !
-		ul.list-unstyled
-			li
-				p
-					i.fa.fa-lg.fa-check-square-o
-					span Pré-requis :<br>HTML5/CSS3
-			li
-				p
-					i.fa.fa-lg.fa-mortar-board
-					span Résultat :<br>
-					span Créer votre propre robot scraper
-		+cta-workshop("./workshops/comprendre-javascript", "Je veux participer")(class="btn-blue")
+		header
+			i.fa.fa-3x.fa-code
+		section
+			h3 Rendre votre site web dynamique
+			h4 Initiation à Javascript
+			p
+				| Envie d'apprendre à récupérer les données d'un site web automatiquement?
+				br
+				| Ce cours est idéal pour s'initier !
+			ul.list-unstyled
+				li
+					p
+						i.fa.fa-lg.fa-check-square-o
+						span Pré-requis :<br>HTML5/CSS3
+				li
+					p
+						i.fa.fa-lg.fa-mortar-board
+						span Résultat :<br>
+						span Créer votre propre robot scraper
+		footer
+			+cta-workshop("./workshops/comprendre-javascript", "Je veux participer")(class="btn-blue")

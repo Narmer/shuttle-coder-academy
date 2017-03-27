@@ -1699,15 +1699,25 @@ Shadow layer
   margin-bottom: 30px;
 }
 
-.workshops-home article .whorkshop-content .btn {
+.workshops-home article .whorkshop-content footer {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -ms-flex-item-align: auto;
+      align-self: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .workshop > .container {

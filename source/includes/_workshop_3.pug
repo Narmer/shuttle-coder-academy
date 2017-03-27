@@ -2,20 +2,23 @@ include ../mixins/_buttons.pug
 
 article.col-sm-4
 	.whorkshop-content
-		i.fa.fa-3x.fa-rocket
-		h3 Construire rapidement son prototype
-		h4 Initiation au développement d'applications Web et mobile réactives
-		p
-			| Envie de tester et lancer rapidement vos idées ?
-			br
-			| Ce cours est idéal pour découvrir le front-end, le back-end et la base de données !
-		ul.list-unstyled
-			li
-				p
-					i.fa.fa-lg.fa-check-square-o
-					span Pré-requis :<br>HTML5/CSS3/Javascript
-			li
-				p
-					i.fa.fa-lg.fa-mortar-board
-					span Résultat :<br>Créer votre propre site web en ligne
-		+cta-workshop("./workshops/construire-rapidement-son-prototype", "Je veux participer")(class="btn-blue")
+		header
+			i.fa.fa-3x.fa-rocket
+		section
+			h3 Construire rapidement son prototype
+			h4 Initiation au développement d'applications Web et mobile réactives
+			p
+				| Envie de tester et lancer rapidement vos idées ?
+				br
+				| Ce cours est idéal pour découvrir le front-end, le back-end et la base de données !
+			ul.list-unstyled
+				li
+					p
+						i.fa.fa-lg.fa-check-square-o
+						span Pré-requis :<br>HTML5/CSS3/Javascript
+				li
+					p
+						i.fa.fa-lg.fa-mortar-board
+						span Résultat :<br>Créer votre propre site web en ligne
+		footer
+			+cta-workshop("./workshops/construire-rapidement-son-prototype", "Je veux participer")(class="btn-blue")
