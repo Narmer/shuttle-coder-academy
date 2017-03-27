@@ -1,21 +1,17 @@
 .workshops-home {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-	align-content: flex-start;
 	align-items: stretch;
+	align-content: flex-start;
 	article {
-		&:nth-of-type(1),
-		&:nth-of-type(2),
-		&:nth-of-type(3) {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
-			order: 0;
-		  flex: 0 1 auto;
-		  align-self: stretch;
-		}
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		order: 0;
+	  flex: 0 1 auto;
+	  align-self: stretch;
 		.whorkshop-content {
 			display: flex;
 			align-items: stretch;
@@ -23,7 +19,7 @@
 			flex-wrap: nowrap;
 			order: 0;
 		  flex: 0 1 auto;
-		  align-self: stretch;
+		  //align-self: stretch;
 	  	border: 1px solid $main-color;
 			border-radius: 3px;
 			padding: 30px 15px;
@@ -93,16 +89,11 @@
 				line-height: 1;
 			}
 			i {
-//          left: -.7em;
-//          margin-right: 10px;
-//          text-align: left;
 			}
 		}
 	}
 	aside {
 		float: right;
-		//border: 5px solid $second-color;
-		//border-radius: 5px;
 		padding: 0;
 		h5 {
 			color: $text-light;
@@ -217,10 +208,8 @@
 			}
 			h2 {
 				font-size: 1.6rem;
-				padding-top: 15px;
 			}
 			h5 {
-				font-size: 1.1rem;
 				margin: 0;
 			}
 		}
@@ -231,14 +220,8 @@
 			line-height: 26px;
 		}
 		article > ul {
-			display: block;
-			padding: 30px 0;
 			&:nth-of-type(1) {
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-pack: justify;
-				-ms-flex-pack: justify;
 				justify-content: space-between;
 				padding: 40px 0;
 				li {
@@ -256,7 +239,22 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+	.workshops-home {
+	flex-direction: row;
+	article {
+		flex-direction: row;
+		.whorkshop-content {
+			header {
 
+			}
+			section {
+
+			}
+			footer{
+			}
+		 }
+		}
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
