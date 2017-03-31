@@ -1,6 +1,6 @@
 //- Workshop Créer votre premier site web
 extends ../layout.pug
-include ../mixins/_navigation.pug
+//-include ../mixins/_navigation.pug
 include ../mixins/_lists.pug
 include ../mixins/_signup.pug
 include ../mixins/_stripe-checkout-simple-form.pug
@@ -20,7 +20,7 @@ append css
 block top-bar
 
 prepend navigation
-  -var path = '../'
+  - var path = '../'
 
 block content
   - var dateList = ["11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars"]

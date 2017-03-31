@@ -14,9 +14,9 @@ mixin navigation(path)
       //- Collect the nav links, forms, and other content for toggling
       .collapse.navbar-collapse#bs-example-navbar-collapse-1
         ul.nav.navbar-nav.navbar-right
-          li
+          li.disabled
             a(href=path+'a-propos.html') à propos
-          li
+          //-li.disabled
             a(href=path+'l-equipage.html') l'équipage
           li.dropdown
             a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") Nos Formations <span class="caret"></span>
