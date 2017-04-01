@@ -2,7 +2,7 @@ mixin stripeCheckoutSimpleForm(titre, price, objectifs, dates, description)
   div
     header.cd-pricing-header
       h5.cd-price= "Prix Unitaire : " + price/100 + "€ TTC"
-    
+
     section.cd-pricing-features
       ul.fa-ul
         each objectif in objectifs
