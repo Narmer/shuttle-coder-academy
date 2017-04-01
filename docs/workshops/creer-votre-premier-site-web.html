@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <title>Créer votre premier site web - Shuttle Coder</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="author" content="Shuttle Coder Academy">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><!-- Bootstrap v3.3.1 -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <script src="../js/modernizr-min.js"></script><link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://shuttlecoder.academy/favicons/apple-touch-icon-57x57.png" />
+<!DOCTYPE html><html lang="fr"><head><title>Créer votre premier site web - Shuttle Coder</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="author" content="Shuttle Coder Academy"><meta name="description" content=""><meta name="keywords" content=""><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" type="text/css" href="../css/main.css"><script src="../js/modernizr-min.js"></script><link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://shuttlecoder.academy/favicons/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://shuttlecoder.academy/favicons/apple-touch-icon-114x114.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://shuttlecoder.academy/favicons/apple-touch-icon-72x72.png" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://shuttlecoder.academy/favicons/apple-touch-icon-144x144.png" />
@@ -23,189 +8,27 @@
 <link rel="icon" type="image/png" href="https://shuttlecoder.academy/favicons/favicon-16x16.png" sizes="16x16" />
 <meta name="application-name" content="Shuttle Coder"/>
 <meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="https://shuttlecoder.academy/favicons/mstile-144x144.png" />
-    <script>
-      !function() {
-        var t;
-        if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
-        t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-          return function() {
-            var n;
-            return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e, n, o, i;
-          e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
-          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
-          n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-        });
-      }();
-      drift.SNIPPET_VERSION = '0.3.1';
-      drift.load('eitw9tstg3zk');
-    </script>
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="../index.html">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="193px" height="41px" viewBox="0 0 193 41" enable-background="new 0 0 193 41" xml:space="preserve">
-              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g transform="translate(-477.000000, -370.000000)">
-                  <g transform="translate(476.000000, 364.000000)">
-                    <text font-family="Ubuntu-Medium, Ubuntu" font-size="10.2222222" font-weight="400" fill="#000">
-                      <tspan x="54.2585752" y="43.1777778">#EveryoneCanCode</tspan>
-                    </text>
-                    <g transform="translate(54.258575, 6.644444)" font-size="21.4666667" font-family="Righteous-Regular, Righteous" font-weight="normal">
-                      <text id="Shuttle" fill="#1797D4">
-                        <tspan x="0" y="21">Shuttle</tspan>
-                      </text>
-                      <text id="Coder" fill="#444C60">
-                        <tspan x="80.3641161" y="21">Coder</tspan>
-                      </text>
-                    </g>
-                    <g id="Logo">
-                      <text font-family="Ubuntu" font-size="40.8888889" font-weight="normal" fill="#444C60">
-                        <tspan x="0" y="38">{</tspan>
-                      </text>
-                      <text font-family="Ubuntu" font-size="40.8888889" font-weight="normal" line-spacing="40.8888889" fill="#444C60">
-                        <tspan x="33.2717678" y="38">}</tspan>
-                      </text>
-                      <rect id="Rectangle" fill="#fff" x="19.4511873" y="13.2888889" width="7.67810026" height="13.2888889"></rect>
-                    </g>
-                    <g transform="translate(12.284960, 7.666667)">
-                      <path d="M11.8155429,28.6222222 C11.9063824,28.8311535 11.9602132,29.1003647 11.9602132,29.4468278 C11.9602132,30.6805174 11.0047163,32.2513062 11.0047163,32.2513062 C11.0047163,32.2513062 10.0509016,30.6805174 10.0509016,29.4468278 C10.0509016,29.1003647 10.1041717,28.8311535 10.1950112,28.6222222 C9.62530174,28.9675148 9.21372032,29.7096014 9.21372032,31.0246395 C9.21372032,33.3404411 11.0047163,36.2888889 11.0047163,36.2888889 C11.0047163,36.2888889 12.7968338,33.3404411 12.7968338,31.0246395 C12.7968338,29.7096014 12.3858131,28.9675148 11.8155429,28.6222222 Z" fill="#F4B737"></path>
-                      <path d="M11.0054552,7.15555556 C12.2780331,7.15555556 13.3087071,8.18505057 13.3087071,9.45537769 C13.3087071,10.7253491 12.2780331,11.7555556 11.0054552,11.7555556 C9.73323357,11.7555556 8.70184697,10.7253491 8.70184697,9.45537769 C8.70184697,8.18505057 9.73323357,7.15555556 11.0054552,7.15555556 L11.0054552,7.15555556 Z" fill="#4A4A4A"></path>
-                      <path d="M16.3799472,24.7112514 L17.9381381,27.6 L19.6801197,27.6 L21.4986807,18.0696642 L17.7607961,14.8222222 C17.2779424,19.6926171 16.5919515,23.5706527 16.3799472,24.7112514" fill="#1797D4" transform="translate(18.939314, 21.211111) rotate(-359.000000) translate(-18.939314, -21.211111) "></path>
-                      <path d="M0.511873351,18.0690913 L2.32962832,27.6 L4.07241601,27.6 L5.63060686,24.7110777 C5.41779652,23.5704104 4.73099952,19.6921417 4.24975796,14.8222222 L0.511873351,18.0690913" fill="#1797D4" transform="translate(3.071240, 21.211111) rotate(-1.000000) translate(-3.071240, -21.211111) "></path>
-                      <polyline fill="#4A4A4A" points="13.9004243 28.1111111 14.8443272 25.0444444 7.16622691 25.0444444 8.11093791 28.1111111 13.9004243 28.1111111"></polyline>
-                      <path d="M11.0054156,14.3111111 C11.9951984,14.3111111 12.7968338,15.1118295 12.7968338,16.0998617 C12.7968338,17.0876172 11.9951984,17.8888889 11.0054156,17.8888889 C10.0159099,17.8888889 9.21372032,17.0876172 9.21372032,16.0998617 C9.21372032,15.1118295 10.0159099,14.3111111 11.0054156,14.3111111 L11.0054156,14.3111111 Z M11.0283113,6.13742222 C12.856723,6.13742222 14.3375726,7.61657778 14.3375726,9.44175556 C14.3375726,11.2664222 12.856723,12.7466 11.0283113,12.7466 C9.20041161,12.7466 7.71853826,11.2664222 7.71853826,9.44175556 C7.71853826,7.61657778 9.20041161,6.13742222 11.0283113,6.13742222 L11.0283113,6.13742222 Z M15.4365646,24.1157556 C16.3702216,21.5556 16.9384011,18.1797111 16.9384011,14.4772222 C16.9384011,6.48191111 14.2920158,0 11.0283113,0 C7.76460686,0 5.11873351,6.48191111 5.11873351,14.4772222 C5.11873351,18.1797111 5.68691293,21.5556 6.61954617,24.1157556 L15.4365646,24.1157556 L15.4365646,24.1157556 Z" fill="#1797D4"></path>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg></a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="disabled"><a href="../a-propos.html">à propos</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nos Formations <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header"><span>Nos Workshops (présentiel)</span></li>
-                <li><a href="../workshops/creer-votre-premier-site-web.html">Créer son premier site web</a></li>
-                <li><a href="../workshops/comprendre-javascript.html">Rendre votre site web dynamique</a></li>
-                <li><a href="../workshops/construire-rapidement-son-prototype.html">Construire rapidement son prototype</a></li>
-                <li class="divider" role="separator"></li>
-                <li class="dropdown-header"><span>Nos Formations Complètes (présentiel)</span></li>
-                <li class="disabled"><a href="../">Code ta Startup (9 semaines)</a></li>
-                <li class="disabled"><a href="../">Crée ton appli iPhone (9 semaines)</a></li>
-                <li class="divider" role="separator"></li>
-                <li class="dropdown-header"><span>En ligne (Vidéos)</span></li>
-                <li class="disabled"><a href="../">iOS 10, Swift 3 - De parfait débutant à professionnel</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section class="workshop">
-      <div class="container">
-        <article class="col-xs-12 col-lg-7">
-          <h1>Construis ton idée et crée ton site web</h1>
-          <h2>Initiation à HTML5 et CSS3</h2>
-          <ul class="fa-ul">
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Pré-requis :</p>
-              <!-- br--><span>Aucun</span>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-user"></i>
-              <p>Nombre de places :</p><span>30</span>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-map-marker"></i>
-              <p>Lieu :</p><span>Memorial Act, Guadeloupe</span>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-trophy"></i>
-              <p>Objectif :</p><span>Créer votre site web</span>
-            </li>
-          </ul>
-          <p>
-            Comprenez enfin le développement web ! Apprenez à coder et créez votre propre site Internet en un week-end. Shuttle Coder, c'est 50% entrepreneur, 50% coder, 100% de pratique.
-            
-          </p>
-          <h5>A qui s'adresse ce cours ?</h5>
-          <ul class="fa-ul">
-            <li><i class="fa fa-li fa fa-minus"></i>
-              <p>Débutants</p>
-            </li>
-            <li><i class="fa fa-li fa fa-minus"></i>
-              <p>Entrepreneurs Tech</p>
-            </li>
-            <li><i class="fa fa-li fa fa-minus"></i>
-              <p>Designer</p>
-            </li>
-            <li><i class="fa fa-li fa fa-minus"></i>
-              <p>Founders</p>
-            </li>
-          </ul>
-          <h5>Ce que vous allez apprendre</h5>
-          <ul class="fa-ul">
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Fondamentaux en HTML &amp; CSS.</p>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Comprendre le fonctionnement simplifié d'un serveur, les différentes façons de créer un site (From scratch, CMS, etc), les noms de domaine, les hébergements Web, les frameworks, et les bibliothèques.</p>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Découvrir le responsive web design avec la grille et les composants Bootstrap.</p>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Découvrir les ressources &amp; outils de web-design</p>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Déployer son site sur Github</p>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Intégrer Google Analytics</p>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Insérer des formulaires Mailchimp &amp; Wufoo</p>
-            </li>
-            <li><i class="fa fa-li fa-lg fa-check-square-o"></i>
-              <p>Les pratiques (bonnes et mauvaises) liées à la programmation et à la gestion de projets.</p>
-            </li>
-          </ul>
-        </article>
-        <aside class="cd-pricing col-xs-12 col-lg-4 col-lg-offset-1">
-          <div>
-            <header class="cd-pricing-header">
-              <h5 class="cd-price">Prix Unitaire : 150€ TTC</h5>
-            </header>
-            <section class="cd-pricing-features">
-              <ul class="fa-ul">
-                <li><i class="fa fa-li fa-lg fa-check"></i><span>HTML5/CSS3</span></li>
-                <li><i class="fa fa-li fa-lg fa-check"></i><span>Bootstrap</span></li>
-                <li><i class="fa fa-li fa-lg fa-check"></i><span>GitHub</span></li>
-                <li><i class="fa fa-li fa-lg fa-check"></i><span>Google Analytics</span></li>
-              </ul>
-            </section>
-            <footer class="cd-pricing-footer">
-              <form action="https://pu46m6i7zc.execute-api.eu-central-1.amazonaws.com/prod/stripeCreateCharges" method="POST"></form>
-              <script class="stripe-button" src="https://checkout.stripe.com/checkout.js" data-key="pk_test_Ph29clHN8TNeJKn5fGz9eYxu" data-amount="15000" data-name="Shuttle Coder Academy" data-description="Créer votre 1er site web" data-image="../img/payment/logo-stripe.jpg" data-locale="fr" data-zip-code="true" data-currency="eur" data-billing-address="false" data-label="Réserver ma place" data-bitcoin="false"></script>
-            </footer>
-          </div>
-        </aside>
-      </div>
-    </section>
-    <section class="newsletter background-color">
-      <div class="newsletter-container">
-        <div class="newsletter-head">
-          <h4>Embarquez dans l'aventure</h4>
-          <p>Recevez les prochaines dates de nos workshops et des nouvelles de Shuttle Coder !</p>
-        </div>
-        <div class="newsletter-suscribe"><!-- Begin MailChimp Signup Form -->
+<meta name="msapplication-TileImage" content="https://shuttlecoder.academy/favicons/mstile-144x144.png" /><script>!function() {
+  var t;
+  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+  t.factory = function(e) {
+    return function() {
+      var n;
+      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+    };
+  }, t.methods.forEach(function(e) {
+    t[e] = t.factory(e);
+  }), t.load = function(t) {
+    var e, n, o, i;
+    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+  });
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('eitw9tstg3zk');</script></head><body><nav class="navbar navbar-default navbar-static-top"><div class="container"><div class="navbar-header"><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="../index.html"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="193px" height="41px" viewBox="0 0 193 41" enable-background="new 0 0 193 41" xml:space="preserve"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-477.000000, -370.000000)"><g transform="translate(476.000000, 364.000000)"><text font-family="Ubuntu-Medium, Ubuntu" font-size="10.2222222" font-weight="400" fill="#000"><tspan x="54.2585752" y="43.1777778">#EveryoneCanCode</tspan></text><g transform="translate(54.258575, 6.644444)" font-size="21.4666667" font-family="Righteous-Regular, Righteous" font-weight="normal"><text id="Shuttle" fill="#1797D4"><tspan x="0" y="21">Shuttle</tspan></text><text id="Coder" fill="#444C60"><tspan x="80.3641161" y="21">Coder</tspan></text></g><g id="Logo"><text font-family="Ubuntu" font-size="40.8888889" font-weight="normal" fill="#444C60"><tspan x="0" y="38">{</tspan></text><text font-family="Ubuntu" font-size="40.8888889" font-weight="normal" line-spacing="40.8888889" fill="#444C60"><tspan x="33.2717678" y="38">}</tspan></text><rect id="Rectangle" fill="#fff" x="19.4511873" y="13.2888889" width="7.67810026" height="13.2888889"></rect></g><g transform="translate(12.284960, 7.666667)"><path d="M11.8155429,28.6222222 C11.9063824,28.8311535 11.9602132,29.1003647 11.9602132,29.4468278 C11.9602132,30.6805174 11.0047163,32.2513062 11.0047163,32.2513062 C11.0047163,32.2513062 10.0509016,30.6805174 10.0509016,29.4468278 C10.0509016,29.1003647 10.1041717,28.8311535 10.1950112,28.6222222 C9.62530174,28.9675148 9.21372032,29.7096014 9.21372032,31.0246395 C9.21372032,33.3404411 11.0047163,36.2888889 11.0047163,36.2888889 C11.0047163,36.2888889 12.7968338,33.3404411 12.7968338,31.0246395 C12.7968338,29.7096014 12.3858131,28.9675148 11.8155429,28.6222222 Z" fill="#F4B737"></path><path d="M11.0054552,7.15555556 C12.2780331,7.15555556 13.3087071,8.18505057 13.3087071,9.45537769 C13.3087071,10.7253491 12.2780331,11.7555556 11.0054552,11.7555556 C9.73323357,11.7555556 8.70184697,10.7253491 8.70184697,9.45537769 C8.70184697,8.18505057 9.73323357,7.15555556 11.0054552,7.15555556 L11.0054552,7.15555556 Z" fill="#4A4A4A"></path><path d="M16.3799472,24.7112514 L17.9381381,27.6 L19.6801197,27.6 L21.4986807,18.0696642 L17.7607961,14.8222222 C17.2779424,19.6926171 16.5919515,23.5706527 16.3799472,24.7112514" fill="#1797D4" transform="translate(18.939314, 21.211111) rotate(-359.000000) translate(-18.939314, -21.211111) "></path><path d="M0.511873351,18.0690913 L2.32962832,27.6 L4.07241601,27.6 L5.63060686,24.7110777 C5.41779652,23.5704104 4.73099952,19.6921417 4.24975796,14.8222222 L0.511873351,18.0690913" fill="#1797D4" transform="translate(3.071240, 21.211111) rotate(-1.000000) translate(-3.071240, -21.211111) "></path><polyline fill="#4A4A4A" points="13.9004243 28.1111111 14.8443272 25.0444444 7.16622691 25.0444444 8.11093791 28.1111111 13.9004243 28.1111111"></polyline><path d="M11.0054156,14.3111111 C11.9951984,14.3111111 12.7968338,15.1118295 12.7968338,16.0998617 C12.7968338,17.0876172 11.9951984,17.8888889 11.0054156,17.8888889 C10.0159099,17.8888889 9.21372032,17.0876172 9.21372032,16.0998617 C9.21372032,15.1118295 10.0159099,14.3111111 11.0054156,14.3111111 L11.0054156,14.3111111 Z M11.0283113,6.13742222 C12.856723,6.13742222 14.3375726,7.61657778 14.3375726,9.44175556 C14.3375726,11.2664222 12.856723,12.7466 11.0283113,12.7466 C9.20041161,12.7466 7.71853826,11.2664222 7.71853826,9.44175556 C7.71853826,7.61657778 9.20041161,6.13742222 11.0283113,6.13742222 L11.0283113,6.13742222 Z M15.4365646,24.1157556 C16.3702216,21.5556 16.9384011,18.1797111 16.9384011,14.4772222 C16.9384011,6.48191111 14.2920158,0 11.0283113,0 C7.76460686,0 5.11873351,6.48191111 5.11873351,14.4772222 C5.11873351,18.1797111 5.68691293,21.5556 6.61954617,24.1157556 L15.4365646,24.1157556 L15.4365646,24.1157556 Z" fill="#1797D4"></path></g></g></g></g></svg></a></div><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav navbar-right"><li class="disabled"><a href="../a-propos.html">à propos</a></li><li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nos Formations <span class="caret"></span></a><ul class="dropdown-menu"><li class="dropdown-header"><span>Nos Workshops (présentiel)</span></li><li><a href="../workshops/creer-votre-premier-site-web.html">Créer son premier site web</a></li><li><a href="../workshops/comprendre-javascript.html">Rendre votre site web dynamique</a></li><li><a href="../workshops/construire-rapidement-son-prototype.html">Construire rapidement son prototype</a></li><li class="divider" role="separator"></li><li class="dropdown-header"><span>Nos Formations Complètes (présentiel)</span></li><li class="disabled"><a href="../">Code ta Startup (9 semaines)</a></li><li class="disabled"><a href="../">Crée ton appli iPhone (9 semaines)</a></li><li class="divider" role="separator"></li><li class="dropdown-header"><span>En ligne (Vidéos)</span></li><li class="disabled"><a href="../">iOS 10, Swift 3 - De parfait débutant à professionnel</a></li></ul></li></ul></div></div></nav><section class="workshop"><div class="container"><article class="col-xs-12 col-lg-7"><h1>Construis ton idée et crée ton site web</h1><h2>Initiation à HTML5 et CSS3</h2><ul class="fa-ul"><li><i class="fa fa-li fa-lg fa-check-square-o"></i><p>Pré-requis :</p><!-- br--><span>Aucun</span></li><li><i class="fa fa-li fa-lg fa-user"></i><p>Nombre de places :</p><span>30</span></li><li><i class="fa fa-li fa-lg fa-map-marker"></i><p>Lieu :</p><span>Memorial Act, Guadeloupe</span></li><li><i class="fa fa-li fa-lg fa-trophy"></i><p>Objectif :</p><span>Créer votre site web</span></li></ul><p>Comprenez enfin le développement web ! Apprenez à coder et créez votre propre site Internet en un week-end. Shuttle Coder, c'est 50% entrepreneur, 50% coder, 100% de pratique.
+</p><h5>A qui s'adresse ce cours ?</h5><ul class="fa-ul"><li><i class="fa fa-li fa fa-minus"></i><p>Débutants</p></li><li><i class="fa fa-li fa fa-minus"></i><p>Entrepreneurs Tech</p></li><li><i class="fa fa-li fa fa-minus"></i><p>Designer</p></li><li><i class="fa fa-li fa fa-minus"></i><p>Founders</p></li></ul><h5>Ce que vous allez apprendre</h5><ul class="fa-ul"><li><i class="fa fa-li fa-lg fa-check-square-o"></i><p>Fondamentaux en HTML &amp; CSS.</p></li><li><i class="fa fa-li fa-lg fa-check-square-o"></i><p>Comprendre le fonctionnement simplifié d'un serveur, les différentes façons de créer un site (From scratch, CMS, etc), les noms de domaine, les hébergements Web, les frameworks, et les bibliothèques.</p></li><li><i class="fa fa-li fa-lg fa-check-square-o"></i><p>Découvrir le responsive web design avec la grille et les composants Bootstrap.</p></li><li><i class="fa fa-li fa-lg fa-check-square-o"></i><p>Découvrir les ressources &amp; outils de web-design</p></li><li><i class="fa fa-li fa-lg fa-check-square-o"></i><p>Déployer son site sur Github</p></li><li><i class="fa fa-li fa-lg fa-check-square-o"></i><p>Intégrer Google Analytics</p></li><li><i class="fa fa-li fa-lg fa-check-square-o"></i><p>Insérer des formulaires Mailchimp &amp; Wufoo</p></li><li><i class="fa fa-li fa-lg fa-check-square-o"></i><p>Les pratiques (bonnes et mauvaises) liées à la programmation et à la gestion de projets.</p></li></ul></article><aside class="cd-pricing col-xs-12 col-lg-4 col-lg-offset-1"><div><header class="cd-pricing-header"><h5 class="cd-price">Prix Unitaire : 150€ TTC</h5></header><section class="cd-pricing-features"><ul class="fa-ul"><li><i class="fa fa-li fa-lg fa-check"></i><span>HTML5/CSS3</span></li><li><i class="fa fa-li fa-lg fa-check"></i><span>Bootstrap</span></li><li><i class="fa fa-li fa-lg fa-check"></i><span>GitHub</span></li><li><i class="fa fa-li fa-lg fa-check"></i><span>Google Analytics</span></li></ul></section><footer class="cd-pricing-footer"><form action="https://pu46m6i7zc.execute-api.eu-central-1.amazonaws.com/prod/stripeCreateCharges" method="POST"></form><script class="stripe-button" src="https://checkout.stripe.com/checkout.js" data-key="pk_test_Ph29clHN8TNeJKn5fGz9eYxu" data-amount="15000" data-name="Shuttle Coder Academy" data-description="Créer votre 1er site web" data-image="../img/payment/logo-stripe.jpg" data-locale="fr" data-zip-code="true" data-currency="eur" data-billing-address="false" data-label="Réserver ma place" data-bitcoin="false"></script></footer></div></aside></div></section><section class="newsletter background-color"><div class="newsletter-container"><div class="newsletter-head"><h4>Embarquez dans l'aventure</h4><p>Recevez les prochaines dates de nos workshops et des nouvelles de Shuttle Coder !</p></div><div class="newsletter-suscribe"><!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
 <form action="//academy.us13.list-manage.com/subscribe/post?u=ea96d70b3f684de68c404b9cb&amp;id=362b089047" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 <div id="mc_embed_signup_scroll" class="input-group">
@@ -216,98 +39,6 @@
 </div>
 </form>
 </div>
-<!--End mc_embed_signup-->
-        </div>
-      </div>
-    </section>
-    <footer class="footer-main">
-      <div class="container">
-        <div class="flex">
-          <div class="brand-footer">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="230px" height="49px" viewBox="0 0 230 49" enable-background="new 0 0 230 49" xml:space="preserve">
-              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g transform="translate(-458.000000, -367.000000)" fill="#fff">
-                  <g transform="translate(457.000000, 360.000000)">
-                    <text font-family="Ubuntu-Medium, Ubuntu" font-size="12.2222222" font-weight="400">
-                      <tspan x="64.8865435" y="51.2777778">#EveryoneCanCode</tspan>
-                    </text>
-                    <g transform="translate(64.886544, 7.944444)" font-size="25.6666667" font-family="Righteous-Regular, Righteous" font-weight="normal">
-                      <text id="Shuttle">
-                        <tspan x="0" y="25">Shuttle</tspan>
-                      </text>
-                      <text id="Coder">
-                        <tspan x="96.1055409" y="25">Coder</tspan>
-                      </text>
-                    </g>
-                    <g id="Logo">
-                      <text font-family="Ubuntu" font-size="48.8888889" font-weight="normal">
-                        <tspan x="0" y="46">{</tspan>
-                      </text>
-                      <text font-family="Ubuntu" font-size="48.8888889" font-weight="normal" line-spacing="48.8888889">
-                        <tspan x="39.7889182" y="46">}</tspan>
-                      </text>
-                    </g>
-                    <g transform="translate(14.691293, 9.166667)">
-                      <path d="M14.1299276,34.2222222 C14.2385604,34.4720314 14.3029354,34.7939143 14.3029354,35.2081637 C14.3029354,36.6832273 13.1602793,38.5613444 13.1602793,38.5613444 C13.1602793,38.5613444 12.0196349,36.6832273 12.0196349,35.2081637 C12.0196349,34.7939143 12.0833393,34.4720314 12.1919721,34.2222222 C11.5106701,34.6350721 11.0184697,35.5223494 11.0184697,37.0946777 C11.0184697,39.8635708 13.1602793,43.3888889 13.1602793,43.3888889 C13.1602793,43.3888889 15.3034301,39.8635708 15.3034301,37.0946777 C15.3034301,35.5223494 14.8119002,34.6350721 14.1299276,34.2222222 Z"></path>
-                      <path d="M13.1611629,8.55555556 C14.6830086,8.55555556 15.9155673,9.7864735 15.9155673,11.3053429 C15.9155673,12.8237869 14.6830086,14.0555556 13.1611629,14.0555556 C11.6397432,14.0555556 10.4063325,12.8237869 10.4063325,11.3053429 C10.4063325,9.7864735 11.6397432,8.55555556 13.1611629,8.55555556 L13.1611629,8.55555556 Z"></path>
-                      <path d="M19.5883905,29.5460614 L21.451794,33 L23.5349885,33 L25.7097625,21.6050333 L21.239715,17.7222222 C20.6622816,23.5455204 19.8419213,28.1823021 19.5883905,29.5460614" transform="translate(22.649077, 25.361111) rotate(-359.000000) translate(-22.649077, -25.361111) "></path>
-                      <path d="M0.612137203,21.6043483 L2.78594727,33 L4.87010575,33 L6.73350923,29.5458538 C6.4790144,28.1820125 5.65769015,23.5449521 5.08218478,17.7222222 L0.612137203,21.6043483" transform="translate(3.672823, 25.361111) rotate(-1.000000) translate(-3.672823, -25.361111) "></path>
-                      <polyline points="16.6231878 33.6111111 17.7519789 29.9444444 8.56992084 29.9444444 9.69967833 33.6111111 16.6231878 33.6111111"></polyline>
-                      <path d="M13.1611156,17.1111111 C14.3447733,17.1111111 15.3034301,18.0684917 15.3034301,19.2498346 C15.3034301,20.4308466 14.3447733,21.3888889 13.1611156,21.3888889 C11.9777892,21.3888889 11.0184697,20.4308466 11.0184697,19.2498346 C11.0184697,18.0684917 11.9777892,17.1111111 13.1611156,17.1111111 L13.1611156,17.1111111 Z M13.188496,7.33822222 C15.3750501,7.33822222 17.1459631,9.10677778 17.1459631,11.2890556 C17.1459631,13.4707222 15.3750501,15.2405 13.188496,15.2405 C11.0025541,15.2405 9.23041689,13.4707222 9.23041689,11.2890556 C9.23041689,9.10677778 11.0025541,7.33822222 13.188496,7.33822222 L13.188496,7.33822222 Z M18.4602216,28.8340556 C19.5767599,25.773 20.2562322,21.7366111 20.2562322,17.3097222 C20.2562322,7.75011111 17.0914828,0 13.188496,0 C9.28550923,0 6.12137203,7.75011111 6.12137203,17.3097222 C6.12137203,21.7366111 6.80084433,25.773 7.91615831,28.8340556 L18.4602216,28.8340556 L18.4602216,28.8340556 Z"></path>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </div>
-          <div class="social-footer">
-            <h3>On est aussi sur</h3>
-            <div class="social-icons animated fadeInDown">
-              <ul class="footer-links list-unstyled list-inline">
-                <li><a href="https://www.facebook.com/ShuttleCoder/" target="_blank"><i class="fa fa-2x fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a></li>
-                <li><a href="https://twitter.com/shuttlecoder" target="_blank"><i class="fa fa-2x fa-twitter" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a></li>
-                <li><a href="https://www.meetup.com/fr-FR/shuttlecoderguadeloupe/" target="_blank"><i class="fa fa-2x fa-meetup" data-toggle="tooltip" data-placement="top" title="Nos Meetups"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="footer-column">
-            <h4>Nos Cours</h4>
-            <ul class="footer-links list-unstyled">
-              <li><a href="../nos-workshops.html" target="_blank">Nos workshops</a></li>
-              <li><a href="../pages/faq.html">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Qui sommes-nous ?</h4>
-            <ul class="footer-links list-unstyled">
-              <li><a href="../index.html" target="_blank">Shuttle Coder, c'est quoi ?</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row row-copyright">
-          <div class="col-xs-6">
-            <p class="copyright"><span>© 2017 Shuttle Coder Academy</span></p>
-          </div>
-          <div class="col-xs-6">
-            <p class="text-right with-love"><span>Made with</span><i class="fa fa-heart"></i><span>in Paris</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script>
-      $(function () {
-      	$('[data-toggle="tooltip"]').tooltip()
-      })
-    </script>
-    <script src="../js/velocity-min.js"></script>
-    <script src="../js/main-min.js"></script>
-  </body>
-</html>
+<!--End mc_embed_signup--></div></div></section><footer class="footer-main"><div class="container"><div class="flex"><div class="brand-footer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="230px" height="49px" viewBox="0 0 230 49" enable-background="new 0 0 230 49" xml:space="preserve"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-458.000000, -367.000000)" fill="#fff"><g transform="translate(457.000000, 360.000000)"><text font-family="Ubuntu-Medium, Ubuntu" font-size="12.2222222" font-weight="400"><tspan x="64.8865435" y="51.2777778">#EveryoneCanCode</tspan></text><g transform="translate(64.886544, 7.944444)" font-size="25.6666667" font-family="Righteous-Regular, Righteous" font-weight="normal"><text id="Shuttle"><tspan x="0" y="25">Shuttle</tspan></text><text id="Coder"><tspan x="96.1055409" y="25">Coder</tspan></text></g><g id="Logo"><text font-family="Ubuntu" font-size="48.8888889" font-weight="normal"><tspan x="0" y="46">{</tspan></text><text font-family="Ubuntu" font-size="48.8888889" font-weight="normal" line-spacing="48.8888889"><tspan x="39.7889182" y="46">}</tspan></text></g><g transform="translate(14.691293, 9.166667)"><path d="M14.1299276,34.2222222 C14.2385604,34.4720314 14.3029354,34.7939143 14.3029354,35.2081637 C14.3029354,36.6832273 13.1602793,38.5613444 13.1602793,38.5613444 C13.1602793,38.5613444 12.0196349,36.6832273 12.0196349,35.2081637 C12.0196349,34.7939143 12.0833393,34.4720314 12.1919721,34.2222222 C11.5106701,34.6350721 11.0184697,35.5223494 11.0184697,37.0946777 C11.0184697,39.8635708 13.1602793,43.3888889 13.1602793,43.3888889 C13.1602793,43.3888889 15.3034301,39.8635708 15.3034301,37.0946777 C15.3034301,35.5223494 14.8119002,34.6350721 14.1299276,34.2222222 Z"></path><path d="M13.1611629,8.55555556 C14.6830086,8.55555556 15.9155673,9.7864735 15.9155673,11.3053429 C15.9155673,12.8237869 14.6830086,14.0555556 13.1611629,14.0555556 C11.6397432,14.0555556 10.4063325,12.8237869 10.4063325,11.3053429 C10.4063325,9.7864735 11.6397432,8.55555556 13.1611629,8.55555556 L13.1611629,8.55555556 Z"></path><path d="M19.5883905,29.5460614 L21.451794,33 L23.5349885,33 L25.7097625,21.6050333 L21.239715,17.7222222 C20.6622816,23.5455204 19.8419213,28.1823021 19.5883905,29.5460614" transform="translate(22.649077, 25.361111) rotate(-359.000000) translate(-22.649077, -25.361111) "></path><path d="M0.612137203,21.6043483 L2.78594727,33 L4.87010575,33 L6.73350923,29.5458538 C6.4790144,28.1820125 5.65769015,23.5449521 5.08218478,17.7222222 L0.612137203,21.6043483" transform="translate(3.672823, 25.361111) rotate(-1.000000) translate(-3.672823, -25.361111) "></path><polyline points="16.6231878 33.6111111 17.7519789 29.9444444 8.56992084 29.9444444 9.69967833 33.6111111 16.6231878 33.6111111"></polyline><path d="M13.1611156,17.1111111 C14.3447733,17.1111111 15.3034301,18.0684917 15.3034301,19.2498346 C15.3034301,20.4308466 14.3447733,21.3888889 13.1611156,21.3888889 C11.9777892,21.3888889 11.0184697,20.4308466 11.0184697,19.2498346 C11.0184697,18.0684917 11.9777892,17.1111111 13.1611156,17.1111111 L13.1611156,17.1111111 Z M13.188496,7.33822222 C15.3750501,7.33822222 17.1459631,9.10677778 17.1459631,11.2890556 C17.1459631,13.4707222 15.3750501,15.2405 13.188496,15.2405 C11.0025541,15.2405 9.23041689,13.4707222 9.23041689,11.2890556 C9.23041689,9.10677778 11.0025541,7.33822222 13.188496,7.33822222 L13.188496,7.33822222 Z M18.4602216,28.8340556 C19.5767599,25.773 20.2562322,21.7366111 20.2562322,17.3097222 C20.2562322,7.75011111 17.0914828,0 13.188496,0 C9.28550923,0 6.12137203,7.75011111 6.12137203,17.3097222 C6.12137203,21.7366111 6.80084433,25.773 7.91615831,28.8340556 L18.4602216,28.8340556 L18.4602216,28.8340556 Z"></path></g></g></g></g></svg></div><div class="social-footer"><h3>On est aussi sur</h3><div class="social-icons animated fadeInDown"><ul class="footer-links list-unstyled list-inline"><li><a href="https://www.facebook.com/ShuttleCoder/" target="_blank"><i class="fa fa-2x fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a></li><li><a href="https://twitter.com/shuttlecoder" target="_blank"><i class="fa fa-2x fa-twitter" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a></li><li><a href="https://www.meetup.com/fr-FR/shuttlecoderguadeloupe/" target="_blank"><i class="fa fa-2x fa-meetup" data-toggle="tooltip" data-placement="top" title="Nos Meetups"></i></a></li></ul></div></div></div><div class="flex"><div class="footer-column"><h4>Nos Cours</h4><ul class="footer-links list-unstyled"><li><a href="../nos-workshops.html" target="_blank">Nos workshops</a></li><li><a href="../pages/faq.html">FAQ</a></li></ul></div><div class="footer-column"><h4>Qui sommes-nous ?</h4><ul class="footer-links list-unstyled"><li><a href="../index.html" target="_blank">Shuttle Coder, c'est quoi ?</a></li></ul></div></div></div></footer><div class="footer-bottom"><div class="container"><div class="row row-copyright"><div class="col-xs-6"><p class="copyright"><span>© 2017 Shuttle Coder Academy</span></p></div><div class="col-xs-6"><p class="text-right with-love"><span>Made with</span><i class="fa fa-heart"></i><span>in Paris</span></p></div></div></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})</script><script src="../js/velocity-min.js"></script><script src="../js/main-min.js"></script></body></html>
