@@ -3,4 +3,4 @@ https://shuttlecoder.academy/nos-workshops.html
 https://shuttlecoder.academy/workshops/creer-votre-premier-site-web.html
 https://shuttlecoder.academy/workshops/comprendre-javascript.html
 https://shuttlecoder.academy/workshops/construire-rapidement-son-prototype.html
-https://shuttlecoder.academy/pages/faq.html
+https://shuttlecoder.academy/faq.html
