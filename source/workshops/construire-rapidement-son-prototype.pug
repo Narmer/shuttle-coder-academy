@@ -2,10 +2,9 @@
 extends ../layout.pug
 //-include ../mixins/_navigation.pug
 include ../mixins/_lists.pug
-include ../mixins/_stripe-checkout-simple-form.pug
-include ../mixins/_signup.pug
 include ../mixins/_buttons.pug
-include ../mixins/_forms.pug
+include ../mixins/_events-listing.pug
+include ../mixins/_resume-workshop.pug
 prepend meta
   title Construire rapidement son prototype - Shuttle Coder
 append meta
@@ -44,12 +43,16 @@ block content
         - var learning = ["Construire rapidement un site SPA (Single Page Application)", "Construire rapidement un prototype", "Construire une application Web et Mobile", "S’initier à la programmation réactive"]
         +course-learning(learning)
 
+        - var events = [{title: 'Juillet 2017', startDate: "Samedi 22", endDate: "Dimanche 23", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931658677375"}, {title: 'Août 2017', startDate: "Samedi 19", endDate: "Dimanche 20", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931935519272"}, {title: 'Septembre 2017', startDate: "Samedi 16", endDate: "Dimanche 17", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931937323458"}, {title: 'Octobre 2017', startDate: "Samedi 21", endDate: "Dimanche 22", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931938981148"}, {title: 'Novembre 2017', startDate: "Samedi 18", endDate: "Dimanche 19", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931940175471"}]
+        - var img = "../img/events/workshop-website.jpg"
+        +events-list(events, img)
+
       aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
         - var objectifs = ["Site web Single Page Application", "Prototype en quelques jours", "Appli Web/mobile réactive"]
         - var titre = ''
         - var price = 30000
         - var description = "Construire rapidement son prototype"
-        +stripeCheckoutSimpleForm(titre, price, objectifs, dateList, description)
+        +resumeWorkshop(titre, price, objectifs, dateList, description)
         //-+signup('Basic', '300', objectifs, "20-21 mai")
 
 append scripts
