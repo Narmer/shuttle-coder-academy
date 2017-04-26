@@ -2,10 +2,9 @@
 extends ../layout.pug
 //-include ../mixins/_navigation.pug
 include ../mixins/_lists.pug
-include ../mixins/_stripe-checkout-simple-form.pug
-include ../mixins/_signup.pug
 include ../mixins/_buttons.pug
-include ../mixins/_forms.pug
+include ../mixins/_events-listing.pug
+include ../mixins/_resume-workshop.pug
 prepend meta
   title Comprendre JavaScript - Shuttle Coder
 append meta
@@ -44,12 +43,16 @@ block content
         - var learning = ["Fondamentaux du langage JavaScript", "Comprendre les bases de la programmation en JavaScript", "Comprendre les interaction avec la page web (programmation événementielle)", "Maîtriser les concepts importants de JavaScript (types, objets, fonctions, syntaxe, etc.)", "Analyser une page web avec les outils développeur"]
         +course-learning(learning)
 
+        - var events = [{title: 'Juin 2017', startDate: "Samedi 10", endDate: "Dimanche 11", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931580914790"}, {title: 'Juillet 2017', startDate: "Samedi 08", endDate: "Dimanche 09", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931595823082"}, {title: 'Août 2017', startDate: "Samedi 12", endDate: "Dimanche 13", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931599051682"}, {title: 'Septembre 2017', startDate: "Samedi 09", endDate: "Dimanche 10", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931600955586"}, {title: 'Octobre 2017', startDate: "Samedi 14", endDate: "Dimanche 15", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931602763730"}, {title: 'Novembre 2017', startDate: "Samedi 11", endDate: "Dimanche 12", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931641884257"}]
+        - var img = "../img/events/workshop-website.jpg"
+        +events-list(events, img)
+
       aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
         - var objectifs = ["Fondamentaux JavaScript", "Débugguer son code", "Découvrir des APIs"]
         - var titre = ''
         - var price = 15000
         - var description = "Comprendre JavaScript"
-        +stripeCheckoutSimpleForm(titre, price, objectifs, dateList, description)
+        +resumeWorkshop(titre, price, objectifs, dateList, description)
         //-+signup('Basic', '300', objectifs, "20-21 mai")
 
 append scripts

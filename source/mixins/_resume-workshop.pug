@@ -1,0 +1,14 @@
+mixin resumeWorkshop(titre, price, objectifs, dates, description)
+	div
+		header.cd-pricing-header
+			h5.cd-price= "Prix Unitaire : " + price/100 + "€ TTC"
+
+		section.cd-pricing-features
+			ul.fa-ul
+				each objectif in objectifs
+					li
+						i.fa.fa-li.fa-lg.fa-check
+						span= objectif
+
+		footer.cd-pricing-footer
+			a.btn(class="btn btn-blue" href="#dates-events") Réserver ma place
