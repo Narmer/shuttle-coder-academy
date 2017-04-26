@@ -6,55 +6,56 @@ include ../mixins/_buttons.pug
 include ../mixins/_events-listing.pug
 include ../mixins/_resume-workshop.pug
 prepend meta
-  title Construire rapidement son prototype - Shuttle Coder
+	title Construire rapidement son prototype - Shuttle Coder
 append meta
-  meta(name="description" content="")
-  meta(name="keywords" content="")
-  //-+meta-social(title, description, url, site_name, fpublisher, image, creator)
+	meta(name="description" content="")
+	meta(name="keywords" content="")
+	//-+meta-social(title, description, url, site_name, fpublisher, image, creator)
 
 append css
-  link(rel="stylesheet" type="text/css" href="../css/main.css")
-  script(src="../js/modernizr-min.js")
+	link(rel="stylesheet" type="text/css" href="../css/main.css")
+	script(src="../js/modernizr-min.js")
 
 block top-bar
 
 prepend navigation
-  - var path = '../'
+	- var path = '../'
 
 block content
-  - var dateList = ["11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars"]
-  section.workshop
-    .container
-      article.col-xs-12.col-lg-7
-        h1 Construire rapidement son prototype
-        h2 Initiation au développement d'applications Web et mobile réactives
-        -var requis = ['HTML5/CSS3', 'Javascript']
-        +course-listing(requis, '30', 'Memorial Act, Guadeloupe', 'Créer votre prototype')
-        p
-          | Construisez votre prototype en quelques jours voir en quelques heures.
-          | Vous utiliserez un framework open-source de développement Web en JavaScript basé sur NodeJS.
-          br
-          | Il propose une façon simple et efficace, d'écrire des applications Web/mobile réactives (en temps réel).
-        //- A qui s'adresse ce cours
-        - var who = ["Entrepreneurs Tech", "Développeur Web", "Founders"]
-        +course-for-who(who)
+	- var dateList = ["11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars"]
+	section.workshop
+		.container
+			.row
+				article.col-xs-12.col-lg-7
+					h1 Construire rapidement son prototype
+					h2 Initiation au développement d'applications Web et mobile réactives
+					-var requis = ['HTML5/CSS3', 'Javascript']
+					+course-listing(requis, '30', 'Memorial Act, Guadeloupe', 'Créer votre prototype')
+					p
+						| Construisez votre prototype en quelques jours voir en quelques heures.
+						| Vous utiliserez un framework open-source de développement Web en JavaScript basé sur NodeJS.
+						br
+						| Il propose une façon simple et efficace, d'écrire des applications Web/mobile réactives (en temps réel).
+				aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
+					- var objectifs = ["Site web Single Page Application", "Prototype en quelques jours", "Appli Web/mobile réactive"]
+					- var titre = ''
+					- var price = 30000
+					- var description = "Construire rapidement son prototype"
+					+resumeWorkshop(titre, price, objectifs, dateList, description)
+			.row
+				.col-xs-12
+					//- A qui s'adresse ce cours
+					- var who = ["Entrepreneurs Tech", "Développeur Web", "Founders"]
+					+course-for-who(who)
 
-        //- Ce que vous allez apprendre dans ce cours
-        - var learning = ["Construire rapidement un site SPA (Single Page Application)", "Construire rapidement un prototype", "Construire une application Web et Mobile", "S’initier à la programmation réactive"]
-        +course-learning(learning)
+					//- Ce que vous allez apprendre dans ce cours
+					- var learning = ["Construire rapidement un site SPA (Single Page Application)", "Construire rapidement un prototype", "Construire une application Web et Mobile", "S’initier à la programmation réactive"]
+					+course-learning(learning)
 
-        - var events = [{title: 'Juillet 2017', startDate: "Samedi 22", endDate: "Dimanche 23", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931658677375"}, {title: 'Août 2017', startDate: "Samedi 19", endDate: "Dimanche 20", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931935519272"}, {title: 'Septembre 2017', startDate: "Samedi 16", endDate: "Dimanche 17", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931937323458"}, {title: 'Octobre 2017', startDate: "Samedi 21", endDate: "Dimanche 22", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931938981148"}, {title: 'Novembre 2017', startDate: "Samedi 18", endDate: "Dimanche 19", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931940175471"}]
-        - var img = "../img/events/workshop-website.jpg"
-        +events-list(events, img)
-
-      aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
-        - var objectifs = ["Site web Single Page Application", "Prototype en quelques jours", "Appli Web/mobile réactive"]
-        - var titre = ''
-        - var price = 30000
-        - var description = "Construire rapidement son prototype"
-        +resumeWorkshop(titre, price, objectifs, dateList, description)
-        //-+signup('Basic', '300', objectifs, "20-21 mai")
+					- var events = [{title: 'Juillet 2017', startDate: "Samedi 22", endDate: "Dimanche 23", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931658677375"}, {title: 'Août 2017', startDate: "Samedi 19", endDate: "Dimanche 20", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931935519272"}, {title: 'Septembre 2017', startDate: "Samedi 16", endDate: "Dimanche 17", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931937323458"}, {title: 'Octobre 2017', startDate: "Samedi 21", endDate: "Dimanche 22", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931938981148"}, {title: 'Novembre 2017', startDate: "Samedi 18", endDate: "Dimanche 19", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931940175471"}]
+					- var img = "../img/events/workshop-meteor-cover.jpg"
+					+events-list(events, img)
 
 append scripts
-  script(src="../js/velocity-min.js")
-  script(src="../js/main-min.js")
+	script(src="../js/velocity-min.js")
+	script(src="../js/main-min.js")

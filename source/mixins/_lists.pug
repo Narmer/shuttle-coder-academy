@@ -29,27 +29,15 @@ mixin course-listing(prerequis, places, lieu, objectif)
 				span= objectif
 
 mixin course-learning(values)
-	h5 Ce que vous allez apprendre
+	h4 Ce que vous allez apprendre
 	ul.fa-ul
 		each val in values
 			li
 				i.fa.fa-li.fa-lg.fa-check-square-o
 				p= val
-			//-  li
-					i.fa.fa-li.fa-lg.fa-check-square-o
-					p= first
-				li
-					i.fa.fa-li.fa-lg.fa-check-square-o
-					p= second
-				li
-					i.fa.fa-li.fa-lg.fa-check-square-o
-					p= third
-				li
-					i.fa.fa-li.fa-lg.fa-check-square-o
-					p= four
 
 mixin course-for-who(values)
-	h5 A qui s'adresse ce cours ?
+	h4 A qui s'adresse ce cours ?
 	ul.fa-ul
 		each val in values
 			li
