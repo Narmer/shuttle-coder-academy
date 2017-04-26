@@ -1,57 +1,57 @@
 mixin course-listing(prerequis, places, lieu, objectif)
-  ul.fa-ul
-    li
-      i.fa.fa-li.fa-lg.fa-check-square-o
-      p.
-        Pré-requis :
-      if prerequis
-        each value in prerequis
-          // br
-          span= value        
-      else
-        span Aucun
-    if places
-      li
-        i.fa.fa-li.fa-lg.fa-user
-        p.
-          Nombre de places :
-        span= places
-    li
-      i.fa.fa-li.fa-lg.fa-map-marker
-      p.
-        Lieu :
-      span= lieu
-    if objectif
-      li
-        i.fa.fa-li.fa-lg.fa-trophy
-        p.
-          Objectif :
-        span= objectif
+	ul.fa-ul
+		li
+			i.fa.fa-li.fa-lg.fa-check-square-o
+			p.
+				Pré-requis :
+			if prerequis
+				each value in prerequis
+					span= value
+					br
+			else
+				span Aucun
+		if places
+			li
+				i.fa.fa-li.fa-lg.fa-user
+				p.
+					Nombre de places :
+				span= places
+		li
+			i.fa.fa-li.fa-lg.fa-map-marker
+			p.
+				Lieu :
+			span= lieu
+		if objectif
+			li
+				i.fa.fa-li.fa-lg.fa-trophy
+				p.
+					Objectif :
+				span= objectif
 
 mixin course-learning(values)
-  h5 Ce que vous allez apprendre
-  ul.fa-ul
-    each val in values
-      li
-        i.fa.fa-li.fa-lg.fa-check-square-o
-        p= val
-      //-  li
-          i.fa.fa-li.fa-lg.fa-check-square-o
-          p= first
-        li
-          i.fa.fa-li.fa-lg.fa-check-square-o
-          p= second
-        li
-          i.fa.fa-li.fa-lg.fa-check-square-o
-          p= third
-        li
-          i.fa.fa-li.fa-lg.fa-check-square-o
-          p= four
+	h5 Ce que vous allez apprendre
+	ul.fa-ul
+		each val in values
+			li
+				i.fa.fa-li.fa-lg.fa-check-square-o
+				p= val
+			//-  li
+					i.fa.fa-li.fa-lg.fa-check-square-o
+					p= first
+				li
+					i.fa.fa-li.fa-lg.fa-check-square-o
+					p= second
+				li
+					i.fa.fa-li.fa-lg.fa-check-square-o
+					p= third
+				li
+					i.fa.fa-li.fa-lg.fa-check-square-o
+					p= four
 
 mixin course-for-who(values)
-  h5 A qui s'adresse ce cours ?
-  ul.fa-ul
-    each val in values
-      li
-        i.fa.fa-li.fa.fa-minus
-        p= val
+	h5 A qui s'adresse ce cours ?
+	ul.fa-ul
+		each val in values
+			li
+				i.fa.fa-li.fa.fa-minus
+				p= val
