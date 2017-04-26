@@ -2,10 +2,9 @@
 extends ../layout.pug
 //-include ../mixins/_navigation.pug
 include ../mixins/_lists.pug
-include ../mixins/_stripe-checkout-simple-form.pug
-include ../mixins/_signup.pug
 include ../mixins/_buttons.pug
-include ../mixins/_forms.pug
+include ../mixins/_events-listing.pug
+include ../mixins/_resume-workshop.pug
 prepend meta
   title Comprendre JavaScript - Shuttle Coder
 append meta
@@ -26,31 +25,35 @@ block content
   - var dateList = ["11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars"]
   section.workshop
     .container
-      article.col-xs-12.col-lg-7
-        h1 Rendre votre site web dynamique
-        h2 Apprenez à vous servir de Javascript
-        -var requis = ['HTML5/CSS3']
-        +course-listing(requis, '30', 'Memorial Act, Guadeloupe', 'Récupérez des données sur le web')
-        p
-          | Avec HTML5 et CSS3, JavaScript est une des technologies au coeur du web. La majorité des sites web utilise JavaScript, et tous les navigateurs web modernes le supportent sans ajout de plugins.
-          br
-          | Il y a une communauté énorme, et l'écosystème évolue rapidement. Si vous voulez être un développeur web, JavaScript est incontournable. Et si vous voulez apprendre JavaScript, vous êtes au bon endroit !
+      .row
+        article.col-xs-12.col-lg-7
+          h1 Rendre votre site web dynamique
+          h2 Apprenez à vous servir de Javascript
+          -var requis = ['HTML5/CSS3']
+          +course-listing(requis, '30', 'Memorial Act, Guadeloupe', 'Récupérez des données sur le web')
+          p
+            | Avec HTML5 et CSS3, JavaScript est une des technologies au coeur du web. La majorité des sites web utilise JavaScript, et tous les navigateurs web modernes le supportent sans ajout de plugins.
+            br
+            | Il y a une communauté énorme, et l'écosystème évolue rapidement. Si vous voulez être un développeur web, JavaScript est incontournable. Et si vous voulez apprendre JavaScript, vous êtes au bon endroit !
+        aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
+          - var objectifs = ["Fondamentaux JavaScript", "Débugguer son code", "Découvrir des APIs"]
+          - var titre = ''
+          - var price = 15000
+          - var description = "Comprendre JavaScript"
+          +resumeWorkshop(titre, price, objectifs, dateList, description)
+      .row
+        .col-xs-12
+          //- A qui s'adresse ce cours
+          - var who = ['Débutants', "Entrepreneurs Tech", "Web Designers", "Back-end Developers", "Growth Hackers"]
+          +course-for-who(who)
 
-        //- A qui s'adresse ce cours
-        - var who = ['Débutants', "Entrepreneurs Tech", "Web Designers", "Back-end Developers", "Growth Hackers"]
-        +course-for-who(who)
+          //- Ce que vous allez apprendre dans ce cours
+          - var learning = ["Fondamentaux du langage JavaScript", "Comprendre les bases de la programmation en JavaScript", "Comprendre les interaction avec la page web (programmation événementielle)", "Maîtriser les concepts importants de JavaScript (types, objets, fonctions, syntaxe, etc.)", "Analyser une page web avec les outils développeur"]
+          +course-learning(learning)
 
-        //- Ce que vous allez apprendre dans ce cours
-        - var learning = ["Fondamentaux du langage JavaScript", "Comprendre les bases de la programmation en JavaScript", "Comprendre les interaction avec la page web (programmation événementielle)", "Maîtriser les concepts importants de JavaScript (types, objets, fonctions, syntaxe, etc.)", "Analyser une page web avec les outils développeur"]
-        +course-learning(learning)
-
-      aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
-        - var objectifs = ["Fondamentaux JavaScript", "Débugguer son code", "Découvrir des APIs"]
-        - var titre = ''
-        - var price = 15000
-        - var description = "Comprendre JavaScript"
-        +stripeCheckoutSimpleForm(titre, price, objectifs, dateList, description)
-        //-+signup('Basic', '300', objectifs, "20-21 mai")
+          - var events = [{title: 'Juin 2017', startDate: "Samedi 10", endDate: "Dimanche 11", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931580914790"}, {title: 'Juillet 2017', startDate: "Samedi 08", endDate: "Dimanche 09", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931595823082"}, {title: 'Août 2017', startDate: "Samedi 12", endDate: "Dimanche 13", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931599051682"}, {title: 'Septembre 2017', startDate: "Samedi 09", endDate: "Dimanche 10", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931600955586"}, {title: 'Octobre 2017', startDate: "Samedi 14", endDate: "Dimanche 15", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931602763730"}, {title: 'Novembre 2017', startDate: "Samedi 11", endDate: "Dimanche 12", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931641884257"}]
+          - var img = "../img/events/workshop-javascript-cover.jpg"
+          +events-list(events, img)
 
 append scripts
   script(src="../js/velocity-min.js")

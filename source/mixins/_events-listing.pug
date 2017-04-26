@@ -1,0 +1,29 @@
+mixin events-list(events, img)
+	.row#dates-events
+		.col-md-12
+			h3 Les dates des workshops
+		each event in events
+			.col-sm-6.col-md-4
+				.thumbnail
+					a(href="https://picatic.com/"+event.link)
+						img(src=img alt="...")
+					.caption
+						if event.title
+							h3= event.title
+						else
+
+						if event.startDate
+							ul.list-inline
+								li='Du '+event.startDate
+								li='au '+event.endDate
+						else
+							ul.list-inline
+								li Du…
+								li au…
+						if event.place
+							p= "à "+event.place
+						else
+							p à…
+						p
+							a(href="https://picatic.com/"+event.link class="btn btn-blue" role="button")= "Je m'inscris pour "+event.title
+								i.fa.fa-angle-right
