@@ -25,32 +25,32 @@ block content
 	- var dateList = ["11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars", "11-12 mars", "25-26 mars"]
 	section.workshop
 		.container
-			article.col-xs-12.col-lg-7
-				h1 Construis ton idée et crée ton site web
-				h2 Initiation à HTML5 et CSS3
-				+course-listing(['Aucun'], '30', 'Memorial Act, Guadeloupe', 'Créer votre site web')
-				p.
-					Comprenez enfin le développement web ! Apprenez à coder et créez votre propre site Internet en un week-end. Shuttle Coder, c'est 50% entrepreneur, 50% coder, 100% de pratique.
+			.row
+				article.col-xs-12.col-lg-7
+					h1 Construis ton idée et crée ton site web
+					h2 Initiation à HTML5 et CSS3
+					+course-listing(['Aucun'], '30', 'Memorial Act, Guadeloupe', 'Créer votre site web')
+					p.
+						Comprenez enfin le développement web ! Apprenez à coder et créez votre propre site Internet en un week-end. Shuttle Coder, c'est 50% entrepreneur, 50% coder, 100% de pratique.
+				aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
+					- var objectifs = ["HTML5/CSS3", "Bootstrap", "GitHub", "Google Analytics"]
+					- var titre = ''
+					- var price = 15000
+					- var description = "Créer votre 1er site web"
+					+resumeWorkshop(titre, price, objectifs, dateList, description)
+			.row
+				.col-xs-12
+					//- A qui s'adresse ce cours
+					- var who = ['Débutants', 'Entrepreneurs Tech', 'Designer', 'Founders']
+					+course-for-who(who)
 
-				//- A qui s'adresse ce cours
-				- var who = ['Débutants', 'Entrepreneurs Tech', 'Designer', 'Founders']
-				+course-for-who(who)
+					//- Ce que vous allez apprendre dans ce cours
+					- var learning = ["Fondamentaux en HTML & CSS.", "Comprendre le fonctionnement simplifié d'un serveur, les différentes façons de créer un site (From scratch, CMS, etc), les noms de domaine, les hébergements Web, les frameworks, et les bibliothèques.", "Découvrir le responsive web design avec la grille et les composants Bootstrap.", "Découvrir les ressources & outils de web-design", "Déployer son site sur Github", "Intégrer Google Analytics", "Insérer des formulaires Mailchimp & Wufoo", "Les pratiques (bonnes et mauvaises) liées à la programmation et à la gestion de projets."]
+					+course-learning(learning)
 
-				//- Ce que vous allez apprendre dans ce cours
-				- var learning = ["Fondamentaux en HTML & CSS.", "Comprendre le fonctionnement simplifié d'un serveur, les différentes façons de créer un site (From scratch, CMS, etc), les noms de domaine, les hébergements Web, les frameworks, et les bibliothèques.", "Découvrir le responsive web design avec la grille et les composants Bootstrap.", "Découvrir les ressources & outils de web-design", "Déployer son site sur Github", "Intégrer Google Analytics", "Insérer des formulaires Mailchimp & Wufoo", "Les pratiques (bonnes et mauvaises) liées à la programmation et à la gestion de projets."]
-				+course-learning(learning)
-
-				- var events = [{title: 'Mai 2017', startDate: "Samedi 27", endDate: "Dimanche 28", description: "2 jours pour créer votre site web", place: "Baie-Mahault, GUADELOUPE", link: "event14931322274406"}, {title: 'Juin 2017', startDate: "Samedi 24", endDate: "Dimanche 25", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931348625772"}, {title: 'Juillet 2017', startDate: "Samedi 29", endDate: "Dimanche 30", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931369511779"}, {title: 'Août 2017', startDate: "Samedi 26", endDate: "Dimanche 27", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931374324405"}, {title: 'Septembre 2017', startDate: "Samedi 23", endDate: "Dimanche 24", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931378378537"}, {title: 'Octobre 2017', startDate: "Samedi 28", endDate: "Dimanche 29", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931574648747"}]
-				- var img = "../img/events/workshop-website.jpg"
-				+events-list(events, img)
-
-			aside.cd-pricing.col-xs-12.col-lg-4.col-lg-offset-1
-				- var objectifs = ["HTML5/CSS3", "Bootstrap", "GitHub", "Google Analytics"]
-				- var titre = ''
-				- var price = 15000
-				- var description = "Créer votre 1er site web"
-				+resumeWorkshop(titre, price, objectifs, dateList, description)
-				//- +signup('Basic', '150', objectifs, "20-21 mai")
+					- var events = [{title: 'Mai 2017', startDate: "Samedi 27", endDate: "Dimanche 28", description: "2 jours pour créer votre site web", place: "Baie-Mahault, GUADELOUPE", link: "event14931322274406"}, {title: 'Juin 2017', startDate: "Samedi 24", endDate: "Dimanche 25", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931348625772"}, {title: 'Juillet 2017', startDate: "Samedi 29", endDate: "Dimanche 30", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931369511779"}, {title: 'Août 2017', startDate: "Samedi 26", endDate: "Dimanche 27", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931374324405"}, {title: 'Septembre 2017', startDate: "Samedi 23", endDate: "Dimanche 24", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931378378537"}, {title: 'Octobre 2017', startDate: "Samedi 28", endDate: "Dimanche 29", description: "", place: "Baie-Mahault, GUADELOUPE", link: "event14931574648747"}]
+					- var img = "../img/events/workshop-html-cover.jpg"
+					+events-list(events, img)
 
 append scripts
 	script(src="../js/velocity-min.js")
